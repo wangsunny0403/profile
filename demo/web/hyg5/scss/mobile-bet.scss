@@ -1,0 +1,72 @@
+@import "helper/variables", "helper/mixin";
+.no-light-bg {
+    background-image: url('../img/game-light-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 0;
+}
+.bet{
+    background-image: url('../img/mobile-bet/bet-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 40px 15%;
+    .row{
+        align-items: center;
+    }
+    h2{
+        color: #3e97f1;
+        font-size: 2.5em;
+        line-height: 1.5;
+    }
+    .b-img{
+        padding-right: 20px;
+        padding-top: 45px;
+        @media (max-width:991px){
+            margin-top: 0;
+        }
+    }
+    .qrcode{
+        display: flex;
+        > div{
+            &:nth-child(1){
+                margin-right: 15px;
+            }
+        }
+        .img{
+            margin-bottom: 5px;
+        }
+        img{
+            height: 130px;
+            width: inherit;
+            border: 5px solid #608abc;
+        }
+        span{
+            color: $lightYellow;
+            margin-right: 3px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    @media(max-width:991px){
+        padding: 15px 20px;
+        h2{
+            font-size: 1.7em;
+        }
+    }
+    @media(max-width:767px){
+        .b-img{
+            display: none;
+        }
+        .txt{
+            text-align: center;
+        }
+        .qrcode{
+            justify-content: center;
+            img{
+                height: 100px;
+            }
+        }
+    }
+}

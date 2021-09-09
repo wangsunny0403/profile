@@ -1,0 +1,426 @@
+.rwd_table-area{
+	max-width:800px;
+	margin: 0 auto;
+}
+.rwd_table-area #rwd_table{
+	box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+@media only screen and (max-width: 720px) {
+	
+	/* Force table to not be like tables anymore */
+	.break-table{
+		background-color: transparent !important;  
+	}
+	.break-table, 
+	.break-table thead, 
+	.break-table tbody, 
+	.break-table th, 
+	.break-table td, 
+	.break-table tr { 
+		display: block; 
+	}
+	.rwd_table-area #rwd_table{
+		box-shadow:none;
+	}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.break-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.break-table tr {
+		/* border: 1px solid rgba(255,255,255,.0); */
+		
+		margin-bottom: 10px;
+	}
+
+	.break-table td { 
+		/* Behave  like a "row" */
+		/* border: none !important; */
+		/* border-bottom: 1px solid rgba(255,255,255,.1) !important; */
+		position: relative;
+		padding-left: 200px;
+		white-space: normal;
+		text-align:left;
+	}
+
+	.break-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 8px;
+		left: 10px;
+		width: 125px;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		/* color: #1a1a1a; */
+	}
+
+	.break-table td:before {content: attr(data-title);/* color: #eee; */}
+	.playtime .break-table td:before{
+		width: 155px;
+	}
+	.playtime #rwd_table td{
+		padding-left: 170px;
+	}
+	
+}
+
+
+
+/***************************************************************************************/
+/*表格-輸入帳號*/
+/***************************************************************************************/
+#rwd_table-account {
+	width: 80%;
+    background-color: rgba(0,0,0,.3);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width: 480px){
+	#rwd_table-account{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table-account{
+	width: 95%;
+}
+	
+}
+
+#rwd_table-account td, #rwd_table-account th{
+	padding: 5px;
+}
+
+#rwd_table-account td{
+	color: #666666;
+	/*border: #ddd 1px solid;*/
+}
+
+#rwd_table-account th{
+	background-color: #b71630;
+	color:#ffffff;
+	/*border: #FFF 1px solid;*/
+	text-align: center;
+}
+
+#rwd_table-account h2{
+  font-size: 18px;
+  padding: 1em;
+}
+
+/***************************************************************************************/
+/*表格-得獎名單*/
+/***************************************************************************************/
+#rwd_table-winner {
+	width: 80%;
+    background-color: rgba(0,0,0,.3);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+
+}
+@media screen and (max-width: 480px){
+	#rwd_table-winner{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table-winner{
+	width: 95%;
+}
+	
+}
+
+#rwd_table-winner td, #rwd_table-winner th{
+	padding: 5px;
+}
+
+#rwd_table-winner td{
+	color: #666666;
+	/*border: #ddd 1px solid;*/
+}
+
+#rwd_table-winner th{
+	background-color: #990101;
+	color:#ffffff;
+	/*border: #FFF 1px solid;*/
+	text-align: center;
+}
+
+
+/***************************************************************************************/
+/*表格01*/
+/***************************************************************************************/
+#rwd_table {
+	width: 100%;
+	margin: 20px 0;
+    /* background-color: #ffffff; */
+    /* border-collapse: collapse; */
+    /* margin-bottom: 20px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 2em; */
+    /* -webkit-filter: drop-shadow(5px 5px 5px #000);
+    border-radius:  20px 20px 10px 10px; */
+}
+
+
+@media screen and (max-width: 480px){
+	#rwd_table{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table{
+	width: 100%;
+}
+	
+}
+
+#rwd_table td, #rwd_table th{
+	padding: 15px;
+	text-align: center;
+}
+
+#rwd_table td{
+	/* color: #666666; */
+	/* border: rgba(0,0,0,.1) 1px solid; */
+
+}
+#rwd_table th{
+	background-color: #00047e;
+	color: #fff000;
+	/* border: none; */
+	text-align: center;
+	border:1px solid #fff;
+}
+#rwd_table .brn{
+	border-right: 1px solid transparent;
+}
+#rwd_table td{
+	background-color: rgba(31,31,255,0.3);
+	border-right:1px solid rgba(255,255,255, .3);
+	
+}
+.blw{
+	border-left:1px solid rgba(255,255,255, .3);
+}
+.brw{
+	border-right:1px solid rgba(255,255,255, .3);
+}
+.bbw{
+	border-bottom:1px solid rgba(255,255,255, .3);
+}
+#rwd_table th:nth-child(1){
+	/* border-radius: 10px 0 0 0; */
+}
+#rwd_table th:nth-last-child(1){
+	/* border-radius: 0 10px 0 0; */
+}
+
+#rwd_table img{
+	width: 100%;
+	max-width: 188px;
+}
+
+/***************************************************************************************/
+/*表格02*/
+/***************************************************************************************/
+#rwd_table_02 {
+	width: 80%;
+    background-color: rgba(0,0,0,.3);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+@media screen and (max-width: 480px){
+	#rwd_table_02{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_02{
+	width: 95%;
+}
+	
+}
+
+#rwd_table_02 td, #rwd_table_02 th{
+	padding: 5px;
+}
+
+#rwd_table_02 td{
+	color: #ddd;
+	border-bottom: rgba(255,255,255,.1) 1px solid;
+}
+
+#rwd_table_02 th{
+	background-color: #b71630;
+	color:#ffffff;
+	border: rgba(255,255,255,.1) 1px solid;
+	margin: 1px;
+	text-align: center;
+}
+
+
+/*ex-td*/
+@media screen and (min-width: 721px){
+#rwd_table_02 #ex-td{
+	width: 50%;
+}
+}
+/***************************************************************************************/
+/*表格03*/
+/***************************************************************************************/
+#rwd_table_03 {
+	/* width: 80%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em; */
+}
+@media screen and (max-width: 480px){
+	#rwd_table_03{
+	/* width: 95%; */
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_03{
+	/* width: 95%; */
+}
+	
+}
+
+#rwd_table_03 td, #rwd_table_03 th{
+	padding: 5px;
+}
+
+#rwd_table_03 td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table_03 th{
+	background-color: #990101;
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+
+
+/***************************************************************************************/
+/*表格-六合彩表格專用-A*/
+/***************************************************************************************/
+#rwd_table_lotterty-A {
+	width: 20%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    float: left;
+}
+@media screen and (max-width: 480px){
+	#rwd_table_lotterty-A{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_lotterty-A{
+	width: 95%;
+}
+	
+}
+
+#rwd_table_lotterty-A td, #rwd_table_lotterty-A th{
+	padding: 5px;
+}
+
+#rwd_table_lotterty-A td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table_lotterty-A th{
+	background-color: #7e1264;
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+#rwd_table_lotterty-A tr td:hover{
+	background:rgba(255,255,255,.1)!important;
+}
+/*break-table-custom*/
+
+@media only screen and (max-width: 720px) {
+
+	.break-table-lotterty-A{
+		margin-bottom: 0!important;
+	}
+	
+	.break-table-custom{
+		margin-top: 0!important;
+		margin-bottom: 0!important;
+	}
+	.break-table-custom thead{
+		display: none;
+	}
+	.break-table-custom tbody tr td:nth-child(1){
+		width: 45%;
+	}
+	.break-table-custom tbody tr td:nth-child(2){
+		width: 55%;
+	}
+	
+}
+
+
+/*table-hide*/
+
+.table-hide{
+	display: none;
+}
+
+@media screen and (max-width: 720px){
+
+.table-hide{
+	display: inline;
+}
+
+#rwd_table td{
+	/* color: #fff; */
+	padding:8px 10px 8px 130px;
+	text-align: left;
+}
+
+.text-center{
+	padding: 0!important;
+}
+
+}

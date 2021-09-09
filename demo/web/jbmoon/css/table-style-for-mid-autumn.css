@@ -1,0 +1,252 @@
+
+
+@media only screen and (max-width: 720px) {
+	
+	/* Force table to not be like tables anymore */
+	.break-table{
+		background-color: transparent !important;  
+	}
+	.break-table, 
+	.break-table thead, 
+	.break-table tbody, 
+	.break-table th, 
+	.break-table td, 
+	.break-table tr { 
+		display: block;
+	}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.break-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.break-table tr { border: 1px solid #ccc; margin-bottom: 10px; background-color: #ffffff;}
+
+	.break-table td { 
+		/* Behave  like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;  
+		position: relative;
+		padding-left: 155px !important; 
+		white-space: normal;
+		text-align:left;
+	}
+
+	.break-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 145px; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		color: #1a1a1a;
+	}
+
+	.break-table td:before { content: attr(data-title); }
+	
+}
+
+
+
+/***************************************************************************************/
+/*表格-輸入帳號*/
+/***************************************************************************************/
+#rwd_table-account {
+	/* width: 80%;
+    background-color: rgba(0,0,0,.3);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+	margin-top: 2em; */
+	
+}
+.rwd_table-area{
+	width: 100%;
+}
+@media screen and (max-width: 480px){
+	/* #rwd_table-account{
+		width: 95%;
+	} */
+}
+
+@media screen and (max-width: 720px){
+	/* #rwd_table-account{
+		width: 95%;
+	} */
+	
+}
+
+#rwd_table-account td, #rwd_table-account th{
+	/* padding: 5px; */
+}
+
+#rwd_table-account td{
+	/* color: #666666; */
+	/*border: #ddd 1px solid;*/
+}
+
+#rwd_table-account th{
+	/* background-color: #990101; */
+	/* color:#ffffff; */
+	/*border: #FFF 1px solid;*/
+	/* text-align: center; */
+}
+
+
+
+
+
+
+
+/***************************************************************************************/
+/*表格01*/
+/***************************************************************************************/
+#rwd_table {
+	width: 100%;
+    background-color: #ffffff;
+    /* border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em; */
+}
+
+
+@media screen and (max-width: 480px){
+	#rwd_table{
+	/* width: 95%; */
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table{
+	/* width: 95%; */
+}
+	
+}
+
+#rwd_table td, #rwd_table th{
+	padding: 9px;
+}
+
+#rwd_table td{
+	color: #666666;
+	border: #ddd 1px solid;
+	text-align: center;
+}
+
+#rwd_table th{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7e130f+0,ac190e+99 */
+	background: #7e130f; /* Old browsers */
+	background: -moz-linear-gradient(top, #7e130f 0%, #ac190e 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7e130f 0%,#ac190e 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7e130f 0%,#ac190e 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e130f', endColorstr='#ac190e',GradientType=0 ); /* IE6-9 */
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+
+/***************************************************************************************/
+/*表格02*/
+/***************************************************************************************/
+#rwd_table_02 {
+	width: 100%;
+    background-color: #ffffff;
+    /* border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em; */
+}
+@media screen and (max-width: 480px){
+	#rwd_table_02{
+	/* width: 95%; */
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_02{
+	/* width: 95%; */
+}
+	
+}
+
+#rwd_table_02 td, #rwd_table_02 th{
+	padding: 9px;
+}
+
+#rwd_table_02 td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table_02 th{
+	background-color: #990101;
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+
+/***************************************************************************************/
+/*表格03*/
+/***************************************************************************************/
+#rwd_table_03 {
+	width: 100%;
+    background-color: #ffffff;
+    /* border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em; */
+}
+@media screen and (max-width: 480px){
+	#rwd_table_03{
+	/* width: 95%; */
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_03{
+	/* width: 95%; */
+}
+	
+}
+
+#rwd_table_03 td, #rwd_table_03 th{
+	padding: 9px;
+}
+
+#rwd_table_03 td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table_03 th{
+	background-color: #990101;
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+
+
+
+/*table-hide*/
+
+.table-hide{
+	display: none;
+}
+
+@media screen and (max-width: 720px){
+.table-hide{
+	display: inline;
+}
+
+}

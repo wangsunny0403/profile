@@ -1,0 +1,99 @@
+
+/*----不斷更新名單---*/
+
+
+.tableBox{
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* table */
+.table-head {
+  display: table;
+  border-collapse: collapse;
+  margin-bottom: 0;
+
+}
+
+.row-head{
+  display: table-row;
+  background-color: #00047e;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff000;
+}
+
+.row-head-colspan{
+   width: 100%;
+   background-color: rgba(20, 98, 132,.9);
+   text-align: center;
+   display:table-caption;
+   padding:1em;
+   color: #ffffff;
+   border-bottom: rgba(255,255,255,.1) 1px solid;
+   text-align: center;
+   border-radius: 10px 10px 0 0;
+}
+
+/* td-head , th-head */
+.cell1-head {
+  display: table-cell;
+  width: 50%;
+    padding: 1em;
+
+  
+}
+.cell2-head {
+  display: table-cell;
+  width: 50%;
+  
+}
+/*
+.cell3-head {
+  display: table-cell;
+  width: 33.33%;
+}*/
+
+
+/*table-body*/
+.table {
+  display: table;
+  border-collapse: collapse;
+  background-color: rgba(31,31,255,0.3);
+  /* color: #fff; */
+  border: 1px solid #5a5b77;
+  border-top-width: 0;
+}
+/* tr */
+.row{
+  display: table-row;
+  /* background-color: rgba(255,255,255,.9); *//*表格tbody背景色*/
+  text-align: center;
+  /* padding: 5px; */
+  /* color: #555; *//*表格tbody文字色*/
+  /* border-bottom: rgba(255,255,255,.1) 1px solid; */
+}
+/* td , th */
+.cell1 {
+  display: table-cell;
+  max-width: 50%;
+  width: 420px;
+  padding: 5px;
+  border-right: 1px solid #5a5b77;
+
+
+}
+.cell2 {
+  display: table-cell;
+  max-width: 50%;
+  width: 420px;
+  padding: 5px;
+}
+/*
+.cell3 {
+  display: table-cell;
+   width: 50%;
+}
+*/

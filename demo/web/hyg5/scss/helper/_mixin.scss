@@ -1,0 +1,14 @@
+@mixin hoverBtn($bgColor, $color:#fff){
+    background-color: $bgColor;
+    color: $color;
+    &:hover{
+        background-color: darken($bgColor, 10%);
+        color: $color;
+    }
+}
+@mixin bgCover($bgImg){
+    background-image: url('../img/'+ $bgImg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+.banner-act {
+  background: url(../images/rio/jb-info-act-banner-rio.jpg) no-repeat;
+  width: 100%;
+  min-height: 360px;
+  background-size: cover;
+  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+@media screen and (max-width: 480px){
+  .banner-act {
+  background: url(../images/rio/jb-info-act-banner-rio-mo.jpg) no-repeat;
+  background-position: center;
+}
+}
+
+.content_block_rio{
+  background: url(../images/rio/rio-green3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 2em 0 6em;
+}
+
+
+h2{
+  text-align: center;
+  margin:1em; 
+}
+
+
+.rio_wrap {
+    background-color: rgba(255,255,255,.95);
+    max-width: 1000px;
+    padding: 3em;
+    margin: 0 auto;
+    border: 1px #289d4c solid;
+    /*box-shadow: #888 0px 3px 20px; */
+
+}
+
+.booking_fill_in {
+    font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+    max-width: 800px;
+    margin: 0.5em auto 1em;
+}
+
+.booking_fill_in table {
+    width: 100%;
+
+}
+
+table th {
+    padding: .5em 0;
+    text-align: center;
+    background-color: #289d4c;
+    color: #fff;
+}
+
+table td {
+    padding: 1em 1em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.btn_box {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.btn_box .btn {
+    font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+    color: rgb(85, 85, 85);
+    background-color: rgb(221, 221, 221);
+    margin: 1em;
+}
+
+
+
+
+.submit_btn{
+    background: #289d4c!important;
+    color: #fff!important;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+}
+
+.submit_btn:focus{
+  
+  color: #289d4c!important;
+  background: #ccc!important;
+}
+
+@media screen and (max-width: 1024px){
+table td {
+    padding: 1em .2em;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 680px){
+.rio_wrap {
+    padding: 0 .5em 3em .5em;
+}
+
+}
+
+
+@media screen and (max-width: 380px){
+table tr {
+    font-size: 14px;
+}
+
+}
+
+/*medal*/
+
+#gold{
+  width: 15px;
+  height: 15px;
+  background-color: #FFD700;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#silver{
+  width: 15px;
+  height: 15px;
+  background-color: #C0C0C0;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#bronze{
+  width: 15px;
+  height: 15px;
+  background-color: #B87333;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+
+
+/*result*/
+
+.booking_payment_info input {
+    border: 0px;
+    background: rgba(0,0,0,0);
+  }
+
+  .rio_wrap p{
+  font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+  font-weight: 400;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #289d4c;
+    color: #fff;
+
+  }
+
+
+    @media screen and (max-width: 700px){
+    #rio_title{
+      font-size: 24px;
+    }
+  }
+
+
+#br_hide{
+  display: block;
+}
+
+    @media screen and (max-width: 700px){
+    #br_hide{
+      display: none;
+    }
+}

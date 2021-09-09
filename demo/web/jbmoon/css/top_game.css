@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+.home-headline{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+.home-block{
+	width:960px;
+	margin:0 auto;
+}
+
+
+.home-block figure{
+	float: left;
+	width: 300px;
+	margin-bottom: 20px;
+	position: relative;
+	line-height: 1.2em;
+	margin-left: 1%;
+    margin-right: 1%;
+}
+
+.home-block figure .thumb{
+	display: block;
+	width: 280px;
+	padding: 10px;
+	margin-bottom: 19px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.1); 
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,.1);
+	-o-box-shadow: 0px 0px 3px rgba(0,0,0,.1);
+	box-shadow: 0px 0px 3px rgba(0,0,0,.1);
+}
+
+.home-block figure img{
+	max-width: 100%;
+		
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.home-block figure .thumb:hover img{
+	/*opacity: 0.1;*/
+	-webkit-filter: brightness(0.6);
+	-moz-filter: brightness(0.6);
+	-o-filter: brightness(0.6);
+	filter: brightness(0.6);
+	-webkit-transform: scale(1.2);  -moz-transform: scale(1.2);  -ms-transform: scale(1.2);
+	-o-transform: scale(1.2);  transform: scale(1.2); cursor:pointer; /*-webkit-filter: grayscale(100%);filter: gray;}*/
+		
+}
+
+.home-block figure figcaption{
+	line-height: 1.5em;
+}
+.home-block figure figcaption strong{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 11px;
+}
+
+.home-block .theme-link-button,
+.left-home-block .theme-link-button,
+.right-home-block .theme-link-button{
+	float: right;
+	margin-top: 13px;
+	margin-right: 20px;
+}
+
+.top_center{
+	width:960px;
+	margin:0 auto;
+	}
+
+
+	
+	
+/* HOME ------------------------------------------------------------*/
+
+
+
+
+.home-block figure .thumb{ background: #fff url(../img/plus.png) no-repeat center center; }
+
+.home-block figure figcaption strong{ color: #444; }
+
+
+
+	
+	
+/*-------------------------------*/
+
+
+.clearfix:after,
+.clearfix:before {
+	content:"";
+    display:table;
+}   
+    
+.clearfix:after {
+	clear:both;
+}
+
+.clearfix {
+    zoom:1;
+}
+
+/*----------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.home-block, .top_center{
+		width: 640px;
+		}
+	.home-block figure .thumb{
+		width: 280px;
+	}
+}
+
+	
+@media only screen and (max-width: 767px) {
+
+		.home-block, .top_center{
+		width: 240px;
+		margin:0 auto;
+		}
+	.home-block figure .thumb{
+		width: 260px;
+	}
+	}
+
+@media only screen and (max-width: 480px) {
+	.home-block, .top_center{
+		width: 100%;
+		}
+	.home-block figure .thumb{
+		width: 100%;
+	}
+	
+	.home-block figure{
+	width: 100%;
+	}
+}
+/*-------------------------------*/
+/* HOME ------------------------------------------------------------*/
+

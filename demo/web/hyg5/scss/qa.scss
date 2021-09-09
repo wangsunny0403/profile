@@ -1,0 +1,55 @@
+@import "helper/variables", "helper/mixin";
+.qa{
+    &-tab-container{
+        padding: 30px 15px;
+    }
+    &-box{
+        border: 1px solid #345a8b;
+        padding: 10px 15px;
+        background-color: #1c2d5d;
+        margin-bottom: 20px;
+        a{
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            padding-right: 25px;
+            span{
+                color: $lightYellow;
+                position: absolute;
+                left: 0px;
+                top:3px;
+            }
+            i{
+                position: absolute;
+                right: 0px;
+                font-size: 18px;
+                top: 3px;
+                color: #345a8b;
+            }
+        }
+        span{
+            font-size: 18px;
+        }
+        &:hover{
+            cursor: pointer;
+            color: $lightYellow;
+            
+        }
+    }
+    &-content{
+        background-color: #2f4788;
+        display: none;
+        padding: 10px 10px 10px 35px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        position: relative;
+        color: $white;
+        .icon-comment{
+            position: absolute;
+            left: 10px;
+            top:14px;
+            color: #bad8ff;
+            width: 20px;
+        }
+    }
+}

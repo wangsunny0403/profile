@@ -1,0 +1,979 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  outline:none !important;
+}
+/*----------------------------------------------------*/
+/*JB-activity-banner*/
+/*----------------------------------------------------*/
+.activity-banner{}
+.act-block {
+    padding: 30px!important;
+}
+/*----------------------------------------------------*/
+/*banner-act-mid-autumn*/
+/*----------------------------------------------------*/
+.banner{
+    background: url(../images/newImg/banner.jpg)no-repeat;
+    /* background: url(../images/newImg/view.jpg)no-repeat; */
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+.banner .flower{
+  width: 100%;
+}
+.flower1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.flower2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+.banner .container{
+  max-width: 1300px;
+  /* background-image: url('../images/newImg/moon.png'); */
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%;
+  padding: 40px 0;
+  position: relative;
+  background-size: cover;
+}
+.rabbit {
+  position: absolute;
+  bottom: -68px;
+  z-index: 4;
+}
+.moon{
+  position: absolute;
+  top: 0;
+}
+.b_txt{
+  text-align: center;
+  margin: 20px 0;
+  z-index: 5;
+  position: relative;
+}
+.b_txt > div{
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto 10px;
+}
+.txt2::after{
+  content: "";
+  width: 107px;
+  height: 64px;
+  background-image: url('../images/newImg/cloudTxt.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  right: -80px;
+  bottom: -25px;
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0 {right: -80px;}
+  50% {right: -88px;}
+  100% {right: -80px;}
+}
+.banner .diceBox{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -51px;
+  z-index: 3;
+}
+.b_dice, .b_dice2{
+  position: absolute;
+}
+.b_dice {
+  bottom: 128px;
+  left: 20% !important;
+  top: inherit !important;
+}
+.b_dice2 {
+  left: inherit !important;
+  top: inherit !important;
+  bottom: 83px;
+  right: 180px
+}
+.b_bowl.layer {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: calc(50% - 230px) !important;
+}
+.banner .cloud{
+  width: 100%;
+  position: absolute;
+  bottom:300px;
+}
+.cloud1, .cloud2{
+  position: absolute;
+  z-index: 3;
+}
+.banner-act-mid-autumn-A{
+  /* background: url(../images/activity/mid-autumn/combination/A.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    position: absolute;
+    top: 0%; */
+
+    /*動畫*/
+    animation-name: animation-A;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.accountInput{
+	width: 100%;
+	margin: 0 auto 80px;
+	border: 5px solid #dfbd74;
+	background-image: url(../images/newImg/accountInputBg.png);
+	background-repeat: repeat;
+	position: relative;
+	padding: 50px 30px;
+	box-sizing: border-box;
+	z-index: 99;
+	
+}
+.accountInput h2{
+	font-size:1.5em;
+	margin-bottom: 10px;
+}
+.accountInput .userNameInput{
+	width: 243px;
+	padding: 10px;
+}
+.accountInput span{
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.accountInput .submit_btn{
+	width: 85px;
+	height: 43px;
+	background-color: #cb2727;
+	color:#fff;
+	text-align: center;
+	margin-left: 10px;
+	letter-spacing: 2px;
+	border: 1px solid #ec3838;
+	box-shadow: 0 4px 0 #a81515;
+	vertical-align: top;
+	text-shadow: 0 -1px -1px #af3a2a;
+	-moz-box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	margin-top: -10px;
+}
+.accountInput .submit_btn:hover {
+	background-color: #d25544;
+	text-shadow: 0 -1px -1px #c4402f;
+	-moz-box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+}
+.accountInput .submit_btn:active {
+	margin-top: -6px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.accountInput .accountImg{
+	position: absolute;
+	right: -70px;
+    bottom: -30px;
+}
+.game-bonus{
+    color: #fff;
+    margin-top: 10px;
+}
+.game-bonus div{
+  width: calc(100% / 3 - 20px);
+  margin: 0 5px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+}
+.banner-act-mid-autumn-B{
+  /* background: url(../images/activity/mid-autumn/combination/B.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    position: absolute;
+    top: 0%;
+
+    /*動畫*/
+    animation-name: animation-B;
+    animation-duration: 1s; */
+    
+}
+
+
+.banner-act-mid-autumn-C{
+  /* background: url(../images/activity/mid-autumn/combination/C.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    position: absolute;
+    top: 0%; */
+
+    /*動畫*/
+    animation-name: animation-C;
+    animation-duration: 1s;
+
+    
+}
+
+/*動畫*/
+/* The animation code */
+@keyframes animation-A {
+    0% {top: 0%;}
+    50%  {top: 2%;}
+    100%  {top: 0%;}
+}
+/*
+@keyframes animation-B {
+    0% {opacity: 0;top: -20%;}
+    100%  {opacity: 1;top: 0%;}
+}
+
+@keyframes animation-C {
+    80% {opacity: 0;left: -10%;}
+    100%  {opacity: 1;left: 0%;}
+}*/
+
+@media screen and (max-width: 1024px){
+  /* .banner-act-mid-autumn-BG {
+  background: url(../images/activity/mid-autumn/combination/tablet-background.png) no-repeat;
+  background-position: center;
+  height: 500px; */
+}
+.banner-act-mid-autumn-A{
+  /* background: url(../images/activity/mid-autumn/combination/tablet-A.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    position: absolute;
+    top: 0%; */
+
+    /*動畫*/
+    animation-name: animation-A;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.banner .mb{
+  display: none;
+}
+
+.banner-act-mid-autumn-B{
+  /* background: url(../images/activity/mid-autumn/combination/tablet-B.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    top: 0%; */
+    /*動畫*/
+    animation-name: animation-B;
+    animation-duration: 1s;
+    
+}
+
+
+.banner-act-mid-autumn-C{
+  /* background: url(../images/activity/mid-autumn/combination/tablet-C.png)no-repeat;
+  width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute; */
+    top: 0%;
+    /*動畫*/
+    animation-name: animation-C;
+    animation-duration: 1s;
+}
+
+/*動畫*/
+/* The animation code */
+@keyframes animation-A {
+    0% {top: 0%;}
+    50%  {top: 2%;}
+    100%  {top: 0%;}
+}
+}
+
+
+
+
+@media screen and (max-width: 480px){
+  .banner-act-mid-autumn-BG {
+  /* background: url(../images/activity/mid-autumn/banner-phone.png) no-repeat;
+  background-position: center; */
+  height: 360px;
+}
+.banner-act-mid-autumn-A,.banner-act-mid-autumn-B,.banner-act-mid-autumn-C{
+  display: none;
+}
+}
+
+
+
+/*----------------------------------------------------*/
+/*banner-act-mid-autumn*/
+/*----------------------------------------------------*/
+.mid-autumnwrap{
+	background-color: rgba(255, 255, 255, 0.95);
+    max-width: 1000px;
+    padding: 3em;
+    margin: 3em auto;
+    border: 1px #2aa04c solid;
+    }
+
+  .mid-autumn-content{
+  	font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+   	max-width: 800px;
+   
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mid-autumn-content h2{
+  	padding:0 2em;
+  }
+
+  @media screen and (max-width: 700px){
+  	.mid-autumn-wrap{
+  	 padding: 1em;
+  	}
+
+  	.mid-autumn-content{
+   	/* max-width: 300px; */
+  }
+
+
+  	 .mid-autumn-content h2{
+  	padding:0 1em;
+  	font-size: 16px;
+
+  }
+  }
+
+
+  .mid-autumn-content td{
+  	    padding-top: 1em;
+  }  
+
+  .ticket_get table {
+    width: 100%;
+	}
+/* 
+  table th {
+    padding:  1em 0;
+    text-align: center;
+    background-color: #289d4c;
+    color: #fff;
+} */
+.mid-autumn-wrap p{
+	color: #000;
+}
+
+
+.backweb_btn{
+	color: #fff;
+	background: #289d4c;
+	border: 0!important;
+	padding: 10px;
+}
+
+.backweb_btn:hover{
+background: #117a26;
+}
+
+
+
+/*----------------------------------------------------*/
+/*menber-login*/
+/*----------------------------------------------------*/
+#rwd_table-account h2{
+  font-size: 18px;
+  padding: 1em;
+}
+
+
+/*----------------------------------------------------*/
+/*explanation*/
+/*----------------------------------------------------*/
+.explanation{
+  background-image:url('../images/newImg/bg.jpg'); 
+  background-repeat:no-repeat;
+  color:#000;
+  background-position: center top;
+  line-height: 24px;
+  background-size: cover;
+}
+#mid-autumn-h5{
+  background-image: url(../images/newImg/mTitle.png);
+  background-position: center center;
+  font-size: 1.5em;
+  background-repeat: no-repeat;
+  color: #dc8d3e;
+  padding: 14px 0;
+  letter-spacing: 5px;
+  margin:30px 0;
+}
+
+/* .explanation h4{
+  background: url(../images/activity/mid-autumn/title.png) no-repeat;
+  height: 80px;
+  background-size: contain;
+  text-indent: -9999px;
+  max-width: 365px;
+  margin: 3em auto 2em auto;
+} */
+.actUnit{
+  margin-bottom: 25px;
+}
+.actUnit > div{
+  display: inline-block;
+  vertical-align: top;
+}
+.actUnit.no1 > div{
+  vertical-align: middle;
+}
+.actTitle{
+  width: 75px;
+  text-align: center;
+  margin-right: 10px;
+  
+}
+.actTitle b, .actTitle span{
+  display: block;
+}
+.actTitle b{
+  font-size: 65px;
+  -webkit-text-stroke: 2px #f33c3a;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 45px;
+  margin-bottom: 7px;
+}
+.actTitle span{
+  background-color: #f33c3a;
+  color: #fff;
+  font-size: 1.1em;
+}
+.actUnit.no2 .actTitle b{
+  -webkit-text-stroke: 2px #fff;
+  color:#f33c3a;
+}
+.actUnit.no2 .actTitle span{
+  background-color: #fff;
+  color: #f33c3a;
+}
+.actContent{
+  width:calc(100% - 95px);
+}
+
+.actSTitle{
+  color:#06083d;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.actItem{
+  list-style: none;
+  margin: 0 0 15px;
+  padding: 0;
+}
+.actItem li{
+  background-image: url('../images/newImg/actItemIc.png');
+  background-repeat: no-repeat;
+  background-position: left 3px;
+  padding-left: 25px;
+}
+.actTxt{
+  position: relative;
+  padding-left: 20px;
+}
+.actTxt::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #000;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+  /* #mid-autumn-h5:after,
+  #mid-autumn-h5:before,
+ .content_block1 #mid-autumn-h5:after,
+ .content_block1 #mid-autumn-h5:before{
+    width: 70px;
+    height: 1px;
+    display: inline-block;
+   vertical-align: middle;
+    content: "";
+    background: #ffee00!important;
+    margin: 0 1%;
+} */
+.infoBTitle{
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#06083d;
+  letter-spacing: 2px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 25px 0;
+  margin: 20px 0;
+}
+.infoBT1{
+  background-image: url('../images/newImg/infoBTitle1.png');
+}
+.infoBT2{
+  background-image: url('../images/newImg/infoBTitle2.png');
+}
+.infoSTitle{
+  text-align: center;
+}
+.infoSTitle span{
+  border:1px solid #f9fcb1;
+  background-color: #db020d;
+  width: 40px;
+  height: 40px;
+  color:#fff;
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+  line-height:40px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 0 -4px 15px;
+}
+.infoSTitle .infoIc{
+  display: inline-block;
+  vertical-align: 6px;
+  margin: 0 15px;
+}
+.infoUnit{
+  margin-bottom: 50px;
+}
+.goGame{
+  height: 60px;
+  text-align: center;
+  margin: 80px 0 50px;
+}
+.goGame .goGameBtn {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  width: 230px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ec3838;
+  background-color: #cb2727;
+  color: #fff;
+  text-shadow: 0 -1px -1px #af3a2a;
+	-moz-box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  margin-top: -10px;
+  height: 53px;
+  line-height: 53px;
+  letter-spacing: 1px;
+}
+.goGame .goGameBtn:active {
+	margin-top: -6px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+  box-shadow: none;
+}
+.goGame .goGameBtn {
+  transition: all 0.2s linear 0s;
+}
+.goGame .goGameBtn:before {
+  content: "\e900";
+  font-family:'icomoon' !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  transition: all 0.2s linear 0s;
+}
+.goGame .goGameBtn:hover {
+  text-indent: -9999px;
+}
+.goGame .goGameBtn:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  text-indent: 0;
+}
+
+
+ #join {
+  display: block;
+  background: url(../images/activity/mid-autumn/login-btn.png);
+  width:267px;
+  height: 123px;
+  text-indent: -9999px;
+  background-position: 0 0;
+}
+ #join2{
+  display: block;
+  background: url(../images/activity/mid-autumn/join-btn.png);
+  width:267px;
+  height: 123px;
+  text-indent: -9999px;
+  background-position: 0 0;
+}
+
+ #join:hover,#join2:hover{
+  background-position: 0 -100%;
+}
+ #join:focus,#join2:focus{
+  background-position: 0 -200%;
+}
+
+/*----------------------------------------------------*/
+/*骰子*/
+/*----------------------------------------------------*/
+.dice{
+  background-size: contain;
+  width: 188px;
+  height: 26px;
+}
+#dice-12{background: url(../images/activity/mid-autumn/normal/12.png) no-repeat;}
+#dice-11{background: url(../images/activity/mid-autumn/normal/11.png) no-repeat;}
+#dice-10{background: url(../images/activity/mid-autumn/normal/10.png) no-repeat;}
+#dice-09{background: url(../images/activity/mid-autumn/normal/09.png) no-repeat;}
+#dice-08{background: url(../images/activity/mid-autumn/normal/08.png) no-repeat;}
+#dice-07{background: url(../images/activity/mid-autumn/normal/07.png) no-repeat;}
+#dice-06{background: url(../images/activity/mid-autumn/normal/06.png) no-repeat;}
+#dice-05{background: url(../images/activity/mid-autumn/normal/05.png) no-repeat;}
+#dice-04{background: url(../images/activity/mid-autumn/normal/04.png) no-repeat;}
+#dice-03{background: url(../images/activity/mid-autumn/normal/03.png) no-repeat;}
+#dice-02{background: url(../images/activity/mid-autumn/normal/02.png) no-repeat;}
+#dice-01{background: url(../images/activity/mid-autumn/normal/01.png) no-repeat;}
+
+@media screen and (max-width: 720px){
+  .dice{
+  background-size: contain;
+  width: 91px;
+  height: 61px;
+}
+#dice-12{background: url(../images/activity/mid-autumn/phone/12.png) no-repeat;}
+#dice-11{background: url(../images/activity/mid-autumn/phone/11.png) no-repeat;}
+#dice-10{background: url(../images/activity/mid-autumn/phone/10.png) no-repeat;}
+#dice-09{background: url(../images/activity/mid-autumn/phone/09.png) no-repeat;}
+#dice-08{background: url(../images/activity/mid-autumn/phone/08.png) no-repeat;}
+#dice-07{background: url(../images/activity/mid-autumn/phone/07.png) no-repeat;}
+#dice-06{background: url(../images/activity/mid-autumn/phone/06.png) no-repeat;}
+#dice-05{background: url(../images/activity/mid-autumn/phone/05.png) no-repeat;}
+#dice-04{background: url(../images/activity/mid-autumn/phone/04.png) no-repeat;}
+#dice-03{background: url(../images/activity/mid-autumn/phone/03.png) no-repeat;}
+#dice-02{background: url(../images/activity/mid-autumn/phone/02.png) no-repeat;}
+#dice-01{background: url(../images/activity/mid-autumn/phone/01.png) no-repeat;}
+}
+
+
+
+/*--------------------------------------------*/
+/*博餅遊戲*/
+/*--------------------------------------------*/
+
+
+/*----------------------------------------------------*/
+/*play-area*/
+/*----------------------------------------------------*/
+#play-area{
+  /* background: url(../images/activity/mid-autumn/game/game-bg.jpg);
+  background-size: cover;
+  background-position: center top; */
+  /*height: 900px;*/
+}
+@media screen and (max-width: 702px){
+  /* #play-area{
+  background: url(../images/activity/mid-autumn/game/game-bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 800px;
+} */
+}
+
+
+
+#tu {
+  width:100%;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
+}
+
+#tu img { 
+  margin-left:4%;
+  width:12%;
+  float:left;
+  position: relative;
+ }
+
+#tu #dice1{
+  top: 0px;
+}
+#tu #dice2{
+  top: 0px;
+}
+#tu #dice3{
+  top: 0px;
+}
+#tu #dice4{
+  top: 0px;
+}
+#tu #dice5{
+  top: 0px;
+}
+#tu #dice6{
+  top: 0px;
+}
+
+
+#start-hand{
+  position: relative;
+  background: url(../images/activity/mid-autumn/game/dice-hand.png)no-repeat;
+  height: 270px;
+  width: 200px;
+  background-size:cover;
+  background-position: center 0%;
+  text-align:center;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#start-hand:hover{
+  background: url(../images/activity/mid-autumn/game/dice-hand.png)no-repeat;
+  height: 270px;
+  width: 200px;
+  background-size:cover;
+  text-align:center;
+  background-position: center 50%;
+  display:block;
+}
+
+#start-hand:focus{
+  background: url(../images/activity/mid-autumn/game/dice-hand.png)no-repeat;
+  height: 270px;
+  width: 200px;
+  background-size:cover;
+  text-align:center;
+  background-position: center 100%;
+}
+
+#start a img{
+  margin:0 auto;
+  position: relative;
+  top:0%;
+  left: 80%;
+}
+
+.img-rwd-pc{
+  display: block;
+}
+.img-rwd-phone{
+  display: none;
+}
+@media screen and (max-width: 560px){
+#start a img{
+  margin:0 auto;
+  position: relative;
+  top:0%;
+  left: 40%;
+}
+
+  .img-rwd-pc{
+  display: none;
+}
+  .img-rwd-phone{
+   display: block;
+}
+}
+
+
+#share img {
+  margin-left:10%;
+  width:35%; 
+  float:left;
+}
+#start p{
+  font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+  text-shadow: 1px 1px 2px #333,1px 2px 5px #333;
+  font-weight: 600;
+}
+
+
+#welcome{
+  font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+  font-size: 24px;
+  color: #000;
+  position: relative;
+  text-align: center;
+  margin: 20px auto 80px;
+  /* overflow: hidden; */
+  max-width: 520px;
+}
+#welcome p{
+  display: inline-block;
+}
+#welcome > div.hello{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#welcome > div.hello span{
+  font-size: 40px;
+  color: #cc7c2c;
+}
+#welcome span{
+  color: #f33c3a;
+  margin: 0 5px;
+}
+#welcome img{
+  position: absolute;
+}
+#welcome img.loginIcL{
+  left: -210px;
+  bottom: -43px;
+}
+#welcome img.loginIcR{
+  right: -105px;
+  top: -30px;
+}
+.bowl{
+     /* margin-top: 15em; */
+    background: url(../images/activity/mid-autumn/game/bowl.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    max-width: 500px;
+    padding-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px){
+  .bowl{
+    min-height: inherit;
+    max-width: inherit;
+  }
+  /* #welcome{
+    font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+    font-size: 12pt;
+    color: #000;
+    position: relative;
+    top: 10px;
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bowl{
+  margin-top: 0em;
+} */
+}
+
+
+/*bonus*/
+
+.result {
+  max-width: 645px;
+  margin: 20px auto;
+  background-color: #8d111d;
+  box-shadow: 0px 0px 20px #3e4200;
+  background-size: contain;
+  padding: 50px 25px 70px;
+  text-align: center;
+  background-image: url(../images/newImg/WinningT.png), url(../images/newImg/WinningB.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 10px , center calc(100% - 10px);
+  background-size: 97%,97%;
+  color: #fff;
+  font-size: 24px;
+}
+.result h4{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.result p {
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.result img {
+    max-width: 300px;
+    width: 100%;
+    margin: 5px auto;
+    display: block;
+}
+
+/* .red-txt{
+  color: #f00;
+  font-size: 18px;
+} */
