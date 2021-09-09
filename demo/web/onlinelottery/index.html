@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线上抽奖页</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1278668141&web_id=1278668141"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="head text-center">
+                <h1><img src="img/title.png" alt=""></h1>
+                <h2><img src="img/sub.png" alt=""></h2>
+            </div>
+            <div class="body text-center">
+                <div class="box">
+                    <div class="shake-box">
+                        <div class="sign-box">
+                            <img src="img/fortune1.png" alt="" class="fortune1">
+                            <img src="img/fortune2.png" alt="" class="fortune2">
+                            <img src="img/fortune3.png" alt="" class="fortune3">
+                            <img src="img/fortune4.png" alt="" class="fortune4">
+                            <img src="img/fortune5.png" alt="" class="fortune5">
+                            <img src="img/fortune6.png" alt="" class="fortune6">
+                        </div>
+                        <div class="lottery-box"><img src="img/lottery-box.png" alt="" ></div>
+                    </div>
+                    <div class="stage-box">
+                        <img src="img/light.png" alt="" class="light"> 
+                        <img src="img/stage.png" alt="" class="stage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/bottom-img.png" alt="" class="bottom-img show-pc">
+        <img src="img/bottom-img1.png" alt="" class="bottom-img show-mb">
+    </div>
+    <!-- result Modal -->
+    <div class="resultModal-outer">
+        <div class="resultModal">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <span class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <a href="" target="_blank" >
+                        <img src="img/top-left.png" alt="" class="top-left">
+                        <img src="img/bottom-right.png" alt="" class="bottom-right">
+                        <div class="modal-body text-center">
+                            <h2 id="text1"></h2>
+                            <h3>
+                                彩金<span class="num" id="text2"></span>元
+                            </h3>
+                            <h4 id="text3"></h4>
+                            <p>
+                                前往<br/>
+                                领取彩金
+                            </p>
+                            <span class="btn-link">马上领取</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="plugin/bootstrap/js/popper.min.js"></script>
+    <script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            function Shake(){
+                var textObj={};
+                function getRandomInt(min,max) {
+                    return Math.floor(Math.random()*(max-min+1))+min;;
+                }
+                var randomInt = getRandomInt(0,99);
+                if(randomInt<25){
+                textObj.text1="大吉";
+                textObj.text2="500000";
+                textObj.text3="天降鸿福神秘好礼";
+                }else if(randomInt<50){
+                textObj.text1="吉";
+                textObj.text2="2000";
+                textObj.text3="免费领取一齐同乐";
+                }else if(randomInt<75){
+                textObj.text1="小吉";
+                textObj.text2="888";
+                textObj.text3="日结佣金就是要惊喜";
+                }else if(randomInt<90){
+                textObj.text1="平";
+                textObj.text2="588";
+                textObj.text3="好运无上限大礼包";
+                }else if(randomInt<100){
+                textObj.text1="凶";
+                textObj.text2="6";
+                textObj.text3="逢凶化吉 打码改运";
+                }
+                var text1 = document.getElementById('text1')
+                var text2 = document.getElementById('text2')
+                var text3 = document.getElementById('text3')
+                text1.innerHTML = textObj.text1;
+                text2.innerHTML = textObj.text2;
+                text3.innerHTML = textObj.text3;
+
+                $('.shake-box').addClass('shaking');
+                $('body').addClass('shaking-body');
+                $('.shaking-body .resultModal-outer')
+                .delay(2000)
+                .fadeIn(1000, function () {
+                    $('body').addClass('scrollHidden');
+                    $('.shake-box').removeClass('shaking');
+                })
+            }
+            
+            var showShakeBox=false;
+            var shakeCount = 0;
+            var xyzCouct = 0;
+            var _xyzCouct = 0;
+            var speed = 500;
+            var x = y = z = 0;
+            //body height
+            var h = $(window).height();
+            $('.wrapper, .resultModal-outer').css('height', h+"px");
+            console.log(h);
+            $('.shake-box, .stage-box').click(function(){
+                if(!showShakeBox) {
+                showShakeBox=true;
+                shakeCount = 1;
+                _xyzCouct = 0;
+                Shake();
+            }
+            })
+            $('.close-btn').click(function(){
+                if(showShakeBox) {
+                showShakeBox=false;
+                shakeCount = 0;
+                _xyzCouct = 0;
+                $('.resultModal-outer').fadeOut(500);
+                $('body').removeClass('scrollHidden', 'shaking-body');
+                }
+            })
+
+            if(window.DeviceOrientationEvent) {
+                window.addEventListener('deviceorientation', function(event) {
+                    if(!showShakeBox) {
+                        x = event.alpha;
+                        y = event.beta;
+                        z = event.gamma;
+                        xyzCouct =  Math.abs(x)+Math.abs(y)+Math.abs(z)
+                        if(shakeCount==0){
+                            shakeCount = xyzCouct;
+                            _xyzCouct = xyzCouct;
+                        }else{
+                            shakeCount=shakeCount+(Math.abs(_xyzCouct-xyzCouct))
+                            _xyzCouct = xyzCouct
+                            if(shakeCount > speed) {
+                                showShakeBox=true;
+                                Shake();
+                            }
+                        }
+                        }
+                    }, false);
+                }
+
+        });
+        
+    </script>
+</body>
+</html>

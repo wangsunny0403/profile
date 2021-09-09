@@ -1,0 +1,82 @@
+@media screen and (max-width:880px) {
+	.contact_txt .main_title{
+		margin-bottom: 20px;
+	}
+	.contact_txt .title_cn {
+	    width: auto;
+	}
+	.contact_txt .title_en {
+	    display: block;
+	    writing-mode:inherit;
+	}
+	.contact_txt .title_en::after{
+		display: none;
+	}
+	.contact_info > div{
+		margin: 0 0 15px;
+	}
+}
+@media screen and (max-width:768px) {
+   .navbar-brand > img {
+	    height: 35px;
+	}
+	.banner {
+	    margin-top: 52px;
+	}
+	.header .navbar-nav > li{
+		border-left:none;
+	}
+	.navbar-default .navbar-nav > li > a{
+		text-align: center;
+	}
+	.navbar-default .navbar-nav > li > a i{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	.serviceBg {
+	    background: url(../images/serviceBg.jpg) no-repeat 35% center;
+	    background-attachment: fixed;
+	}
+	.welfare_unit{
+		width: 100%;
+	    margin-bottom: 10px;
+	}
+	.welfare_img{
+		width: 80px;
+	    height: 80px;
+	    vertical-align: middle;
+	    display: inline-block;
+	    line-height: 80px;
+	    font-size: 40px;
+	    border-radius: 5px;
+	}
+	.welfare_unit.play .welfare_img {
+	    font-size: 60px;
+	    line-height: 88px;
+	}
+	.welfare_info{
+		width: calc(100% - 100px);
+	    margin-left: 15px;
+	    vertical-align: middle;
+		display: inline-block;
+	}
+	.welfare_title{
+		margin-top: 0;
+		text-align: left;
+	}
+	.contact_info > div{
+		margin: 0 15px 15px;
+	}
+}
+@media screen and (max-width:550px) {
+	.serviceBg {
+	    height: 150px;
+	}
+	.welfare_title{
+		margin-bottom: 5px;
+	}
+	.contact_info > div{
+		margin: 0 0 15px;
+	}
+}

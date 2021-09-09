@@ -1,0 +1,5 @@
+@mixin bg-img($bgName, $postionX:center, $postionY:bottom) {
+    background: url('../img/'+$bgName);
+    background-repeat: no-repeat;
+    background-position: $postionX $postionY;
+}

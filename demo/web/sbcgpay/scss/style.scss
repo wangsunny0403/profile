@@ -1,0 +1,1156 @@
+@import "variables";
+@import "mixin";
+@import "normal";
+
+body{
+    color:$contentColor;
+    font:{
+        family: 'Microsoft JhengHei', 'Do Hyeon', 'Geneva', 'Tahoma', sans-serif;
+        size: $contentSize;
+    }
+    @include phone-width{
+        font-size: 15px;
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+}
+.addPadding{
+    padding-top: 50px;
+    display: block;
+}
+.container{
+    max-width:1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.mTitle{
+    font:{
+        size:$titleSize;
+        weight:bold;
+    }
+    padding: 100px 0 75px;
+    &::before,&::after{
+        content:"";
+        background: $whiteColor;
+        width: 50px;
+        height: 1px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 25px;
+    }
+    @include pcs-width{
+        padding: 70px 0 40px;
+    }
+    @include phone-width{
+        padding: 50px 0 30px;
+        font-size: 30px;
+        &::before,&::after{
+            display: none;
+        }
+    }
+}
+.borderLine{
+    box-shadow: 4px 4px 0px rgba(93, 93, 93, 0.3);
+}
+.outer_header{
+    @include bg('headerBg.jpg');
+    @include phone-width{
+        background-position: right bottom;
+    }
+}
+.header{
+    color: $whiteColor;
+    position: fixed;
+	z-index: 99;
+    transition: all .3s;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    @include pad-width{
+        background: $mainColor;
+        padding: 15px 0;
+    }
+    @include phone-width{
+        background: $mainColor;
+        padding: 5px 0;
+    }
+    .navbar{
+        margin-bottom: 0;
+        background: transparent;
+        border: none;
+        .navbar-toggle{
+            margin-right: 0;
+            .icon-bar{
+                background-color: $whiteColor;
+            }
+            &:hover, &:focus{
+                background:$purpleColor;
+                .icon-bar{
+                    background-color: #333;
+                }
+            }
+        }
+        li{
+            margin-left: 0;
+            @include pad-width{
+                border-bottom: 1px dotted #222;
+            }
+            &.active, .open{
+                > a{
+                    color: $whiteColor;
+                    &:hover, &:focus{
+                        color: $whiteColor;
+                    }
+                }
+            }
+            &.mb{
+                display: none;
+                @include pad-width{
+                    display: block;
+                }
+            }
+            a{
+                color: $whiteColor;
+                padding: 20px 15px 12px;
+                position: relative;
+                @include pcs-width{
+                    padding: 13px 10px;
+                    font-size: 15px;
+                }
+                &:hover, &:focus{
+                    color: $whiteColor;
+                    top: -5px;
+                    @include pad-width{
+                        top: 0;
+                    }
+                }
+                
+            }
+            &:hover, &:focus{
+                color: $whiteColor;
+            }
+        }
+    }
+    .hvr-underline-from-center {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        @include pad-width{
+            display: block;
+            text-align: center;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 51%;
+            right: 51%;
+            bottom: 0;
+            background: $purpleColor;
+            height: 2px;
+            -webkit-transition-property: left, right;
+            transition-property: left, right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+        &:hover::before, &:focus:before, &:active:before {
+            left: 0;
+            right: 0;
+        }
+    }
+    .logo{
+        color: $whiteColor;
+        padding-left: 0;
+        padding-right: 0;
+        @include pad-width{
+            padding: 0;
+        }
+        img{
+            transition: all .3s;
+            @include pcs-width{
+                width: 190px;
+            }
+            @include phone-width{
+                width: 145px;
+                margin-top: 8px;
+            }
+        }
+        &:hover{
+            color: $whiteColor;
+        }
+    }
+    .link{
+        text-align: right;
+        font-size: 12px;
+        padding-right: 15px;
+        @include pad-width{
+            position: absolute;
+            width: 160px;
+            right: 60px;
+            top: 17px;
+        }
+        @include phone-width{
+            right: 40px;
+           .mb{
+                display: none;
+           }
+        }
+        a{
+            color:$whiteColor;
+            > span{
+                margin-right: 5px;
+            }
+            +a{
+                &::before{
+                    content: "|";
+                    margin: 0 5px;
+                    display: inline-block;
+                    color: $whiteColor;
+                }   
+            }
+            &:hover{
+                color:$purpleColor;
+                >span{
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
+/*header scroll*/
+body.scroll{
+    .header{
+        height: 85px;
+        background: rgba($mainColor, 0.85);
+        .logo{
+            img{
+                width: 200px;
+            }
+        }
+    }
+	.navbar-nav > li{
+        font-size: 13px;
+        &.act{
+            &::after{
+                content:"";
+                display: block;
+                border-bottom: 2px solid $purpleColor;
+                position: relative;
+            }
+            a{
+                padding: 15px;
+            }
+        }
+    }
+}
+.banner{
+    @include bg('banner.png');
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    @include pad-width{
+        margin-top: 80px;
+        background-position: 60% bottom;
+    }
+    .container{
+        min-height: 600px;
+    }
+    .linkBtn {
+        background: url('../img/linkBtnBg.png');
+        background-size:100% 100%;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        width: 159px;
+        height: 47px;
+        position: absolute;
+        bottom: 150px;
+        left: 20px;
+        transition: all .3s;
+        font-size: 22px;
+        line-height: 47px;
+        box-shadow: 0px 0px 5px rgba(181, 180, 181, 0.5);
+        text-shadow: 1px 1px 3px #969696;
+        > span{
+            margin-left: 5px;
+            font-size:30px;
+            position: relative;
+            top:3px;
+        }
+        &:hover{
+            bottom: 148px;
+        }
+        @include phone-width{
+            width: 132px;
+            height: 44px;
+            font-size: 18px;
+            line-height: 44px;
+            box-shadow: 0px 0px 3px rgba(181, 180, 181, 0.5);
+            &:hover{
+                bottom: 197px;
+            }
+        }
+    }
+    @include phone-width{
+        margin-top: 50px;
+        background-size: 240%;
+        min-height: 450px;
+        .container{
+            text-align: left;
+            min-height: 450px;
+        }
+        .linkBtn{
+            bottom: 197px;
+        }
+        img{
+            position: relative;
+            top: -70px;
+        }
+    }
+}
+.sectBody{
+    padding-bottom: 100px;
+    @include pcs-width{
+        padding-bottom: 70px;
+        .slick-prev, .slick-next{
+            z-index: 10;
+            &::before{
+                // color:$mainColor;
+                content: '\e902';
+                font-family: 'icomoon' !important;
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+        .slick-prev{
+            transform: rotate(180deg);
+        }
+        .slick-next{
+        }
+        .slick-dots{
+            bottom: 20px;
+            li{
+                @include phone-width{
+                    margin: 0 3px;
+                }
+                &.slick-active{
+                    button:before{
+                        color: $secondColor;
+                        opacity:0.9;
+                    }
+                }
+                button{
+                    &::before{
+                        color: $whiteColor;
+                        opacity: 0.5;
+                    }
+                    &:hover:before{
+                        color: $secondColor;
+                        opacity:0.9;    
+                    }
+                    
+                        
+                }
+            }
+            
+        }
+    }
+    .beforeArrow::before{
+        content:"\e906";
+        display: block;
+        background: $purpleColor;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: $whiteColor;
+        text-align: center;
+        font-size: 25px;
+        line-height: 50px;
+        margin: 30px auto;
+        font-family: 'icomoon' !important;
+        transform: rotate(90deg);
+    }
+}
+.step{
+    &_info{
+        margin-top: 20px;
+    }
+    &_num{
+        font:{
+            family: 'Do Hyeon';
+            weight:bold;
+            size: 25px;
+        }
+        letter-spacing: 1px;
+        color: $secondColor;
+        margin-bottom: 10px;
+        > span{
+            font-size: 40px
+        }
+        @include phone-width{
+            font-size: 20px;
+            > span{
+                font-size: 30px;
+            }
+        }
+    }
+}
+.block1{
+        @include bg('block1.jpg');
+        background-position: center top;
+        .mTitle{
+            color: $mainColor;
+            &::before, &::after{
+                background: $mainColor;
+            }
+        }
+}
+.advantage{
+    &_body{
+        position: relative;
+        min-height: 650px;
+        background: url(../img/circle.png) no-repeat center 89%;
+        background-size: 50%;
+        @include pcs-width{
+            background-size: 60%;
+        }
+        @include pad-width{
+            background: none;
+        }
+    }
+    &_img{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        margin-left: -60px;
+        @include pad-width{
+            margin-left: 0;
+            > img{
+                max-width: 380px;
+            }
+        }
+        @include phones-width{
+            > img{
+                max-width: 280px;
+            }
+        }
+    }
+    &_info{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        @include phone-width{
+            text-align: left;
+        }
+        @include phones-width{
+            text-align: center;
+        }
+        li{
+            position: absolute;
+            z-index: 2;
+            width: 130px;
+            text-align: center;
+            color:$mainColor;
+            color: $whiteColor;
+            &.a1{
+                left: 200px;
+                top: 250px;
+            }
+            &.a2{
+                left: 350px;
+                top: -20px;
+            }
+            &.a3{
+                left: calc(65% - 55px);
+                top: 55px;
+            }
+            &.a4{
+                right: 240px;
+                bottom: 140px;
+            }
+            &.a5{
+                left: 360px;
+                bottom: 20px;
+                >div{
+                    padding: 20px 0;
+                }
+            }
+            > div{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background: $darkpurpleColor;
+                color: $whiteColor;
+                margin: 0 auto;
+                border:3px solid rgba(255,255,255, 0.5);
+                padding: 35px 0;
+                &.purpleColor{
+                    background: $purpleColor;
+                }
+                @include pad-width{
+                    background: transparent;
+                    border-radius: inherit;
+                    box-shadow: none;
+                    padding: 0;
+                    color: $mainColor;
+                    &.purpleColor{
+                        background: transparent;
+                    }
+                }
+            }
+            .icon{
+                font-size: 50px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            @include pc-width{
+                &.a1{
+                    left: 150px;
+                }
+                &.a4{
+                    right: 200px;
+                }
+                &.a5{
+                    left: 250px;
+                    bottom: 0;
+                    
+                }
+            }
+            @include pcs-width{
+                &.a1{
+                    left: 100px;
+                }
+                &.a2{
+                    left: 220px;
+                    top: 0;
+                }
+                &.a4{
+                    right: 170px;
+                }
+            }
+            @include padb-width{
+                &.a1{
+                    left: 70px;
+                }
+                &.a2{
+                    left: 150px;
+                }
+            }
+            @include pad-width{
+                margin: 0;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% / 5 - 4px);
+                br{
+                    display: none;
+                }
+                &.a1, &.a2, &.a3, &.a4, &.a5{
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    > div{
+                        padding: 0;
+                        width: auto;
+                        height: auto;
+                        border:none;
+                    }
+                }
+                .icon{
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    font-size: 40px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    border:1px solid $mainColor;
+                    margin-bottom: 5px;
+                }
+            }
+            @include phone-width{
+                width: calc(50% - 2px);
+                margin-bottom: 10px;
+                text-align: left;
+                .icon{
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-size: 40px;
+                    display: inline-block;
+                    
+                }
+                .step_txt{
+                    display: inline-block;
+                }
+            }
+            @include phones-width{
+                text-align: center;
+                width: calc(100% / 3 - 4px);
+                .step_txt{
+                    display: block;
+                    
+                }
+            }
+        }
+        
+    }
+    
+}
+.block2{
+    @include bg('block2.jpg');
+    background-position: center top;
+}
+.registered{
+    &_body{
+        margin: 0 80px;
+        @include pcs-width{
+            margin: 0 20px; 
+        }
+        @include pad-width{
+            .slick-prev, .slick-next{
+                width: 35px;
+                height: 35px;
+            }
+            .slick-prev{
+                left: -25px;
+            }
+            .slick-next{
+                right: -25px;
+                top: 53%;
+            }
+        }
+    }
+    &_unit{
+        display: inline-block;
+        color: $mainColor;
+        &:nth-child(2n+2){
+            margin-top: 30px;
+            @include pad-width{
+                margin-top: 0;
+            }
+        }
+        &:nth-child(4n+4){
+            .registered_img{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    &_img{
+        background:{
+            color: $secondColor;
+            image: url(../img/registeredShadow.png);
+            position: right bottom;
+            repeat: no-repeat;
+        }
+        width: 225px;
+        margin: 0 auto;
+        padding:7px;
+        border-radius: 5px;
+        position: relative;
+        img{
+            border-radius: 5px;
+        }
+    }
+    &_info{
+        color: $whiteColor;
+    }
+}
+.block3{
+    @include bg('line.png');
+    background-size: auto;
+    @include pad-width{
+        background-image: none;
+    }
+    .mTitle{
+        color: $whiteColor;
+        @include phone-width{
+            padding: 50px 0 10px;
+        }
+    }
+}
+.buy{
+    &_body{
+        margin: 0 120px;
+        position: relative;
+        z-index: 2;
+        .slick-list{
+            padding: 30px 10px !important;
+            @include phone-width{
+                padding: 0px 10px !important;
+            }
+        }
+        @include pcs-width{
+            margin: 0 20px; 
+        }
+        .slick-prev, .slick-next{
+            z-index: 10;
+            width: inherit;
+            height: inherit;
+            &::before{
+                // color:$mainColor;
+                content: '\e902';
+                font-family: 'icomoon' !important;
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+        .slick-prev{
+            transform: rotate(180deg);
+        }
+        .slick-next{
+            top: 54%;
+        }
+        .slick-dots{
+            bottom:-20px;
+        }
+    }
+    &_unit{
+        margin: 0 10px;
+        position: relative;
+        @include phone-width{
+            margin: 0 20px;
+        }
+        &:focus{
+            outline:none;
+        }
+        .buy_img{
+            transition: all .3s;
+            background: $whiteColor;
+            transform: scale(0.8);
+            img{
+                width: 100%;
+                opacity:0.6;
+                border-width: 2px;
+                margin: 0 auto;
+                @include phone-width{
+                    opacity: 1;
+                    width: inherit;
+                }
+            }
+            @include phone-width{
+                background: none;
+                img{
+                    opacity: 1;
+                    width: inherit;
+                }
+                
+            }
+        }
+        
+        &.slick-active.slick-current{
+            .buy_img{
+                transform: scale(1.1);
+                img{
+                    opacity:1;
+                }
+                @include phone-width{
+                    transform: scale(0.9);
+                    img{
+                        box-shadow: none;
+                    }
+                    
+                }
+            }
+            .buy_info{
+                padding-top:0;
+                display: block;
+            }
+        }
+        .step{
+            &_info{
+                width: 302%;
+                margin-left: -85%;
+                text-align: center;
+                margin-top: 50px;
+                @include phone-width{
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+            &_txt{
+                display: inline-block;
+                min-height: 77px;
+            }
+        }
+    }
+    &_info{
+        display: none;
+        @include phone-width{
+            display: block;
+        }
+    }
+}
+.outer_section{
+    @include bg('bg.jpg');
+    .sectBody{
+        @include phone-width{
+            padding-bottom: 20px;
+        }
+    }
+}
+.block4{
+    @include bg('line.png');
+    background-size: auto;
+    @include pad-width{
+        background-image: none;
+    }
+    @include phone-width{
+        .mTitle {
+            padding: 50px 0 10px;
+        }
+    }
+}
+.deposit{
+    &_body{
+        margin: 0 80px;
+        @include pcs-width{
+            margin: 0 20px;
+        }
+    }
+    &_unit{
+        margin-bottom:35px;
+        .beforeArrow::before{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            transform: rotate(0deg);
+            margin: 115px 20px 0 0;
+            @include pcs-width{
+                margin: 30px auto;
+                transform: rotate(90deg);
+            }
+        }
+        > .row{
+            .deposit_info{
+                margin-top: 0;
+            }
+        }
+    }
+    &_img{
+        margin-top: 10px;
+        
+    }
+    &_subInfo{
+        display: flex;
+        @include pcs-width{
+            margin-top: 15px;
+            display: block;
+        }
+        .deposit_img{
+            margin-top: 0;
+            width: 175px;
+            @include pcs-width{
+                display: inline-block;
+                vertical-align: top;
+            }
+            @include  phone-width{
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.subStep{
+    flex:1;
+    margin-left: 10px;
+    @include pcs-width{
+        display: inline-block;
+        width: calc(100% - 190px);
+    }
+    @include  phone-width{
+        width:100%;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    &__unit{
+        border:1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 23px;
+        background-color: $whiteColor;
+        position: relative;
+        .num{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background:$lightpurpleColor;
+            font-size: 30px;
+            font-family:'Do Hyeon';
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 10px 0 10px;
+                border-color: $lightpurpleColor transparent transparent transparent;
+                position: absolute;
+                left: calc(50% - 12px);
+                bottom: -15px;
+            }
+        }
+        .purpleColor{
+            background: $purpleColor;
+            &::after{
+                border-color: $purpleColor transparent transparent transparent;
+            }
+        }
+        .darkpurpleColor{
+            background: $darkpurpleColor;
+            &::after{
+                border-color: $darkpurpleColor transparent transparent transparent;
+            }
+        }
+        .darkpurpleColor2{
+            background: $darkpurpleColor2;
+        }
+        .txt{
+            color:$mainColor;
+            display: inline-block;
+            vertical-align: middle;
+            img{
+                position: absolute;
+                right: 5px;
+                top:10px;
+                @include pad-width{
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(4n+4){
+            .num{
+                &::after{
+                    display: none;
+                }
+            }
+            .txt{
+                img{
+                    top: 3px;
+                }
+            }
+        }
+        .txt{
+            margin-left: 5px;
+        }
+    }
+}
+.withdrawal{
+    &_body{
+        margin: 0 100px;
+        @include pcs-width{
+            margin: 0 20px;
+        }
+    }
+    &_unit{
+        margin-bottom: 60px;
+        @include pcs-width{
+            margin-bottom: 40px;
+        }
+        .step_txt{
+            margin-bottom: 20px;
+        }
+    }
+    &_step1{
+        display: flex;
+        @include phone-width{
+            display: block;
+        }
+        .withdrawal_img{
+            width: 270px;
+            margin-right: 85px;
+            @include pcs-width{
+                width: 220px;
+                margin-right: 20px;
+            }
+            @include phone-width{
+                img{
+                    width: 200px;
+                }
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .withdrawal_info{
+            flex: 1;
+            margin-top: 60px;
+            @include phone-width{
+                flex:none;
+                margin-top: 30px;
+            }
+        }
+    }
+    &_subInfo{
+        position: relative;
+        .subStep_unit{
+            border:1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 35px;
+            background-color: $whiteColor;
+            font-size: 20px;
+            position: relative;
+            @include pcs-width{
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+            &:nth-child(3n+3){
+                .num{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .num{
+            width: 88px;
+            height: 88px;
+            border-radius: 5px;
+            background: $lightpurpleColor;
+            font-size: 50px;
+            font-family:'Do Hyeon';
+            line-height: 90px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            @include pcs-width{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 10px 0 10px;
+                border-color: $lightpurpleColor transparent transparent transparent;
+                position: absolute;
+                left: calc(50% - 12px);
+                bottom: -15px;
+            }
+        }
+        .purpleColor{
+            background: $purpleColor;
+            &::after{
+                border-color: $purpleColor transparent transparent transparent;
+            }
+        }
+        .darkpurpleColor{
+            background: $darkpurpleColor;
+        }
+        .txt{
+            color:$mainColor;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+            width: calc(100% - 120px);
+            img{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            @include pcs-width{
+                img{
+                    height: 55px;
+                    line-height: inherit;
+                }
+            }
+            @include pad-width{
+                
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    &_step3{
+        display: flex;
+        @include phone-width{
+            display: block;
+        }
+        .withdrawal_unit{
+            .step_txt{
+                min-height: 45px;
+            }
+            &:first-child{
+                flex: 1;
+                margin-right: 60px;
+                @include pcs-width{
+                    margin-right: 20px;
+                }
+                @include phone-width{
+                    flex: none;
+                    margin-right: 0;
+                }
+            }
+            &:last-child{
+                width: 270px;
+                .withdrawal_img{
+                    text-align: center;
+                }
+                @include pad-width{
+                    width: 200px;
+                }
+                @include phone-width{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+.footer{
+    padding: 13px 0;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.scrollTop{
+	display:none;
+	position: fixed;
+	right: 5px;
+	bottom: 20%;
+	width: 48px;
+	cursor: pointer;
+    z-index: 100;
+    i{
+        width: 50px;
+        height: 50px;
+        background: $purpleColor;
+        color: $whiteColor;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        transition: all .3s;
+        &:hover{
+            background: darken($purpleColor, 15%);
+        }
+    }
+    
+}
+

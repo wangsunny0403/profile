@@ -1,0 +1,842 @@
+@import "variables";
+@import "normal";
+@import "mixin";
+
+body{
+    font:{
+        family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        size: $primary-size;
+    }
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+p{
+    margin-bottom: 1em;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        margin-left: 0;
+    }
+}
+.text{
+    &-yellow{
+        color: $main-title-y;
+    }
+    &-blue{
+        color: $main-title-b;
+    }
+}
+.sect{
+    &-box{
+        position: relative;
+    }
+    &-title{
+        &.title-inline{
+            h2, span{
+                display: inline-block;
+                vertical-align: baseline;
+                margin-right: 15px;
+            }
+        }
+        &.title-line{
+            span{
+                &::after{
+                    content: "";
+                    width: 100px;
+                    height: 3px;
+                    background-color: #91ceff;
+                    display: block;
+                    margin: 15px auto 30px;
+                }
+            }
+        }
+        h2{
+            font: {
+                family: 'Noto Sans', sans-serif;
+                size: 50px;
+                weight: bold;
+            }
+            line-height: 60px;
+            @media screen and (max-width:780px){
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+        span{
+            font-size: 24px;
+        }
+    }
+}
+.container{
+    max-width: 1410px;
+}
+.copyright{
+    background-color: $black;
+    color: $white;
+    font-size: 14px;
+    padding: 10px;
+}
+body.scroll{
+    @media screen and (max-width:768px){
+        .header{
+            &-outer{
+                padding: 0;
+            }
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            background: rgba($white, 0.85);
+            .logo{
+                img{
+                    width: 65px;
+                    margin-top: -5px;
+                }
+                span{
+                    b{
+                        &.cn{
+                            font-size: 21px;
+                        }
+                        &.en{
+                            transform: scale(0.85);
+                            position: relative;
+                            margin-left: -15px;
+                            margin-top: -6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//header
+.header{
+    &-outer{
+        @include bg-img('banner-bg.png');
+        background-position: right bottom;
+        padding-bottom: 16%;
+        padding-top: 20px;
+        transition: all .3s;
+        @media screen and (max-width:1280px){
+            background-size: contain;
+        }
+        @media screen and (max-width:991px){
+            padding-bottom: 8%;
+            padding-top: 0;
+        }
+        @media screen and (max-width:768px){
+            background-position: left top;
+            background-size: cover;
+        }
+    }
+}
+.logo{
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        b{
+            display: block;
+            font-weight: normal;
+            &.cn{
+                font-size: 25px;
+                margin-bottom: 6px;
+            }
+            &.en{
+                font-size: 12px;
+            }
+        }
+    }
+    @media screen and (max-width:550px){
+        img{
+            max-width: 70px;
+        }
+        span{
+            b{
+                display: none;
+            }
+        }
+    }
+}
+.navbar-light{
+    > .container{
+        align-items: flex-end;
+        @media screen and (max-width:991px){
+            align-items: center;
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 3em;
+            border-bottom: 2px solid transparent;
+            margin-bottom: 3px;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: #30a0d2;
+                left: 0;
+                bottom: 0;
+                transition: all .3s;
+                position: absolute;
+            }
+            &:focus, &:hover{
+                color: #30a0d2;
+                &::after{
+                    width: 100%;
+                }
+            }
+            @media screen and (min-width:991px) and (max-width:1127px){
+                margin-left: 1.3em;
+            }
+        }
+        @media screen and (max-width:991px){
+            background-color: rgba($white, 0.3);
+            .nav-link{
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+.banner{
+    overflow: hidden;
+    @media screen and (max-width:768px){
+        margin-top: 10%;
+    }
+    .row{
+        align-items: center;
+    }
+    .main-title{
+        font-size: 50px;
+        font-weight: bold;
+        @media screen and (max-width:1314px){
+            font-size: 40px;
+        }
+        @media screen and (max-width:400px){
+            font-size: 30px;
+        }
+    }
+    p{
+        color: #8e8e8e;
+        font-size: 30px;
+        line-height: 45px;
+        @media screen and (max-width:1314px){
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @media screen and (max-width:400px){
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &-content{
+        @media screen and (max-width:767px){
+            text-align: center;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &-img{
+        @media screen and (max-width:767px){
+            text-align: center;
+            img{
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+//about
+.about{
+    &-box{
+        padding: 0 0 8%;
+        overflow: hidden;
+        .row{
+            align-items: center;
+        }
+        .container{
+            max-width: 1350px;
+        }
+        @media screen and (max-width:991px){
+            padding: 10% 0;
+        }
+        @media screen and (max-width:767px){
+            .about-img{
+                order:2;
+            }
+            .about-content{
+                order:1;
+                margin-bottom: 15px;
+            }
+            .sect{
+                &-title{
+                    margin-top: 15px;
+                    h2, span{
+                        display: block;
+                        text-align: center;
+                    }
+                    span{
+                        &::after{
+                            content: "";
+                            width: 100px;
+                            height: 3px;
+                            background-color: #91ceff;
+                            display: block;
+                            margin: 15px auto 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+//service
+.service{
+    &-outer{
+        @include bg-img('service-bg.png');
+        background-position: left bottom;
+        @media screen and (max-width:1280px){
+            background-size: contain;
+        }
+        @media screen and (max-width:991px){
+            background-image: none;
+        }
+    }
+    &-box{
+        padding: 10% 0 20%;
+        .sect-title{
+            span{
+                color: $white;
+            }
+        }
+        .container{
+            max-width: 1200px;
+        }
+        @media screen and (max-width:991px){
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#548cf7+0,6cdbee+100 */
+            background: #548cf7; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #548cf7 0%, #6cdbee 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #548cf7 0%,#6cdbee 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #548cf7 0%,#6cdbee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#548cf7', endColorstr='#6cdbee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            padding: 10% 0;
+        }
+    }
+    &-list{
+        margin-top: 5%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:665px){
+            flex-wrap: wrap;
+        }
+    }
+    &-item{
+        width: 250px;
+        text-align: center;
+        margin: 0 5px;
+        position: relative;
+        padding: 1.2em 15px 0.2em;
+        border: 5px solid #d7d9da;
+        background-color: #fff;
+        &::before, &::after{
+            content:"";
+            width: 0;
+            height: 5px;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: $main-title-y;
+        }
+        &::before{
+            right: -5px;
+            top: -5px;
+            background: $main-title-y;
+            transition-duration: 0.3s;
+        }
+        &::after{
+            left:-5px;
+            bottom: -5px;
+            transition-duration: 0.3s;
+        }
+        > div{
+            &::before, &::after{
+                content:"";
+                width:5px;
+                height:0;
+                position: absolute;
+                transition: all 0.2s linear;
+                background: $main-title-y;
+            }
+            &::before{
+                left: -5px;
+                bottom: -5px;
+                transition-duration: 0.3s;
+            }
+            &::after{
+                right:-5px;
+                top: -5px;
+                transition-duration: 0.3s;
+            }
+        }
+        &:hover{
+            &::before, &::after{
+                width: calc(100% + 10px);
+            }
+            > div{
+                &::before, &::after{
+                    height: calc(100% + 10px);
+                }
+            }
+        }
+        h3{
+            color: $primary;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        @media screen and (max-width:665px){
+            width:calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width:400px){
+            width: 100%;
+            margin: 0;
+            flex: 0 0 100%;
+            margin-bottom: 10px;
+        }
+    }
+    &-img{
+        min-height: 120px;
+        @media screen and (max-width:767px){
+            text-align: center;
+            img{
+                height: 80px;
+            }
+        }
+        &-l{
+            position: absolute;
+            left: -75px;
+            top: 150px;
+            display: none;
+        }
+        &-r{
+            position: absolute;
+            right: -122px;
+            top: 108px;
+            display: none;
+        }
+    }
+}
+
+//welfare
+.welfare{
+    &-box{
+        padding: 5% 0 0;
+        .row{
+            align-items: center;
+        }
+        @media screen and (max-width:1280px){
+            padding: 10% 0;
+        }
+    }
+    &-txt{
+        margin-bottom: 3%;
+        h3{
+            font:{
+                weight: bold;
+                size: 20px;
+            }
+        }
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item{
+        flex:0 0 50%;
+        width: 50%;
+        display: inline-flex;
+        align-items: center;
+        margin: 2% 0;
+        @media screen and (min-width:600px )and (max-width:991px){
+            flex:0 0 25%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        @media screen and (max-width:550px ){
+            flex:0 0 50%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+    &-ic{
+        width: 118px;
+        height: 118px;
+        border-radius: 50%;
+        background-color: #91ceff;
+        margin-right: 15px;
+        text-align: center;
+        line-height: 118px;
+        font-size: 50px;
+        color: $white;
+        @media screen and (max-width:991px){
+            margin-bottom: 15px;
+        }
+    }
+    &-img{
+        text-align: center;
+    }
+}
+
+//quality
+.quality{
+    &-box{
+        @include bg-img('quality-bg.png');
+        background-position: center bottom;
+        padding: 17% 0 7%;
+        @media screen and (max-width:1280px){
+            padding: 10% 0;
+        }
+        @media screen and (max-width:991px){
+            background-image: none;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#548cf7+0,6cdbee+100 */
+            background: #548cf7; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #548cf7 0%, #6cdbee 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #548cf7 0%,#6cdbee 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #548cf7 0%,#6cdbee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#548cf7', endColorstr='#6cdbee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+        @media screen and (max-width:500px){
+            padding: 10% 0 20%;
+        }
+        .slick{
+            &-arrow{
+                top: calc(100% + 20px);
+                display: block;
+                width: 50px;
+                height: 50px;
+                &::before{
+                    transition: all .3s;
+                    cursor: pointer;
+                    margin: 0 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    font-size: 22px;
+                    font-family: 'icomoon' !important;
+                    color: #d7d9da;
+                    border: 5px solid #d7d9da;
+                    text-align: center;
+                    line-height: 43px;
+                    background-color: #fff;
+                    opacity: 1;
+                }
+                &:hover{
+                    &::before{
+                        color: $primary;
+                        border-color: $primary;
+                    }
+                }
+            }
+            &-prev{
+                left: calc(50% - 55px);
+                &::before{
+                    content: "\e902";
+                }
+
+            }
+            &-next{
+                right: calc(50% - 55px);
+                &::before{
+                    content: "\e903";
+                }
+            }
+        }
+    }
+    &-content{
+        color: $white;
+        margin-top: 25px;
+        .sect-title.title-line span::after{
+            margin-left: 0;
+        }
+        @media screen and (max-width:991px){
+            margin-top: 0;
+        }
+    }
+    &-item{
+        @include bg-img('quality-img-border.png');
+        background-position: center center;
+        background-size: 100% 100%;
+        padding:20px 20px 20px 35px;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width:600px){
+            padding:15px 15px 15px 25px;
+        }
+        @media screen and (max-width:450px){
+            padding:15px 15px 15px 20px;
+        }
+    }
+}
+
+//join
+.join{
+    &-box{
+        padding: 8% 0 22%;
+        @media screen and (max-width:1700px){
+            padding: 0 0 38%;
+        }
+        @media screen and (max-width:991px){
+            padding: 5% 0 27%;
+        }
+        @media screen and (max-width:767px){
+            .sect{
+                &-title{
+                    margin-top: 15px;
+                    h2, span{
+                        display: block;
+                    }
+                    span{
+                        &::after{
+                            content: "";
+                            width: 100px;
+                            height: 3px;
+                            background-color: #91ceff;
+                            display: block;
+                            margin: 15px 0 30px;
+                            @media  screen and (max-width:660px){
+                                margin: 15px auto 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media  screen and (max-width:660px){
+            text-align: center;
+            padding: 10% 0;
+        }
+    }
+    &-content{
+        max-width: 450px;
+        margin: 0 26% 0 auto;
+        position: relative;
+        top: 100px;
+        @media screen and (max-width:1700px){
+            margin: 0 10%;
+        }
+        @media screen and (max-width:991px){
+            margin: 0;
+            max-width: 350px;
+        }
+        @media  screen and (max-width:660px){
+            max-width: 100%;
+            top: 0;
+        }
+    }
+    &-info{
+        margin: 5% 0 10%;
+    }
+    &-img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media screen and (max-width:1700px){
+            width: 38%;
+        }
+        @media screen and (max-width:800px){
+            width: 45%;
+        }
+        @media  screen and (max-width:660px){
+            display: none;
+        }
+    }
+    &-btn{
+        a{
+            width: 165px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: $btn;
+            color: $white;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            @media  screen and (max-width:660px){
+                margin: 0 auto;
+            }
+        }
+        .effect {
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s linear 0s;
+            &::before{
+                content: "\e903";
+                font-family: 'icomoon' !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 30px;
+                transform: scale(0, 1);
+                transition: all 0.2s linear 0s;
+            }
+            &:hover{
+                text-indent: -9999px;
+                background-color: darken($btn, 15%);
+                &:before {
+                    transform: scale(1, 1);
+                    text-indent: 0;
+                }
+            }
+        }
+    }
+}
+
+//contact
+.contact{
+    &-outer{
+        @include bg-img('contact-bg.png');
+        @media screen and (max-width:991px){
+            background-image: none;
+        }
+    }
+    &-box{
+        padding: 20% 0 5%;
+        @media screen and (max-width:991px){
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#548cf7+0,6cdbee+100 */
+            background: #548cf7; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #548cf7 0%, #6cdbee 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #548cf7 0%,#6cdbee 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #548cf7 0%,#6cdbee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#548cf7', endColorstr='#6cdbee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            padding: 10% 0;
+        }
+        @media screen and (max-width:767px){
+            .sect{
+                &-title{
+                    margin-top: 15px;
+                    h2, span{
+                        display: block;
+                    }
+                    span{
+                        &::after{
+                            content: "";
+                            width: 100px;
+                            height: 3px;
+                            background-color: #91ceff;
+                            display: block;
+                            margin: 15px 0 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-img{
+        position: absolute;
+        top: -40%;
+        left: 3.5%;
+        @media screen and (max-width:1700px){
+            width: 45%;
+        }
+        @media screen and (max-width:1410px){
+            left: 15px;
+            width: 38%;
+        }
+        @media screen and (max-width:991px){
+            display: none;
+        }
+    }
+    &-content{
+        margin-top: 10%;
+        color: $white;
+        @media screen and (max-width:780px){
+            margin-top: 5%;
+        }
+    }
+    &-info{
+        margin-top: 10%;
+        p{
+            position: relative;
+            padding-left: 25px;
+        }
+        span{
+            margin-right: 5px;
+            position: absolute;
+            left: 0;
+        }
+        @media screen and (max-width:575px){
+            margin-top: 20px;
+        }
+    }
+    &-map{
+        iframe{
+            border: 10px solid #fff;
+            box-shadow: 0 0 50px #5ba3f4;
+            height: 440px;
+            @media screen and (max-width:780px){
+                height: 300px;
+            }
+        }
+    }
+}
+//scrollTop
+.scrollTop{
+	display:none;
+	position: fixed;
+	right: 5px;
+	bottom: 20%;
+	cursor: pointer;
+    z-index: 100;
+    i{
+        width: 50px;
+        height: 50px;
+        display: block;
+        background: $main-title-y;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        transition: all .3s;
+        &:hover{
+            background: darken($main-title-y, 15%);
+        }
+    }
+    
+}

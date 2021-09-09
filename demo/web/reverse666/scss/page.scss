@@ -1,0 +1,422 @@
+@import "helper/variables", "helper/mixin";
+.page{
+    &-banner{
+        padding: 10% 0;
+        background:{
+            image: url("../img/page-banner.png");
+            position: center center;
+            repeat: no-repeat;
+            size: 100%;
+        }
+    }
+    &-items{
+        background-color: $darkblue;
+        padding: 20px;
+        color: $white;
+    }
+}
+/*index*/
+.carousel-indicators li{
+    background-color: #005DB6;
+    border:1px solid $white;
+    height: 9px;
+    width: 40px;
+    &.active{
+        background-color: #FFE867;
+    }
+}
+.main-title{
+    span{
+        color: $white;
+        margin-left: 10px;
+    }
+}
+.notice{
+    &-box{
+        background-color: $lightblue;
+        padding: 10px 0;
+    }
+    &-list{
+        display: flex;
+    }
+    &-title{
+        width: 120px;
+        color: #005eb6;
+        font-size: 18px;
+    }
+    &-txt{
+        overflow: hidden;
+        width: calc(100% - 120px);
+        position: relative;
+        top:2px;
+        a{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}
+.index{
+    a{
+        border:1px solid $lightyellow;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        img{
+            transition: all .3s;
+        }
+        &:hover{
+            box-shadow: 0 0 10px $lightyellow;
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.index{
+    &-list{
+        display: flex;
+        margin-bottom: 20px;
+        // align-items: stretch;
+        flex-wrap: wrap;
+        .img_mb{
+            display: none;
+        }
+    }
+}
+.game{
+    &-top{
+        &-left{
+            max-width: 749px;
+            margin-right: 20px;
+        }
+        &-right{
+            max-width: 340px;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222775+0,231e4c+77 */
+            background: #222775; /* Old browsers */
+            background: -moz-linear-gradient(left, #222775 0%, #231e4c 46%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #222775 0%,#231e4c 46%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #222775 0%,#231e4c 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222775', endColorstr='#231e4c',GradientType=1 ); /* IE6-9 */
+            a{
+                height: 100%;
+            }
+        }
+        &-inner{
+            display: flex;
+            margin-top: 18px;
+            div{
+                max-width: 364px;
+                &:first-child{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    &-bottom{
+        display: flex;
+        margin-top: 20px;
+        > div{
+            max-width: 545px;
+            &:first-child{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+/*ball*/
+.ball{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    &-blue{
+        background-image: linear-gradient(#0085ae, #043980);
+    }
+    &-red{
+        background-image: linear-gradient(#e91f40, #981f3b);
+    }
+    &-green{
+        background-image: linear-gradient(#28a444, #00625c);
+    }
+}
+/*registered*/
+.terms{
+    margin-left: 20px;
+    margin-bottom: 25px;
+    li{
+        list-style-type: disc;
+        margin-bottom: 5px;
+        a{
+            color: $darkyellow;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/*bet*/
+.bet-title{
+    font-size: 20px;
+    color: $lightyellow;
+    margin-bottom: 10px;
+}
+.bet-detail{
+    &-box{
+        margin-bottom: 20px;
+    }
+    &-title{
+        font-size: 20px;
+        color: $lightyellow;
+        margin-bottom: 10px;
+    }
+}
+/*member*/
+.verify{
+    &-box{
+        .tips{
+            margin-top: 10px;
+        }
+    }
+    &-add{
+        border:1px solid $lightblue;
+        border-radius: 2px;
+        padding: 0 10px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $lightblue;
+        input{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: transparent;
+        }
+        > div{
+            margin: 5px 0;
+        }
+        i{
+            font-size:40px;
+        }
+    }
+    &-img{
+        height: 198px;
+        img{
+            width: 280px;
+            height: 180px;
+        }
+    }
+}
+/*chat*/
+.chat{
+    &-content{
+        min-height: 300px;
+        margin: 0 auto 25px;
+        border: 1px solid $lightblue;
+    }
+    &-btn{
+        padding-left: 0;
+        .btn{
+            width: 100%;
+        }
+    }
+}
+/*stored*/
+.stored{
+    &-info{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    &-list{
+        li{
+            display: inline-block;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid $lightyellow;
+            width: calc(100%/3 - 13px);
+            box-sizing: border-box;
+            &:nth-child(3n+3){
+                margin-right: 0;
+            }
+            &.active{
+                border: 2px solid $lightblue;
+                box-shadow: 0 0 5px $lightblue;
+            }
+        }
+        margin-bottom: 20px;
+    }
+}
+/*game*/
+.game{
+    &-num{
+        span{
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    &-list{
+        margin-top: 25px;
+        a{
+            display: block;
+            text-align: center;
+            padding: 30px 15px;
+            color: $white;
+            box-sizing: border-box;
+            border:8px solid transparent;
+            transition: all .5s;
+        }
+        .bet{
+            background-color: #630563;
+            i{
+                color: #630563;
+            }
+            .game-icon{
+                box-shadow: 7px 7px 0 rgba(64,4,73,50);
+            }
+            &:hover{
+                border-color: darken(#630563, 10%);
+            }
+        }
+        .record{
+            background-color: #EBAF08;
+            i{
+                color: #EBAF08;
+            }
+            .game-icon{
+                box-shadow: 7px 7px 0 rgba(184,136,1,50);
+            }
+            &:hover{
+                border-color: darken(#EBAF08, 10%);
+            }
+        }
+        .bet-detail{
+            background-color: #2A865F;
+            i{
+                color: #2A865F;
+            }
+            .game-icon{
+                box-shadow: 7px 7px 0 rgba(23,99,67,50);
+            }
+            &:hover{
+                border-color: darken(#2A865F, 10%);
+            }
+        }
+        .history{
+            background-color: #2A5786;
+            i{
+                color: #2A5786;
+            }
+            .game-icon{
+                box-shadow: 7px 7px 0 rgba(18,66,115,50);
+            }
+            &:hover{
+                border-color: darken(#2A5786, 10%);
+            }
+        }
+    }
+    &-item{
+        margin-bottom: 10px;
+    }
+    &-icon{
+        background-color: $white;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 80px;
+        border-radius: 50%;
+        line-height: 140px;
+    }
+    &-title{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+/*history*/
+.history{
+    &-box{
+        .card{
+            background-color: $darkblue;
+            border-radius: 0;
+            border:0px;
+            margin-bottom: 25px;
+            color: $white;
+            h2{
+                cursor: pointer;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+            }
+            .btn{
+                color: $white;
+            }
+            &-body{
+                border-top: 1px solid #72849a;
+            }
+        }
+        .price{
+            margin-left: auto;
+        }
+    }
+}
+/*bet*/
+.bet{
+    &-box{
+        text-align: center;
+        .row {
+            margin: 0;
+            > div{
+                padding: 5px;
+                border:0.5px solid #2f5eb3;
+            }
+        }
+    }
+    &-head{
+        margin-bottom: 20px;
+        .row{
+            justify-content: center;
+            align-items: center;
+            > div{
+                &:nth-child(2){
+                    color: $darkyellow;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    &-table{
+        .table{
+            th, td{
+                padding: 10px;
+            }
+            th{
+                background-color: #CEDDEF;
+            }
+            th, td{
+                border-left:1px solid #CEDDEF;
+                &:last-child{
+                    border-right: 1px solid #CEDDEF;
+                }
+            }
+        }
+    }
+    &-btn{
+        .btn-submit{
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-price{
+        margin-top: 20px;
+    }
+}

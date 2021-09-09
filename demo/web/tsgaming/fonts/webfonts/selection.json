@@ -1,0 +1,70 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M152 353.6c-12.8 12.8-12.8 33.6 0 44.8 12.8 12.8 33.6 12.8 44.8 0l284.8-284.8v876.8c0 17.6 14.4 32 32 32s32-14.4 32-32v-876.8l284.8 284.8c12.8 12.8 33.6 12.8 44.8 0 12.8-12.8 12.8-33.6 0-44.8l-337.6-340.8c-6.4-6.4-14.4-9.6-22.4-9.6s-16 3.2-22.4 9.6c-1.6 0-340.8 340.8-340.8 340.8z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "download"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "download",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "webfonts"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showCodes": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "webfonts",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "showSelector": true,
+      "showMetrics": true
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215
+    },
+    "historySize": 100,
+    "gridSize": 16
+  }
+}

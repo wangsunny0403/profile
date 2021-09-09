@@ -1,0 +1,41 @@
+@mixin bg($imgName){
+    background: url("../img/"+ $imgName);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+//pc
+@mixin pc-width() {
+    @media all and (max-width: $pc-media) {
+            @content;
+    }
+}
+//pcs
+@mixin pcs-width() {
+    @media all and (max-width: $pcs-media) {
+            @content;
+    }
+}
+//padb
+@mixin padb-width() {
+    @media all and (max-width: $padb-media) {
+        @content;
+    }
+}
+//pad
+@mixin pad-width() {
+    @media all and (max-width: $pad-media) {
+        @content;
+    }
+}
+//phone
+@mixin phone-width() {
+    @media all and (max-width: $phone-media) {
+            @content;
+    }
+}
+@mixin phones-width() {
+    @media all and (max-width: $phones-media) {
+            @content;
+    }
+}
