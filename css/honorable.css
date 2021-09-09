@@ -1,0 +1,393 @@
+body.scroll-tab .nav-box {
+  position: fixed;
+  left: 0;
+  top: 63px;
+  width: 100%;
+  background-color: #e9ecef;
+  border-bottom: 0;
+  z-index: 10;
+  margin: 0;
+}
+
+body.scroll-tab .nav-box .active a {
+  color: #013DC1;
+  border-bottom: 2px solid #013DC1;
+}
+
+body.scroll-tab .nav-box li .nav-link {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+}
+
+body.scroll-tab .nav-box li .nav-link:hover {
+  color: #013DC1;
+  border-bottom: 2px solid #013DC1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.scroll-tab .nav-box li .nav-link i {
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.page-banner {
+  background-image: url("../img/honorable/banner.jpg");
+  text-align: center;
+  position: relative;
+}
+
+.page-banner .container {
+  position: inherit;
+}
+
+.page-banner .btn {
+  width: 245px;
+  height: 60px;
+  line-height: 48px;
+}
+
+.page-banner .btn-box {
+  position: absolute;
+  bottom: -110px;
+  text-align: center;
+  width: 100%;
+}
+
+.page-content {
+  padding-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .page-banner .btn {
+    width: 150px;
+    height: inherit;
+    line-height: inherit;
+    margin-top: 20px;
+  }
+  .page-banner .btn-box {
+    position: inherit;
+    bottom: 0;
+  }
+  .page-content {
+    padding-top: 0;
+  }
+}
+
+.nav-box {
+  border-bottom: 0;
+  margin: 30px 0;
+}
+
+.nav-box ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-box ul .active a {
+  color: #013DC1;
+}
+
+.nav-box ul li .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-box ul li .nav-link i {
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.nav-box ul li .nav-link:hover {
+  border: 0;
+  -webkit-box-shadow: 0 0 10px #e9ecef;
+          box-shadow: 0 0 10px #e9ecef;
+}
+
+@media (max-width: 991px) {
+  .nav-box {
+    display: none;
+  }
+}
+
+.section {
+  min-height: 480px;
+}
+
+.section h2 {
+  color: #013DC1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section h2::after {
+  display: none;
+}
+
+.section h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #2287FF;
+  margin-bottom: 5px;
+}
+
+.section .desc {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .section h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    min-height: inherit;
+  }
+  .section .desc {
+    margin-bottom: 25px;
+  }
+}
+
+.section1 {
+  background-image: url("../img/honorable/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.section1 .desc {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section1 ul {
+  max-width: 350px;
+  margin: 10% auto;
+}
+
+.section1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.section1 li i {
+  font-size: 25px;
+  line-height: 37.5px;
+  margin-right: 10px;
+  color: #2287FF;
+}
+
+@media (max-width: 767px) {
+  .section1 ul {
+    margin: 25px 0;
+  }
+}
+
+.section2 {
+  background-image: url("../img/honorable/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.section2 .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section2 li {
+  padding: 15px 0;
+  margin: 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 li:hover .img {
+  background-color: #f3a953;
+  color: #fff;
+}
+
+.section2 .img {
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 45px;
+  color: #2287FF;
+}
+
+.section2 .img i {
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.section2 .txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 575px) {
+  .section2 li {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px #ddd;
+            box-shadow: 0 0 10px #ddd;
+    border-radius: 5px;
+  }
+  .section2 .img {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    line-height: 37.5px;
+  }
+  .section2 .img i {
+    font-size: 35px;
+    line-height: 52.5px;
+  }
+}
+
+.section3 {
+  background-image: url("../img/honorable/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.section3 li {
+  background-color: #fff;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+  margin: 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.section3 .img {
+  margin-right: 15px;
+}
+
+.section3 .img i {
+  font-size: 50px;
+  line-height: 75px;
+  color: #2287FF;
+}
+
+@media (max-width: 575px) {
+  .section3 li {
+    padding: 10px;
+  }
+}
+
+.section4 .img {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.section4 .img img {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .section4 .item {
+    margin-bottom: 20px;
+  }
+}
+
+.section5 {
+  padding: 0;
+  min-height: inherit;
+}
+
+.section5 h2 {
+  color: #fff;
+  text-align: left;
+}
+
+.section5 .img {
+  background-image: url("../img/honorable/contact-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 13%;
+}
+
+.section5 .txt {
+  background-color: #2287FF;
+  color: #fff;
+  padding: 5%;
+}
+
+.section5 .link-box {
+  color: #FDE504;
+  margin: 15px 0;
+}
+
+.section5 .join {
+  text-align: center;
+}
+
+.section5 .join i {
+  font-size: 70px;
+  line-height: 105px;
+}
+
+.section5 .join a {
+  background-color: #fff;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .section5 .img, .section5 .txt {
+    height: inherit;
+  }
+}

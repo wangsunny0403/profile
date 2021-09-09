@@ -1,0 +1,141 @@
+.page-banner {
+  background-image: url("../img/faq/banner.png");
+}
+
+.toggle .nav-link {
+  background-color: #01285f;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 130px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5px;
+}
+
+.toggle .nav-link:hover {
+  background-color: #2287FF;
+}
+
+.toggle .nav-link:last-child {
+  border-right: 0;
+}
+
+.toggle .nav-link.active, .toggle .show > .nav-link {
+  background-color: #2287FF;
+}
+
+@media (max-width: 575px) {
+  .toggle {
+    margin-bottom: 10px;
+  }
+  .toggle .nav-link {
+    padding: 5px;
+    width: calc(100%/ 3 - 5px);
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-box ul li {
+    width: calc(100% / 3);
+  }
+}
+
+.qa-item .qa-title {
+  display: block;
+  position: relative;
+  padding: 15px 25px 15px 30px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.qa-item .qa-title.active {
+  color: #2287FF;
+  border-bottom: 1px solid transparent;
+}
+
+.qa-item .qa-title.active .qa-num::before {
+  color: #2287FF;
+}
+
+.qa-item .qa-title.active i {
+  color: #2287FF;
+}
+
+.qa-item .qa-title i {
+  position: absolute;
+  right: 0px;
+  font-size: 18px;
+  top: 15px;
+  color: #bfdfff;
+}
+
+.qa-item:hover .qa-title {
+  color: #013DC1;
+}
+
+.qa-item:hover .qa-title.active {
+  color: #2287FF;
+}
+
+.qa-item .qa-num::before {
+  content: "\e911";
+  font-family: 'icomoon' !important;
+  font-size: 22px;
+  margin-right: 5px;
+  color: #013DC1;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.qa-content {
+  display: none;
+  position: relative;
+  background-color: #e9ecef;
+  padding: 15px 15px 15px 50px;
+  color: #4D4D4D;
+}
+
+.qa-content::before {
+  content: "\e910";
+  font-family: 'icomoon' !important;
+  font-size: 22px;
+  margin-right: 5px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.qa-content ol {
+  margin-left: 17px;
+}
+
+.qa-content ol li {
+  list-style: decimal;
+}
+
+@media (max-width: 575px) {
+  .qa-item .qa-title {
+    padding: 10px 25px 10px 30px;
+  }
+  .qa-item .qa-num::before {
+    font-size: 20px;
+    top: 10px;
+  }
+  .qa-content {
+    padding: 10px 15px 10px 40px;
+  }
+  .qa-content::before {
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+  }
+}

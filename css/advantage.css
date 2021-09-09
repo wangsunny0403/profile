@@ -1,0 +1,467 @@
+body.scroll-tab .nav-box {
+  position: fixed;
+  left: 0;
+  top: 63px;
+  width: 100%;
+  background-color: #e9ecef;
+  border-bottom: 0;
+  z-index: 10;
+}
+
+body.scroll-tab .nav-box .nav-link {
+  border-bottom: 2px solid transparent;
+  padding: 10px;
+}
+
+body.scroll-tab .nav-box .nav-link:hover {
+  color: #013DC1;
+}
+
+body.scroll-tab .nav-box .active a {
+  color: #013DC1;
+  border-bottom: 2px solid #013DC1;
+}
+
+.page-banner {
+  background-image: url("../img/advantage/banner.png");
+}
+
+@media (max-width: 991px) {
+  .page-content {
+    padding: 0;
+  }
+}
+
+.nav-box ul .active a {
+  color: #013DC1;
+  border-bottom: 2px solid #013DC1;
+}
+
+@media (max-width: 991px) {
+  .nav-box {
+    display: none;
+  }
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+  border-bottom: 0;
+}
+
+.section h2 {
+  color: #013DC1;
+}
+
+.section h2::after {
+  display: none;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.section i {
+  color: #2287FF;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+@media (max-width: 767px) {
+  .section h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.section1 .list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.section1 .img {
+  margin-right: 25px;
+}
+
+.section1 .img img {
+  width: 100px;
+}
+
+.section1 .txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1 .txt::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #2287FF;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.section1 h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.section1 h3 span {
+  background-color: #2287FF;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0px 15px;
+  color: #fff;
+}
+
+.section1 h4 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #013DC1;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .section1 .item {
+    margin-bottom: 20px;
+  }
+  .section1 .img img {
+    width: 70px;
+  }
+  .section1 h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section1 h4 {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+}
+
+.section2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/advantage/bg3.png");
+}
+
+.section2 h3 {
+  color: #222;
+  font-weight: bold;
+}
+
+.section2 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 40px;
+}
+
+.section2 .img {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin-right: 15px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: 4px 2px 5px #ddd;
+          box-shadow: 4px 2px 5px #ddd;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e8e8e8+100 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e8e8e8));
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 );
+  /* IE6-9 */
+}
+
+.section2 .img i {
+  line-height: 100px;
+}
+
+.section2 .txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .section2 .item {
+    margin-bottom: 20px;
+  }
+  .section2 .img {
+    width: 80px;
+    height: 80px;
+  }
+  .section2 .img i {
+    line-height: 80px;
+  }
+}
+
+.section3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/advantage/bg1.png");
+}
+
+.section3 .list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section3 .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section3 .row > div {
+  margin-bottom: 40px;
+  border-right: 1px solid #ddd;
+}
+
+.section3 .row > div:nth-child(3), .section3 .row > div:nth-child(5) {
+  border-right: 0;
+}
+
+.section3 h3 {
+  color: #013DC1;
+  font-weight: bold;
+}
+
+.section3 .img {
+  max-width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: 4px 2px 5px #ddd;
+          box-shadow: 4px 2px 5px #ddd;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e8e8e8+100 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e8e8e8));
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 );
+  /* IE6-9 */
+}
+
+.section3 .img i {
+  line-height: 100px;
+}
+
+.section3 .txt {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .section3 .row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section3 .row > div {
+    margin-bottom: 20px;
+    border-right: 1px solid #ddd;
+  }
+  .section3 .row > div:nth-child(3), .section3 .row > div:nth-child(5) {
+    border-right: 1px solid #ddd;
+  }
+  .section3 .row > div:nth-child(2n+2) {
+    border-right: 0;
+  }
+  .section3 .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section3 .img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .section3 .img i {
+    line-height: 80px;
+  }
+  .section3 .txt {
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (max-width: 575px) {
+  .section3 .row > div {
+    border-right: 0;
+  }
+  .section3 .row > div:nth-child(3), .section3 .row > div:nth-child(5) {
+    border-right: 0;
+  }
+}
+
+.section4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../img/advantage/bg2.png");
+}
+
+.section4 .list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section4 .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section4 .row > div {
+  margin-bottom: 40px;
+}
+
+.section4 i {
+  font-size: 70px;
+  line-height: 105px;
+}
+
+.section4 .item {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+}
+
+@media (max-width: 767px) {
+  .section4 .row > div {
+    margin-bottom: 15px;
+  }
+  .section4 .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .section4 i {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .section4 .img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  .section4 .img i {
+    line-height: 60px;
+  }
+  .section4 .txt {
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .section4 .row > div {
+    width: 50%;
+  }
+  .section4 .row > div:nth-child(2n+1) {
+    padding-right: 7px;
+  }
+  .section4 .row > div:nth-child(2n+2) {
+    padding-left: 7px;
+  }
+  .section4 .txt br {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .section4 .row > div {
+    width: 100%;
+  }
+  .section4 .row > div:nth-child(2n+1) {
+    padding-right: 15px;
+  }
+  .section4 .row > div:nth-child(2n+2) {
+    padding-left: 15px;
+  }
+}
+
+.section5 .container {
+  position: relative;
+}
+
+.section5 .container h2 {
+  position: absolute;
+  top: 20px;
+}
