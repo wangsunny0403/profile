@@ -1,0 +1,29 @@
+.page-banner {
+  background-image: url("../img/information-quote/banner.png");
+}
+
+.tab-pane h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.tab-pane h3::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: #f3a953;
+  position: relative;
+  top: -2px;
+}
+
+.tab-pane .table-responsive {
+  margin-bottom: 2rem;
+}
+
+.tab-pane .table-quote {
+  margin-bottom: 0;
+}

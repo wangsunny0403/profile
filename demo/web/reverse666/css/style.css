@@ -1,0 +1,354 @@
+/*
+	normal.scss - a CSS normalizer (cf. CSS reset).
+	
+	Provides a normalized environment for new designs and nice defaults for
+	styling simple documents.
+
+	Author: Miikka Koskinen <miikka.koskinen@iki.fi>
+*/
+/* Box model reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Text styling */
+body {
+  font-size: 1em;
+  font-family: "Palatino", "Palatino Linotype", "Georgia", serif;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.86667em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.86667em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-variant: small-caps;
+}
+
+p, ul, ol, blockquote, pre {
+  margin-bottom: 1.4em;
+}
+
+li {
+  margin-left: 1em;
+}
+
+small {
+  font-size: 0.8em;
+  line-height: 1.75em;
+}
+
+/* vim: set ts=4 sw=4 noet: */
+body {
+  font-family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #323232;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 0;
+}
+
+.text-red {
+  color: #F55223;
+}
+
+.text-green {
+  color: #00B38A;
+}
+
+.width-num {
+  width: 60px;
+}
+
+.width-date {
+  width: 170px;
+}
+
+.width-status {
+  width: 100px;
+}
+
+.main-title {
+  margin-bottom: 30px;
+}
+
+.main-title i {
+  color: #FFC107;
+  font-size: 30px;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+
+.main-title b {
+  color: #FFE867;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/*table*/
+.table {
+  margin-bottom: 0;
+}
+
+.table-box th {
+  background-color: #CEDDEF;
+  color: #323232;
+  font-weight: normal;
+}
+
+.table-box tr:last-child td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/*page*/
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #4493da;
+}
+
+.page-link {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.page-link:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #FFE867;
+}
+
+.top {
+  background-color: #07214E;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.top .btn {
+  padding: 0 10px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+.top .login-btn {
+  background-color: #FFE867;
+}
+
+.top .login-btn:hover {
+  background-color: #ffe034;
+}
+
+.top .registered-btn {
+  background-color: #AC4C5E;
+  color: #fff;
+}
+
+.top .registered-btn:hover {
+  background-color: #893c4b;
+}
+
+.header {
+  background-color: #F2F7FF;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .nav-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #323232;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navbar .nav-link:hover {
+  border-color: #005EB6;
+}
+
+.wrapper {
+  background-image: url("../img/wrapper-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6% 0;
+}
+
+.page-container {
+  background-color: #051A45;
+  padding: 5%;
+  color: #fff;
+}
+
+.page-form {
+  max-width: 495px;
+  margin: 0 auto;
+}
+
+.page-btn {
+  margin-bottom: 0;
+}
+
+.page-btn .btn {
+  width: 100px;
+  margin-right: 5px;
+}
+
+/*form-btn*/
+.btn-submit {
+  background-color: #FFC107;
+}
+
+.btn-submit:hover {
+  background-color: #d39e00;
+}
+
+.btn-cancel {
+  background-color: #F1F1F1;
+}
+
+.btn-cancel:hover {
+  background-color: #d8d8d8;
+}
+
+.btn-back {
+  background-color: #03a9f4;
+  color: #fff;
+}
+
+.btn-back:hover {
+  background-color: #0286c2;
+}
+
+/*nav-pill*/
+.nav-pills .nav-link {
+  border-radius: 0;
+  background-color: #FFE867;
+  color: #323232;
+  margin-right: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #ffdc1b;
+}
+
+.nav-pills .nav-link i {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #5893D4;
+  color: #fff;
+}
+
+.nav-pills .nav-link.active:hover {
+  background-color: #2e6db2;
+}
+
+.nav-pills .show > .nav-link {
+  background-color: #5893D4;
+  color: #fff;
+}
+
+.info {
+  padding: 20px 0;
+  background-color: #CEDDEF;
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: #07214E;
+  color: #fff;
+}
+
+.footer-menu-mb {
+  display: none;
+}
+
+.footer-menu a {
+  color: #fff;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-menu a::after {
+  content: "|";
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  color: #CEDDEF;
+}
+
+/*modal*/
+.modal-header {
+  background-color: #07214E;
+  color: #fff;
+}
+
+.modal-header .close, .modal-header .close:not(:disabled):not(.disabled):focus, .modal-header .close:not(:disabled):not(.disabled):hover {
+  color: #fff;
+}
+
+/*fixed*/
+.fixed {
+  position: fixed;
+  right: 5px;
+  width: 43px;
+  z-index: 1;
+  bottom: 172px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fixed:hover {
+  bottom: 70px;
+  -webkit-box-shadow: 0 0 10px #FFE867;
+          box-shadow: 0 0 10px #FFE867;
+}
+/*# sourceMappingURL=style.css.map */

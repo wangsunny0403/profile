@@ -1,0 +1,156 @@
+@media screen and (max-width: 1400px){
+    .banner img{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 1350px){
+    .banner .container{
+        height: 700px;
+    }
+    .banner img{
+        max-width: 60%;
+    }
+    .banner img.b_txt{
+        left: 32% !important;
+        max-width: 55%;
+    }
+    .banner img.b_dice {
+       right: -2% !important;
+       max-width: 40%;
+    }
+    .scroll-btn{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .banner .container{
+        height: inherit;
+    }
+    .banner img.b_dice {
+        right: 0% !important;
+     }
+}
+@media screen and (max-width: 990px){
+    .banner img.b_dice {
+        max-width:25%;
+        right: -5% !important;
+     }
+}
+@media screen and (max-width: 800px){
+    .banner img.b_dice {
+        right: -0% !important;
+     }
+}
+@media screen and (max-width: 768px){
+    .logo img{
+        max-width: 150px;
+    }
+    .menu a {
+        padding: 8px 0 0;
+    }
+    .contentBox{
+        padding: 40px 0 70px;
+    }
+    .contentBox h2{
+        font-size: 25px;
+    }
+    .submit-btn {
+        height: 110px;
+        width: 140px;
+        background-size: 79%;
+    }
+    .actinfo {
+        padding: 30px 0;
+    }
+    .winner, .actinfo, .loginBox, .gameTick, .gameTick{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 720px){
+    #rwd_table tr td{
+        background-color: #1c1ca9;
+    }
+    #rwd_table tr:nth-child(2n+2) td{
+        background-color: #16167f;
+    }
+    .actinfo #rwd_table td, .actinfo #rwd_table tr:nth-child(2n+2) td{
+        background-color: #0b0b56;
+    }
+    .actinfo #rwd_table td{
+        text-align: left;
+    }
+    .playtime .pc{
+        display: none;
+    }
+    .playtime .mb{
+        display: block;
+        color:#fff000;
+    }
+    .playtime br{
+        display: none;
+    }
+    .rewardInfo #rwd_table td, #rwd_table tr td{
+        border:1px solid rgba(255,255,255, .2);
+        border-top: none;
+    }
+    .rewardInfo #rwd_table tr td:first-child, #rwd_table tr td:first-child{
+        border-top:1px solid rgba(255,255,255, .2);
+    }
+    .blw{
+        border-left:none;
+    }
+    .brw{
+        border-right:none;
+    }
+    .bbw{
+        border-bottom:none;
+    }
+    #rwd_table td{
+        border-right:none;
+    }
+}
+@media screen and (max-width: 600px){
+    *{
+        font-size: 15px;
+    }
+    .contentBox {
+        padding: 20px 0 70px;
+    }
+    .input-account {
+        height: 45px;
+        font-size: 15px;
+    }
+    .contentBox .infoTxt {
+        margin-left: 0;
+        margin-top: 35px;
+    }
+    .gameTick img{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 480px){
+    .header{
+        text-align: center;
+    }
+	.menu{
+        float:inherit;
+    }
+    .menu a{
+        padding-bottom: 0;
+    }
+    #start-hand {
+        height: 265px;
+        max-width: 316px;
+    }
+}
+@media screen and (max-width: 420px){
+    .bowl {
+        height: 330px;
+    }
+    .bowl .txt {
+        bottom: 65px;
+    }
+    #tu{
+        margin-top: -20px;
+    }
+}

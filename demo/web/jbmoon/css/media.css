@@ -1,0 +1,287 @@
+@media screen and (max-width: 1680px){
+    .banner .cloud{
+        bottom: 250px;
+    }
+}
+@media screen and (max-width: 1580px){
+    .banner .cloud{
+        bottom: 200px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .banner .cloud{
+        bottom: 170px;
+    }
+    .flower1{
+        max-width: 700px;
+    }
+    .b_dice{
+        left: 15% !important;
+    }
+    .b_dice2{
+        right: 10%;
+    }
+}
+@media screen and (max-width: 1122px){
+    .b_dice{
+       width: 80px;
+    }
+    .b_dice2{
+       width: 180px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .banner{
+        height: 480px;
+    }
+    .b_dice2{
+        width: 150px;
+        bottom: 120px;
+     }
+     .banner .cloud{
+        bottom: 145px;
+     }
+     .b_bowl.layer{
+         width: 400px;
+         left: calc(50% - 200px) !important;
+     }
+     .b_txt > div.txt1{
+         max-width: 450px;   
+     }
+     .b_txt > div.txt2{
+        max-width: 580px;   
+    }
+    .rabbit{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 880px){
+    .banner .cloud {
+        bottom: 115px;
+    }
+}
+@media screen and (max-width: 875px){
+    .accountInput .accountImg{
+        right: -15px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:780px){
+    .banner{
+        height: 380px;
+    }
+    .flower1 {
+        max-width: 500px;
+    }
+    .b_txt > div.txt1 {
+        max-width: 380px;
+    }
+    .b_txt > div.txt2 {
+        max-width: 490px;
+    }
+    .txt2::after{
+        width: 80px;
+    }
+    .rabbit {
+        width: 180px;
+    }
+    .b_bowl.layer{
+        width: 330px;
+        left: calc(50% - 165px) !important;
+    }
+    .b_dice2{
+        width: 120px;
+    }
+    .content_block1 .container{
+        padding: 50px 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    .content_block1 .container{
+        padding:50px 15px 50px 15px;
+    }
+    .actUnit > div{
+      display: block;
+      text-align: left;
+    }
+    .actTitle, .actContent{
+      width: 100%;
+    }
+    .actTitle b, .actTitle span{
+      display: inline-block;
+    }
+    .actTitle b, .actUnit.no2 .actTitle b{
+        font-size: 35px;
+        line-height:35px;
+        color: white;
+        -webkit-text-stroke: 2px #f33c3a;
+    }
+    .actTitle span, .actUnit.no2 .actTitle span{
+        background-color: transparent;
+        color: #f33c3a;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+}
+@media screen and (max-width: 685px){
+    .banner .pc {
+        display: none;
+    }
+    .banner .mb{
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-image: url(../images/newImg/mb_bannerB.png), url(../images/newImg/mb_banner.png);
+        background-position: center 114%, center top;
+        background-size: 172%, 130%;
+        height: 135%;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .b_txt > div.txt1 {
+        max-width: 280px;
+    }
+    .b_txt > div.txt2 {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 650px){
+    .banner {
+        height: 330px;
+    }
+    .accountInput .accountImg{
+        display: none;
+    }
+    .accountInput > div{
+        position: relative;
+    }
+    .accountInput .userNameInput{
+        width: 100%;
+        padding-right: 70px;
+    }
+    .accountInput span.accountTxt{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .accountInput span.accountBtn{
+        display: block;
+    }
+    .accountInput .submit_btn{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .accountInput .submit_btn:active{
+        margin-top: 10px;
+    }
+    #welcome{
+        font-size:18px;
+    }
+    #welcome > div.hello{
+        font-size: 24px;
+    }
+    #welcome > div.hello span {
+        font-size: 32px;
+    }
+    #welcome img.loginIcR {
+        right: -30px;
+        top: -13px;
+        width: 65px;
+    }
+    #welcome img.loginIcL {
+        left: -128px;
+        bottom: -35px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 550px){
+    .banner {
+        height: 290px;
+    }
+    .b_txt > div.txt1 {
+        max-width: 250px;
+    }
+    .b_txt > div.txt2 {
+        max-width: 300px;
+    }
+    .txt2::after {
+        width: 50px;
+        animation:infinite;
+        right: -48px;
+    }
+    .accountInput{
+        padding:30px 15px;
+        margin-bottom: 50px;
+    }
+    .accountInput h2{
+        font-size: 18px;
+    }
+    .infoUnit, .slider-list{
+        margin-bottom: 30px;
+    }
+    .infoBTitle {
+        padding: 25px 20px;
+        background-size: 100% 100%;
+        font-size: 1.3em;
+    }
+    .infoSTitle span{
+        width: 33px;
+        height: 33px;
+        font-size: 1.3em;
+        line-height: 33px;
+    }
+    .infoSTitle .infoIc{
+        margin: 0 5px;
+    }
+    .infoSTitle .infoIc img{
+        width: 40px;
+    }
+    .goGame{
+        margin: 50px 0;
+    }
+    #welcome img.loginIcR{
+        display: none;
+    }
+    .game-bonus div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #welcome p{
+        display: block;
+    }
+    #welcome p i{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .banner .mb {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-image: url(../images/newImg/mb_bannerB.png), url(../images/newImg/mb_banner.png);
+        background-position: 45% 114%, center top;
+        background-size: 200%, 169%;
+        height: 135%;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .banner{
+        height: 250px;
+    }
+    .b_txt > div.txt2 {
+        max-width: 240px;
+    }
+    .b_txt > div.txt1 {
+        max-width: 210px;
+    }
+    .txt2::after {
+        width: 35px;
+        right: -35px;
+        bottom: -36px;
+    }
+}

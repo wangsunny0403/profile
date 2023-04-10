@@ -1,0 +1,137 @@
+.page-banner {
+  background-image: url("../img/account-type/banner.png");
+}
+
+.account-type-table .row {
+  margin: 0;
+}
+
+.account-type-table .title-box, .account-type-table .type-box {
+  padding: 0;
+  border-right: 1px solid #ddd;
+}
+
+.account-type-table .title-box .head, .account-type-table .type-box .head {
+  background: #00519c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-type-table .title-box .title, .account-type-table .type-box .title {
+  display: none;
+}
+
+.account-type-table .title-box > div, .account-type-table .type-box > div {
+  padding: 10px;
+  min-height: 65px;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.account-type-table .title-box > div.head, .account-type-table .type-box > div.head {
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  min-height: 50px;
+}
+
+.account-type-table .title-box > div.feature, .account-type-table .type-box > div.feature {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 175px;
+}
+
+.account-type-table .title-box {
+  background: #e5f2ff;
+  border-left: 1px solid #ddd;
+}
+
+.account-type-table .title-box .head {
+  background-color: #01285f;
+}
+
+.account-type-table .title-box > div {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.account-type-table .title-box span {
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .account-type-table .title-box {
+    display: none;
+  }
+  .account-type-table .type-box {
+    border-right: 0;
+  }
+  .account-type-table .type-box .title {
+    display: block;
+    width: 165px;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  .account-type-table .type-box .title::after {
+    display: none;
+  }
+  .account-type-table .type-box > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-height: inherit;
+  }
+  .account-type-table .type-box > div.head {
+    min-height: inherit;
+    line-height: inherit;
+  }
+  .account-type-table .type-box > div > div {
+    position: relative;
+    padding-left: 15px;
+  }
+  .account-type-table .type-box > div > div::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+  }
+  .account-type-table .type-box > div > div:last-child {
+    width: calc(100% - 155px);
+  }
+  .account-type-table .type-box > div.feature {
+    min-height: inherit;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 575px) {
+  .account-type-table .type-box .title {
+    width: 40%;
+  }
+  .account-type-table .type-box > div > div:last-child {
+    width: 60%;
+  }
+}

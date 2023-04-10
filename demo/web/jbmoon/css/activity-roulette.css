@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+*:focus{
+  outline:none !important;
+}
+
+.banner-act-rio{
+	background: url(../images/activity/activity-roulette/banner.jpg)no-repeat;
+	width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media screen and (max-width: 480px){
+  .banner-act-rio {
+  background: url(../images/activity/activity-roulette/banner-mobile.jpg) no-repeat;
+  background-position: center;
+  height: 360px;
+}
+}
+
+
+.roulette_wrap{
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 80%;
+    padding: 3em;
+    /*border: 1px #a1723a solid;*/
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #333;
+    }
+.roulette-main-background h2{
+  text-align: center;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 5px #000;
+}
+/*------------------------------------------------------------------------------*/
+/*roulette-main-background*/
+/*------------------------------------------------------------------------------*/
+.roulette-main-background{
+  background-image:url('../images/activity/activity-roulette/background.jpg'); 
+  background-repeat:no-repeat; 
+  background-size:cover;
+  color:#fff;
+  min-height: 600px;
+}
+
+/*------------------------------------------------------------------------------*/
+/*roulette_content*/
+/*------------------------------------------------------------------------------*/
+
+  .roulette_content{
+    color:#000;
+  	font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+
+  }
+.roulette_content  p{
+  font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+  font-size: 14px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+  .roulette_content table td{
+    text-align: center;
+   }
+  .roulette_content table input{
+    text-align: center;
+  }
+  .roulette_content h2{
+  	padding:0 2em;
+  }
+
+  .submit_btn{
+    background-color: #a1723a;
+    color: #fff;
+  }
+.submit_btn:hover{
+    background-color: #8b6333;
+    color: #fff;
+  }
+.submit_btn:focus{
+    background-color: #a1723a;
+    color: #fff;
+  }
+
+.input-block{
+      border-radius: 5px;
+    box-shadow: 0px 2px 6px #666 inset;
+    border: solid 1px #fff;
+    height: 40px;
+    width: 80%;
+    max-width: 280px;
+}
+  @media screen and (max-width: 700px){
+  	.roulette_wrap{
+  	 padding: 1em;
+  	}
+
+
+
+
+  	 .roulette_content h2{
+  	padding:0 1em;
+  	font-size: 16px;
+
+  }
+  }
+
+
+  .roulette_content td{
+  	    padding-top: 1em;
+  } 
+
+/*------------------------------------------------------------------------------*/
+/*roulette_winner*/
+/*------------------------------------------------------------------------------*/
+.roulette_winner{
+  font-family: 微軟正黑體, "Microsoft JhengHei", 新細明體, "Myriad Pro", Arial, PMingLiU, sans-serif, Calibri;
+  color:#000;
+}
+
+
+  .ticket_get table {
+    width: 100%;
+	}
+
+  table th {
+    padding:  1em 0;
+    text-align: center;
+    background-color: #289d4c;
+    color: #fff;
+}
+.roulette_wrap p{
+	color: #000;
+}
+.roulette-text{
+	margin-top: 1em;
+}
+
+.backweb_btn{
+	color: #fff;
+	background: #289d4c;
+	border: 0!important;
+	padding: 10px;
+}
+
+.backweb_btn:hover{
+background: #117a26;
+}
+

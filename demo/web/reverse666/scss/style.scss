@@ -1,0 +1,253 @@
+@import "normal";
+@import "helper/variables", "helper/mixin";
+body{
+    font:{
+        family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        size: 15px;
+    }
+    color: $primary;
+
+}
+img{
+    max-width: 100%;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        margin-left: 0;
+    }
+}
+.text{
+    &-red{
+        color: #F55223;
+    }
+    &-green{
+        color: #00B38A;
+    }
+}
+.width{
+    &-num{
+        width: 60px;
+    }
+    &-date{
+        width: 170px;
+    }
+    &-status{
+        width: 100px;
+    }
+}
+.main-title{
+    margin-bottom: 30px;
+    i{
+        color: $darkyellow;
+        font-size: 30px;
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+    b{
+        color: $lightyellow;
+        font:{
+            size: 30px;
+            weight: normal;
+        }
+    }
+}
+/*table*/
+.table{
+    margin-bottom: 0;
+    &-box{
+        th{
+            background-color: $lightblue;
+            color: $primary;
+            font-weight: normal;
+        }
+        tr:last-child{
+            td{
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    }
+}
+/*page*/
+.pagination{
+    margin-top: 20px;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #4493da;
+}
+.page-link{
+    color: $white;
+    background-color: transparent;
+    border-color: transparent;
+    &:hover{
+        background-color: transparent;
+        border-color: transparent;
+        color: $lightyellow;
+    }
+}
+.top{
+    background-color: $darkblue;
+    padding: 10px 0;
+    text-align: right;
+    .btn{
+        padding: 0 10px;
+        border-radius: 2px;
+        margin-left: 5px;
+    }
+    .login-btn{
+        @include btn($lightyellow);
+    }
+    .registered-btn{
+       @include btn(#AC4C5E);
+        color: $white;
+    }
+}
+.header{
+    background-color: #F2F7FF;
+}
+.navbar{
+    padding: 0;
+    .nav-link{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: $primary;
+        border-bottom: 4px solid transparent;
+        transition: all .3s;
+        &:hover{
+            border-color: #005EB6;
+        }
+    }
+}
+.wrapper{
+    background:{
+        image: url("../img/wrapper-bg.png");
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    padding: 6% 0;
+}
+.page{
+    &-container{
+        background-color: #051A45;
+        padding: 5%;
+        color: $white;
+    }
+    &-form{
+        max-width: 495px;
+        margin: 0 auto;
+    }
+    &-btn{
+        margin-bottom: 0;
+        .btn{
+            width: 100px;
+            margin-right: 5px;
+        }
+    }
+}
+/*form-btn*/
+.btn{
+    &-submit{
+        @include btn($darkyellow);
+    }
+    &-cancel{
+        @include btn(#F1F1F1);
+    }
+    &-back{
+        @include btn(#03a9f4);
+        color: $white;
+    }
+}
+/*nav-pill*/
+.nav-pills {
+    .nav-link{
+        border-radius: 0;
+        background-color: $lightyellow;
+        color: $primary;
+        margin-right: 20px;
+        transition: all .3s;
+        &:hover{
+            background-color: darken($lightyellow, 15%);
+        }
+        i{
+            font-size: 20px;
+            position: relative;
+            top: 3px;
+            margin-right: 5px;
+        }
+        &.active{
+            background-color: #5893D4;
+            color: $white;
+            &:hover{
+                background-color: darken(#5893D4, 15%);
+            }
+        }
+    }
+    .show{
+        > .nav-link{
+            background-color: #5893D4;
+            color: $white;
+        }
+    }
+}
+.info{
+    padding: 20px 0;
+    background-color: $lightblue;
+}
+.footer{
+    padding: 25px 0;
+    background-color: $darkblue;
+    color: $white;
+    &-menu{
+        &-mb{
+            display: none;
+        }
+        a{
+            color: $white;
+            margin-bottom: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            &::after{
+                content:"|";
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+    .copyright{
+        font-size:12px;
+        color: $lightblue;
+    }
+}
+/*modal*/
+.modal-header{
+    background-color: $darkblue;
+    color: $white;
+    .close, .close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+        color: $white;
+    }
+}
+/*fixed*/
+.fixed {
+    position: fixed;
+    right: 5px;
+    width: 43px;
+    z-index: 1;
+    bottom: 172px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover{
+        bottom:70px;
+        box-shadow: 0 0 10px $lightyellow;
+    }
+}

@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8xq8lh');
+  src:  url('fonts/icomoon.eot?8xq8lh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8xq8lh') format('truetype'),
+    url('fonts/icomoon.woff?8xq8lh') format('woff'),
+    url('fonts/icomoon.svg?8xq8lh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat .path1:before {
+  content: "\e924";
+  color: rgb(139, 195, 74);
+}
+.icon-wechat .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(139, 195, 74);
+}
+.icon-wechat .path3:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.icon-wechat .path4:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.icon-wechat .path5:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.icon-wechat .path6:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.icon-line:before {
+  content: "\e92a";
+}
+.icon-poker:before {
+  content: "\e91d";
+}
+.icon-sport:before {
+  content: "\e91e";
+}
+.icon-video:before {
+  content: "\e91f";
+}
+.icon-egame:before {
+  content: "\e920";
+}
+.icon-game:before {
+  content: "\e921";
+}
+.icon-lottery:before {
+  content: "\e922";
+}
+.icon-gamepad-controller:before {
+  content: "\e914";
+}
+.icon-credit-card1:before {
+  content: "\e915";
+}
+.icon-android:before {
+  content: "\e916";
+}
+.icon-apple:before {
+  content: "\e917";
+}
+.icon-like:before {
+  content: "\e918";
+}
+.icon-safety:before {
+  content: "\e919";
+}
+.icon-document:before {
+  content: "\e911";
+}
+.icon-comment:before {
+  content: "\e900";
+}
+.icon-credit-card:before {
+  content: "\e901";
+}
+.icon-goals:before {
+  content: "\e902";
+}
+.icon-name:before {
+  content: "\e903";
+}
+.icon-question:before {
+  content: "\e904";
+}
+.icon-transfer:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e906";
+}
+.icon-home1:before {
+  content: "\e907";
+}
+.icon-information:before {
+  content: "\e908";
+}
+.icon-treasure:before {
+  content: "\e909";
+}
+.icon-update-arrows:before {
+  content: "\e90a";
+}
+.icon-home:before {
+  content: "\e90b";
+}
+.icon-checkmark:before {
+  content: "\e923";
+}
+.icon-volume-medium:before {
+  content: "\e92b";
+}
+.icon-hammer:before {
+  content: "\e91c";
+}
+.icon-close-outline:before {
+  content: "\e913";
+}
+.icon-chevrons-up:before {
+  content: "\e91b";
+}
+.icon-menu:before {
+  content: "\e91a";
+}
+.icon-link:before {
+  content: "\e912";
+}
+.icon-chevron-right:before {
+  content: "\e910";
+}
+.icon-chevron-left:before {
+  content: "\e90f";
+}
+.icon-minus:before {
+  content: "\e90c";
+}
+.icon-plus:before {
+  content: "\e90d";
+}
+.icon-comments:before {
+  content: "\e90e";
+}

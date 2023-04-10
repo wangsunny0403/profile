@@ -1,0 +1,318 @@
+@import "helper/variables", "helper/mixin";
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+@media (max-width:1199px){
+    /*index*/
+    .game{
+        &-top{
+            &-left{
+                max-width: calc(70% - 5px);
+            }
+            &-right{
+                max-width: calc(28% - 2px);
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .container, .wrapper .container{
+        max-width: 98%;
+    }
+    .top{
+        padding: 5px 0;
+        .btn{
+            font-size: 13px;
+        }
+    }
+    .navbar{
+        &-collapse{
+            border-top: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        .nav-link{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .icon-menu{
+            color: $darkblue;
+        }
+    }
+    .info{
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .footer{
+        &-menu{
+            font-size: 13px;
+        }
+    }
+    /*index*/
+    .game{
+        &-top{
+            &-left{
+                margin-right: 10px;
+            }
+            &-right{
+                max-width: calc(30% - 5px);
+            }
+            &-inner{
+                margin-top: 10px;
+                div{
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        &-bottom{
+            margin-top: 10px;
+            div{
+                &:first-child{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    /*page*/
+    .nav-pills{
+        .nav-link{
+            margin-right: 10px;
+            padding: 5px 10px;
+            i{
+                font-size: 17px;
+            }
+        }
+    }
+    /*member*/
+    .verify-box{
+        > div{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width:600px) {
+    .table-rwd{
+        tr:nth-child(2n){
+            border-top: 1px solid $lightblue;
+            border-bottom: 1px solid $lightblue;
+        }
+        thead{
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        tr:last-child{
+            td{
+                border: none;
+            }
+        }
+        td {
+            display: block;
+            position: relative;
+            padding-left: 90px;
+            border-top: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &::before {
+                content: attr(data-label);
+                display: inline-block;
+                width: 80px;
+                border-right: 1px solid #ccc;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+    /*record*/
+    .ball{
+        margin: 2px 0;
+    }
+    /*history*/
+    .history-box {
+        .card{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width:575px){
+    .main-title {
+        margin-bottom: 20px;
+        b{
+            font-size: 25px;
+        }
+    }
+    .fixed {
+        width: 30px;
+    }
+    .footer{
+        padding-bottom: 70px;
+        &-menu{
+            font-size: 12px;
+            a{
+                &.footer-menu-pc{
+                    display: none;
+                }
+            }
+            &-mb{
+                display: block;
+                .container{
+                    padding: 0;
+                }
+            }
+            &-fixed{
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                .fixed-list{
+                    display: flex;
+                    background-color: $darkblue;
+                    border-top: 1px solid $lightblue;
+                    a{
+                        color: $white;
+                        display: block;
+                        width: 20%;
+                        padding: 10px 0;
+                        font-size: 13px;
+                        &.active{
+                            background-color: $lightyellow;
+                            color: $primary;
+                        }
+                    }
+                    i{
+                        display: block;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    /*page*/
+    .nav-pills{
+        .nav-link{
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+    }
+    /*index*/
+    .index{
+        &-list{
+            display: block;
+            img{
+                width: 100%;
+            }
+            .img_pc{
+                display: none;
+            }
+            .img_mb{
+                display: block;
+            }
+        }
+    }
+    .game{
+        &-top{
+            &-left{
+                max-width: 100%;
+                margin-right: 0;
+            }
+            &-inner{
+                flex-direction: column;
+                > div{
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                    &:first-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            &-right{
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        &-bottom{
+            flex-direction: column;
+            > div{
+                max-width: 100%;
+                margin-bottom: 10px;
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    /*stored*/
+    .stored{
+        &-list{
+            li{
+                width: calc(100%/2 - 6px);
+                border-radius: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                &:nth-child(3n+3){
+                    margin-right: 5px;
+                }
+                &:nth-child(2n+2){
+                    margin-right: 0;
+                }
+            }
+        }
+        &-info{
+            font-size: 17px;
+        }
+    }
+    /*chat*/
+    .chat{
+        &-content{
+            margin-bottom: 15px;
+        }
+        &-btn{
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+    }
+    /*bet*/
+    .bet{
+        &-box{
+            .row{
+                > div{
+                    flex: 0 0 16.666667%;
+                    max-width: 16.666667%;
+                }
+            }
+        }
+        &-head{
+            margin-bottom: 10px;
+            .row{
+                > div{
+                    &:nth-child(2){
+                        margin-top: 10px;
+                        width: 50%;
+                        flex: 0 0 50;
+                        max-width: 50%;
+                        text-align: left !important;
+                    }
+                    &:last-child{
+                        margin-top: 10px;
+                        width: 50%;
+                        flex: 0 0 50;
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

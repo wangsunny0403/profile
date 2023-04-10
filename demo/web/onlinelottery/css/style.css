@@ -1,0 +1,587 @@
+/*
+	normal.scss - a CSS normalizer (cf. CSS reset).
+	
+	Provides a normalized environment for new designs and nice defaults for
+	styling simple documents.
+
+	Author: Miikka Koskinen <miikka.koskinen@iki.fi>
+*/
+/* Box model reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Text styling */
+body {
+  font-size: 1em;
+  font-family: "Palatino", "Palatino Linotype", "Georgia", serif;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+p, ul, ol, blockquote, pre {
+  margin-bottom: 1.4em;
+}
+
+/* vim: set ts=4 sw=4 noet: */
+body {
+  font-family: "Microsoft JhengHei", 'Lato', 'Arial', sans-serif;
+}
+
+body > a {
+  display: none;
+}
+
+body.scrollHidden {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  img {
+    max-width: 90%;
+  }
+}
+
+.show-mb {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .show-mb {
+    display: block;
+  }
+  .show-pc {
+    display: none;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 650px;
+}
+
+.wrapper {
+  background-image: url("../img/bg-img.png"), url("../img/bg-color.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center center;
+  background-size: 100%, cover;
+  padding: 2% 0 3% 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .head {
+  margin-bottom: 10%;
+}
+
+.wrapper .head h1 {
+  margin-left: -16%;
+}
+
+.wrapper .head h1 img {
+  max-width: 370px;
+}
+
+.wrapper .head h2 img {
+  max-width: 280px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper .head {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper .head h1 img {
+    max-width: 255px;
+  }
+  .wrapper .head h2 img {
+    max-width: 220px;
+  }
+}
+
+.wrapper .body .shake-box {
+  max-width: 50%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.wrapper .body .sign-box {
+  position: relative;
+  margin: 0 7% -8%;
+  padding-bottom: 55%;
+}
+
+.wrapper .body .sign-box img {
+  position: absolute;
+  max-width: 35%;
+  -webkit-transform: translate(0%, 5%);
+          transform: translate(0%, 5%);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.wrapper .body .sign-box .fortune1 {
+  left: -10%;
+  bottom: -35%;
+  z-index: 4;
+}
+
+.wrapper .body .sign-box .fortune2 {
+  left: 5%;
+  bottom: -24%;
+  z-index: 3;
+}
+
+.wrapper .body .sign-box .fortune3 {
+  left: 25%;
+  bottom: 0%;
+  z-index: 2;
+}
+
+.wrapper .body .sign-box .fortune4 {
+  left: 36%;
+  bottom: -27%;
+  z-index: 3;
+}
+
+.wrapper .body .sign-box .fortune5 {
+  left: 59%;
+  bottom: -15%;
+  z-index: 4;
+}
+
+.wrapper .body .sign-box .fortune6 {
+  right: -8%;
+  bottom: -39%;
+  z-index: 5;
+}
+
+.wrapper .body .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .body .box .lottery-box {
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.wrapper .body .box .stage-box {
+  text-align: center;
+  max-width: 80%;
+}
+
+.wrapper .body .box .light {
+  margin-top: -46%;
+  z-index: 3;
+  position: relative;
+  max-width: 75%;
+}
+
+.wrapper .body .box .stage {
+  margin-top: -18%;
+}
+
+@media (max-width: 1200px) {
+  .wrapper .body .sign-box {
+    margin: 0 11% -8%;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper .body .shake-box {
+    max-width: 65%;
+  }
+  .wrapper .body .box .stage-box {
+    max-width: 100%;
+  }
+  .wrapper .body .box .light {
+    margin-top: -50%;
+  }
+}
+
+.shake-box.shaking {
+  -webkit-animation: shake-lottery-box 1.5s linear infinite;
+          animation: shake-lottery-box 1.5s linear infinite;
+}
+
+@-webkit-keyframes shake-lottery-box {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateY(0) rotate(3deg);
+            transform: translateY(0) rotate(3deg);
+  }
+}
+
+@keyframes shake-lottery-box {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateY(0) rotate(3deg);
+            transform: translateY(0) rotate(3deg);
+  }
+}
+
+.shake-box.shaking .sign-box .fortune1 {
+  -webkit-animation: fortune1 1.5s .075s linear infinite;
+          animation: fortune1 1.5s .075s linear infinite;
+}
+
+.shake-box.shaking .sign-box .fortune2 {
+  -webkit-animation: fortune2 1.5s .075s linear infinite;
+          animation: fortune2 1.5s .075s linear infinite;
+}
+
+.shake-box.shaking .sign-box .fortune3 {
+  left: 27%;
+  -webkit-animation: fortune3 1.5s .075s linear infinite;
+          animation: fortune3 1.5s .075s linear infinite;
+}
+
+.shake-box.shaking .sign-box .fortune4 {
+  -webkit-animation: fortune1 1.5s .075s linear infinite;
+          animation: fortune1 1.5s .075s linear infinite;
+}
+
+.shake-box.shaking .sign-box .fortune5 {
+  left: 58%;
+  -webkit-animation: fortune5 1.5s .075s linear infinite;
+          animation: fortune5 1.5s .075s linear infinite;
+}
+
+.shake-box.shaking .sign-box .fortune6 {
+  right: -2%;
+  -webkit-animation: fortune6 1.5s .075s linear infinite;
+          animation: fortune6 1.5s .075s linear infinite;
+}
+
+@-webkit-keyframes fortune1 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(15deg);
+            transform: translateX(0%) translateY(-10%) rotate(15deg);
+  }
+}
+
+@keyframes fortune1 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(15deg);
+            transform: translateX(0%) translateY(-10%) rotate(15deg);
+  }
+}
+
+@-webkit-keyframes fortune2 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(6deg);
+            transform: translateX(0%) translateY(-10%) rotate(6deg);
+  }
+}
+
+@keyframes fortune2 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(6deg);
+            transform: translateX(0%) translateY(-10%) rotate(6deg);
+  }
+}
+
+@-webkit-keyframes fortune3 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(-2deg);
+            transform: translateX(0%) translateY(0%) rotate(-2deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-7deg);
+            transform: translateX(0%) translateY(-10%) rotate(-7deg);
+  }
+}
+
+@keyframes fortune3 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(-2deg);
+            transform: translateX(0%) translateY(0%) rotate(-2deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-7deg);
+            transform: translateX(0%) translateY(-10%) rotate(-7deg);
+  }
+}
+
+@-webkit-keyframes lkdw-02 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-15deg);
+            transform: translateX(0%) translateY(-10%) rotate(-15deg);
+  }
+}
+
+@keyframes lkdw-02 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(0deg);
+            transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-15deg);
+            transform: translateX(0%) translateY(-10%) rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes fortune5 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(3deg);
+            transform: translateX(0%) translateY(0%) rotate(3deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-3deg);
+            transform: translateX(0%) translateY(-10%) rotate(-3deg);
+  }
+}
+
+@keyframes fortune5 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(3deg);
+            transform: translateX(0%) translateY(0%) rotate(3deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(-3deg);
+            transform: translateX(0%) translateY(-10%) rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes fortune6 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(10deg);
+            transform: translateX(0%) translateY(0%) rotate(10deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(4deg);
+            transform: translateX(0%) translateY(-10%) rotate(4deg);
+  }
+}
+
+@keyframes fortune6 {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translateX(0%) translateY(0%) rotate(10deg);
+            transform: translateX(0%) translateY(0%) rotate(10deg);
+  }
+  5%, 15%, 85%, 95% {
+    -webkit-transform: translateX(0%) translateY(-10%) rotate(4deg);
+            transform: translateX(0%) translateY(-10%) rotate(4deg);
+  }
+}
+
+.bottom-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .bottom-img {
+    max-width: 100%;
+  }
+}
+
+.resultModal-outer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 30;
+}
+
+.resultModal .modal-dialog {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resultModal .modal-content {
+  background-image: url("../img/result-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% 100%;
+  background-color: transparent;
+  padding: 15px 25px 25px;
+  border: none;
+  position: relative;
+}
+
+.resultModal .modal-content a {
+  text-decoration: none;
+}
+
+.resultModal .modal-content .num {
+  font-family: 'Lobster';
+  margin: 0 3px;
+}
+
+.resultModal .modal-content .close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  font-size: 30px;
+  color: #fff1e8;
+  z-index: 21;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .resultModal .modal-open .modal {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .resultModal .modal-content {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+
+.resultModal img {
+  position: absolute;
+}
+
+.resultModal .top-left {
+  top: -3%;
+  left: -9%;
+  width: 85px;
+}
+
+.resultModal .bottom-right {
+  bottom: 0;
+  right: -5%;
+  width: 70px;
+}
+
+.resultModal h2 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #f8ca99;
+  line-height: 1;
+}
+
+.resultModal h3 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffdf00+0,ffb903+100 */
+  background: #ffdf00;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf00), to(#ffb903));
+  background: linear-gradient(to bottom, #ffdf00 0%, #ffb903 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf00', endColorstr='#ffb903',GradientType=0 );
+  /* IE6-9 */
+  font-size: 20px;
+  color: #754c24;
+  padding: 5px;
+  border-radius: 30px;
+  margin: 15px 0 10px;
+}
+
+.resultModal h4 {
+  font-size: 30px;
+  color: #f8ca99;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 10px auto;
+  letter-spacing: 5px;
+}
+
+.resultModal p {
+  color: #fff3e9;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.resultModal .btn-link {
+  display: block;
+  width: 150px;
+  padding: 3px;
+  font-size: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8caac+0,f8bd99+100 */
+  background: #f8caac;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8caac), to(#f8bd99));
+  background: linear-gradient(to bottom, #f8caac 0%, #f8bd99 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8caac', endColorstr='#f8bd99',GradientType=0 );
+  /* IE6-9 */
+  color: #754c24;
+  border-radius: 30px;
+  margin: 0 auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  z-index: 20;
+}
+
+.resultModal .btn-link:hover {
+  text-decoration: none;
+  opacity: .9;
+}
+/*# sourceMappingURL=style.css.map */

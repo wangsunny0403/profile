@@ -1,0 +1,63 @@
+﻿body{
+	margin:0;
+	padding:0;
+	
+	background-color: black;
+}
+
+img{ border:0;}
+*{ padding:0; margin:0;}
+
+.fl{ font-size:12px;} 
+.fr{ float:right;}
+.w{ width:100%; margin:0 auto;}
+
+
+/*.header{ height:154px; background:url(hbg.jpg) repeat-x -225px 0; position:relative; background-color:}*/
+.logo{ text-align: center;}
+.logo img {margin-top: 45px;}
+.guanggao{ position:absolute; top:16px; background:url(guanggao.html) no-repeat; width:284px; height:256px; right:143px;}
+.shewei{ position:absolute; top:0; right:82px; width:120px; height:40px; line-height:40px; color:#FFF;}
+.shewei a{ color:#fff;}
+
+.mainbg{ background:url(manibody_bg_x.jpg) repeat-x black;}
+
+
+.main_l{width:100%; margin:0 auto; margin-top:27px;}
+.main_l .bt{line-height:37px; padding-left:10px; }
+.main_l .bt b{ color:#eec162; font-size:22px;}
+.main_l .bt span{ color:#FFF;font-size:12px;}
+.main_l .bm{ width:241px; height:28px; margin:0 auto; margin-top:15px; margin-bottom:30px;}
+.main_l .bm img{ margin-top:20px;}
+.main_l .bt2{ height:37px; line-height:37px; padding-left:10px; float:left;}
+.main_l .bt2 b{ color:#eec162; font-size:22px;}
+
+.abcd{ float:left; margin:5px 0;}
+.a{ height:40px; width:90px; border:1px solid #691421; background:#140001; color:#fff100; text-align:center; margin-left:12px; display:inline; line-height:40px;}
+.b{ height:34px; width:58px; line-height:34px;}
+.c{ height:40px; max-width:280px;width:100% line-height:40px; border:1px solid #691421; background:#140001; color:#FFF; text-align:center;}
+.d{ height:34px; width:80px; line-height:34px;  background:url(../images/check/button.png) no-repeat; border:none; margin-left:14px; display:inline; cursor:pointer;  color:#FFF;}
+.d input{ color:#FFF;}
+
+.mc .l .but{ margin-left:180px; cursor:pointer;}
+
+
+.main_r{width:100%;  font-size:14px; font-family:"黑体"; margin-top:58px;}
+.xinxi{ float:left; width:260px; position:relative; left:25px; top:10px;}
+.xinxi .c1{  padding:10px; color:#FF0;  width:261px;  height:87px; position:absolute; top:2px; left:0px;}
+.xinxi .c1 font{ color:#FFF; font-size:18px;}
+.xinxi .c1 span{ font-size:18px; color:#FFF100;}
+.xinxi h2{ color:#FFF100; font-size:12px; padding:5px 0;}
+.xinxi h3{color:#FFF; font-weight:normal; }
+.xinxi p{ color:#FFF100; padding:10px 0;}
+.xiazai a{ display:block; background:url(../images/check/kehuduana.png) no-repeat; width:256px; height:80px;}
+.xiazai a:hover{background:url(../images/check/kehuduanh.png) no-repeat; width:256px; height:80px;}
+
+.footer{ height:88px;  background:url(footer.png) no-repeat; padding-bottom:10px;}
+.footer p{
+	line-height:70px;
+	padding-right:30px;
+	text-align:right;
+	color:#FFF;
+	letter-spacing: 2px;
+}

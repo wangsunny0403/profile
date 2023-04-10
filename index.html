@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Portfolio</title>
+  <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="plugin/fancyBox/jquery.fancybox.css">
+  <link rel="stylesheet" href="plugin/fancyBox/helpers/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section class="section1" id="section1">
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav mr-auto navBar">
+            <li class="nav-item active">
+              <a class="nav-link" href="#section2">關於我</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">作品集</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 left-info">
+          <div class="info-box">
+            <h1>Sunny</h1>
+            <p>
+              <span><img src="img/ic-arrow.png" alt=""></span>
+              <span class="content-txt">具備網站製作經驗，熟悉Vue框架及網頁視覺設計，作出好的使用者介面，提升用戶體驗和操作的易用性</span>
+            </p>
+          </div>
+          <ul class="link-box">
+            <li>
+              <i class="fas fa-envelope-open"></i>
+              <a href="mailto:wangsunny0403@gmail.com">wangsunny0403@gmail.com</a>
+            </li>
+            <li>
+              <i class="fab fa-line"></i>
+              loveshow888
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section1 -->
+  <section class="section section2" id="section2">
+    <div class="container">
+      <h2 class="text-center title-main"><span>關於我</span></h2>
+      <div class="row about-box">
+        <div class="col-md-6 txt-box">
+          <div class="about-item">
+            <h3 class="title-sub"><img src="img/ic-arrow.png" alt="">專業技能</h3>
+            <ul class="content-list content-txt">
+              <li>APP、Web、Mobile Web、後台等使用者介面設計</li>
+              <li>具備 HTML / SCSS / RWD / Vue 網頁技術相關經驗</li>
+            </ul>
+          </div>
+          <div class="about-item">
+            <h3 class="title-sub"><img src="img/ic-arrow.png" alt="">活動經歷</h3>
+            <ul class="content-list content-txt">
+              <li>2022鐵人賽-<a href="https://ithelp.ithome.com.tw/users/20112053/ironman/5468" target="_blank"
+                  class="text-link">第一次使用Jira就上手</a>(優選)</li>
+              <li>2023/04-台中前端社群分享主題：提升前端開發效率的秘密武器：透過 ChatGPT 讓開發更快速精準</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 txt-box">
+          <div class="about-item">
+            <h3 class="title-sub"><img src="img/ic-arrow.png" alt="">工作經驗</h3>
+            <ul class="content-list content-txt">
+              <li>
+                <h6>2020/12-至今 旭謙國際有限公司（前端工程師）</h6>
+                <ol class="work-list">
+                  <li>後臺的UI/UX介面設計及串接資料(Vuejs)</li>
+                  <li>Web、Mobile Web切版及串接資料(Vuejs)</li>
+                </ol>
+              </li>
+              <li>
+                <h6>2018/10-2020/06 興晨股份有限公司 (網頁設計師)</h6>
+                <ol class="work-list">
+                  <li>客戶網站版面規劃視覺設計、RWD響應式網站</li>
+                  <li>後臺的UI/UX介面設計</li>
+                  <li>APP UI介面設計</li>
+                </ol>
+              </li>
+              <li>
+                <h6>2017/06-2018/08 索特股份有限公司 (網頁設計師)</h6>
+                <ol class="work-list">
+                  <li>客戶網站版面規劃視覺設計、RWD響應式網站</li>
+                  <li>後臺的UI/UX介面設計</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section2 -->
+  <section class="section section3" id="section3">
+    <div class="container">
+      <nav>
+        <div class="nav nav-pills work-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-web-tab" data-toggle="tab" href="#nav-web" role="tab"
+            aria-controls="nav-web" aria-selected="true">Web</a>
+          <a class="nav-item nav-link" id="nav-banner-tab" data-toggle="tab" href="#nav-banner" role="tab"
+            aria-controls="nav-banner" aria-selected="false">Banner</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
+          <div class="row work-list gallery">
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="https://www.cts-travel.com.tw/C/tw/web" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web14.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="https://www.magiccurry.com.tw/" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web15.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/11.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/11.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/xcweb/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web10.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/hyg5/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web0.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/1.jpg" class="work-item fancybox" rel=example_group>
+                <div class="img template-img" style="background-image: url('demo/template/1.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/2.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/2.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/3.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/3.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/5.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/5.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/6.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/6.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/7.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/7.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/9.png" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/9.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/jbmoon/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web3.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/bkkmoon/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web4.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/gamedownload/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web1.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/tsgaming/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web5.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/reverse666/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web6.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/sportintro/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web7.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/web/sbcgpay/index.html" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web8.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="demo/template/12.jpg" class="work-item fancybox">
+                <div class="img template-img" style="background-image: url('demo/template/12.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="1">
+              <a href="https://www.jandan.com.tw/index.php" class="work-item" target="_blank">
+                <div class="img template-img" style="background-image: url('demo/web/web17.png');"></div>
+                <div class="hover"><i class="fas fa-link"></i></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-banner" role="tabpanel" aria-labelledby="nav-banner-tab">
+          <div class="row work-list gallery">
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b1.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b1.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b2.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b2.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b3.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b3.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b4.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b4.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b5.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b5.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b6.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b6.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b7.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b7.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b8.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b8.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b9.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b9.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b10.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b10.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b10.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b10.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b11.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b11.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b16.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b16.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b18.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b18.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b19.jpg" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b19.jpg');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b21.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b21.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b22.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b22.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b23.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b23.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b24.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b24.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-md-3 filtr-item" data-category="2">
+              <a href="demo/banner/b25.png" class="work-item fancybox">
+                <div class="img" style="background-image: url('demo/banner/b25.png');"></div>
+                <div class="hover"><i class="fas fa-search-plus"></i></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section3 -->
+  <div class="scrollTop"><i class="fas fa-arrow-up"></i></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugin/poptrox/jquery.poptrox.min.js"></script>
+  <script type="text/javascript" src="plugin/fancyBox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="plugin/fancyBox/helpers/jquery.fancybox-thumbs.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(function () {
+      $(".fancybox").fancybox({
+        padding: 0
+      });
+    });
+  </script>
+</body>
+
+</html>

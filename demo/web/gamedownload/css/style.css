@@ -1,0 +1,372 @@
+/*
+	normal.scss - a CSS normalizer (cf. CSS reset).
+	
+	Provides a normalized environment for new designs and nice defaults for
+	styling simple documents.
+
+	Author: Miikka Koskinen <miikka.koskinen@iki.fi>
+*/
+/* Box model reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Text styling */
+body {
+  font-size: 1em;
+  font-family: "Palatino", "Palatino Linotype", "Georgia", serif;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+p, ul, ol, blockquote, pre {
+  margin-bottom: 1.4em;
+}
+
+/* vim: set ts=4 sw=4 noet: */
+body {
+  font-family: "Microsoft JhengHei", 'Lato', 'Arial', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg.jpg");
+  background-position: center top;
+  background-size: 100%;
+  background-color: #000;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-size: 125%;
+  }
+}
+
+body > a {
+  display: none;
+}
+
+body.bodyFixed {
+  overflow: hidden;
+}
+
+body.bodyFixed::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  img {
+    max-width: 90%;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box .img {
+  margin-top: 7%;
+}
+
+.img-box .txt {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-box .txt .main {
+  position: relative;
+}
+
+.img-box .txt .sub {
+  position: absolute;
+  top: -90px;
+  right: -30px;
+}
+
+@media (max-width: 991px) {
+  .img-box .txt .sub {
+    right: -15px;
+  }
+  .img-box .txt .sub img {
+    max-width: 85%;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .img-box .txt {
+    position: relative;
+    margin-top: -35%;
+  }
+  .img-box .txt .main {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .img-box .txt .sub {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .img-box .txt .sub img {
+    max-width: 90%;
+  }
+}
+
+.link-box {
+  max-width: 800px;
+  margin: 8% auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.link-item {
+  width: calc(50% - 15px);
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.link-item1 {
+  background-image: url("../img/btn1.png");
+}
+
+.link-item2 {
+  background-image: url("../img/btn2.png");
+}
+
+.link-item3 {
+  background-image: url("../img/btn3.png");
+}
+
+.link-item4 {
+  background-image: url("../img/btn4.png");
+}
+
+.link-item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.link-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6% 13%;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-shadow: 0 0 2px #999;
+  cursor: pointer;
+}
+
+.link-item a:hover {
+  text-decoration: none;
+}
+
+.link-item .img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.link-item .txt {
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.link-item .txt p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .link-box {
+    padding: 0 8%;
+    margin-top: 3%;
+  }
+  .link-item {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: calc(50% - 8px);
+  }
+  .link-item a {
+    padding: 15px 20px;
+  }
+  .link-item .img {
+    width: 40px;
+  }
+  .link-item .txt h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .link-box {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 575px) {
+  .link-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .link-item {
+    width: 240px;
+    margin-right: 0;
+    height: 68px;
+  }
+  .link-item a {
+    padding: 10px 20px;
+  }
+}
+
+.ios-download-info {
+  display: none;
+  padding: 5% 5% 350px;
+  background-color: #fff;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  z-index: 100;
+  bottom: 0;
+  top: 30%;
+}
+
+.ios-download-info .close {
+  position: absolute;
+  left: 3%;
+  top: 6%;
+  color: #666;
+  font-size: 4em;
+}
+
+.ios-download-info .img-box {
+  text-align: center;
+}
+
+.ios-download-info img {
+  width: 60%;
+  margin: 20px 0;
+}
+
+.ios-download-info h3 {
+  font-size: 2.5em;
+}
+
+@media (max-width: 767px) {
+  .ios-download-info {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .ios-download-info img {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .ios-download-info h3 {
+    font-size: 1em;
+  }
+  .ios-download-info .close {
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575px) {
+  .ios-download-info {
+    padding-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .ios-download-info .close {
+    top: 10px;
+    left: 10px;
+    font-size: 1em;
+  }
+}
+
+.ios-download-head {
+  text-align: center;
+  color: #FF1919;
+}
+
+.ios-download-head h2 {
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+.ios-download-head p {
+  font-size: 3em;
+}
+
+@media (max-width: 767px) {
+  .ios-download-head h2 {
+    font-size: 2em;
+  }
+  .ios-download-head p {
+    font-size: 1em;
+  }
+}
+
+.scrolltop {
+  text-align: center;
+  font-size: 8em;
+  color: #25a7ff;
+  cursor: pointer;
+}

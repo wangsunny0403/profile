@@ -1,0 +1,202 @@
+.page-banner {
+  background-image: url("../img/forex/banner.png");
+}
+
+.page-content h2 {
+  color: #2287FF;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.page-content .list .row > div {
+  margin-bottom: 30px;
+}
+
+.page-content .list .item {
+  padding: 15px;
+  -webkit-box-shadow: 0 4px 8px 1px #eee;
+          box-shadow: 0 4px 8px 1px #eee;
+  height: 100%;
+  border: 1px solid #f5f5f5;
+  border-top: 5px solid #e9ecef;
+  border-radius: 5px;
+}
+
+.page-content .list .item h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 8px;
+  color: #013DC1;
+}
+
+.page-content .list .item h3 span {
+  color: #999;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 5px;
+}
+
+.page-content .note {
+  color: #999;
+}
+
+@media (max-width: 767px) {
+  .page-content .list .row > div {
+    margin-bottom: 20px;
+  }
+}
+
+.block2 h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .table-box thead th:first-child {
+    height: 57px;
+    line-height: 45px;
+  }
+}
+
+.table-product thead th {
+  border-bottom: 1px solid #dee2e6;
+  min-width: inherit;
+}
+
+.table-product thead th.title {
+  border-right: 1px solid #dee2e6;
+  min-width: 120px;
+}
+
+.doc-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.doc-box a {
+  max-width: 300px;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  height: 45px;
+  border: 1px solid #013DC1;
+  border-radius: 2px;
+  color: #013DC1;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+  padding: 0 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.doc-box a i {
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 5px;
+}
+
+.doc-box a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(107deg, #2287FF 0%, #013DC1 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.doc-box a:hover {
+  color: #fff;
+}
+
+.doc-box a:hover::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#nav-product4 li > div {
+  border: 4px solid #fff;
+  outline: 1px solid #bfdfff;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../img/forex/item-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: inset 0 0 15px #cfe6f1;
+          box-shadow: inset 0 0 15px #cfe6f1;
+}
+
+#nav-product4 h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#nav-product4 p {
+  margin: 10px 0;
+}
+
+#nav-product4 b {
+  font-size: 25px;
+  line-height: 37.5px;
+  color: #2287FF;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  #nav-product4 li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  #nav-product4 li {
+    width: 50%;
+  }
+  #nav-product4 li:nth-child(2n+1) {
+    padding-right: 7px;
+  }
+  #nav-product4 li:nth-child(2n+2) {
+    padding-left: 7px;
+  }
+}

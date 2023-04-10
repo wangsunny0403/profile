@@ -1,0 +1,71 @@
+body {
+  font-family: 'Microsoft JhengHei', Tahoma, Geneva, Verdana, sans-serif;
+  background: #d9e0e7;
+}
+
+.error {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error h4 {
+  font-size: 1.6em;
+  text-shadow: 3px 5px 0px #c4ccd4;
+  color: #b11407;
+}
+
+.error h5 {
+  font-size: .5em;
+  color: #666;
+}
+
+.error img {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.error-message {
+  color: #2b3033;
+  font-size: 40px;
+  line-height: 2.5;
+  font-weight: bold;
+  text-align: left;
+}
+
+.error-code {
+  padding: 15px;
+  position: relative;
+  line-height: 20px;
+  text-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+  .error h4 {
+    font-size: 1.1em;
+  }
+  .error h5 {
+    font-size: .3em;
+  }
+  .error-message {
+    text-align: center;
+  }
+}

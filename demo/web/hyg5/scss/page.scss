@@ -1,0 +1,66 @@
+@import "helper/variables", "helper/mixin";
+.txt-list{
+    li{
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: $lightYellow;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        > div{
+            color: $lightBlue;
+        }
+    }
+}
+//about
+.about{
+    > div{
+        margin-bottom: 1.4em;
+    }
+    h4{
+        color: $lightYellow;
+        font-weight: normal;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #668ce3;
+        margin-bottom: 15px;
+    }
+    &-list{
+        li{
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        }
+    }
+}
+//contact
+.contact{
+    max-width: 800px;
+    margin: 0 auto;
+    .txt{
+        > div{
+            color: $lightBlue;
+        }
+    }
+    .form{
+        &-box{
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,627 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	max-width: 1140px;
+	width: inherit;
+}
+.screen_custom {
+	/* width:70%; */
+	max-width: 720px;
+	margin: 0 auto;
+}
+.loan-point .screen_custom h4{
+	margin-bottom:30px;	
+	line-height:200%;
+	color:#C70000;
+}
+
+.loan-point .screen_custom p{
+	margin-top:30px;
+	margin-bottom:30px;	
+	line-height:200%;
+}
+
+.screen_custom h4{
+
+	line-height:200%;
+	color:#C70000;
+}
+.screen_custom p{
+
+	line-height:200%;
+	margin-bottom:10px;
+}
+.screen_custom li{
+	/* list-style-type:decimal; */
+	/* line-height:200%; */
+}
+.screen_custom li a{
+	/* color: #fff000; */
+}
+.screen_custom .reset_width{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.screen_custom span{
+	/* color:#C70000; */
+}
+
+.contact_ul ul li{
+	list-style-type:none;
+	float:left;	
+	display: inline-block;
+    width: 20%;
+    margin: 0 auto;
+}
+.disk_list li{
+	list-style-type:disc;
+	}
+@media(max-width:480px){
+.screen_custom .upper-alpha, .screen_custom{
+	/* width:90%; */
+}
+}
+
+@media(max-width:1024px){
+.contact_ul ul li{
+	display:block;
+	float:none;	
+	width: 100%;
+}
+}
+
+.contact_ul ul li img{
+	margin: 0 auto;
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact_ul ul li p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact_banner{
+	width:100%;;
+}
+
+
+.contact_banner:hover{
+		filter: brightness(0.7);
+	    -webkit-filter: brightness(0.7);
+}
+
+.coop_one h2{
+	margin-bottom:20px;
+}
+
+.decimal_list li{
+	list-style-type:decimal!important;
+}
+.upper-alpha li {
+	margin-left : 4em; 
+
+	list-style-type:upper-alpha;
+}
+.table_set{
+	width:100%;
+	}
+	
+/*mobile_custom*/
+#mobile_type {
+	width:73%;
+	margin-right:auto;
+	margin-left:auto;
+	
+}
+#mobile_type li{
+	float:left;
+	list-style-type:none;
+	font-size:18px;
+	margin-right:2em;
+	}
+
+
+.mobile_block img{
+	width:100%;
+	}
+.cooperation_block img{
+	width:100%;
+	}
+#myCanvas01{
+	width:12%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	
+	position:absolute;
+	top:11%;
+	left:87%;
+	}
+#myCanvas02{
+	width:15%;
+	height:10%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	
+	position:absolute;
+	top:88%;
+	left:80%;
+	}
+#myCanvas03{
+	width:60%;
+	height:34%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	
+	position:absolute;
+	top:21%;
+	left:35%;
+	}
+#myCanvas04{
+	width:28%;
+	height:18%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	
+	position:absolute;
+	top:25%;
+	left:6%;
+	}	
+#arrow01{
+	width:10%;
+	height:auto;
+	z-index:10;
+	position:absolute;
+	padding-top:10%;
+	left:45%;
+	}
+	
+#arrow02{
+	width:10%;
+	height:auto;
+	z-index:10;
+	position:absolute;
+	padding-top:10%;
+	left:45%;
+	}
+
+/*mobile_sl*/
+#arrow_sl01{
+	width:10%;
+	height:auto;
+	z-index:10;
+	position:absolute;
+	padding-top:10%;
+	left:45%;
+	}
+
+#myCanvas_m_sl01{
+	width:30%;
+	height:20%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:25%;
+	left:66%;
+	}
+
+#myCanvas_m_sl02{
+	width:15%;
+	height:13%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:17%;
+	left:84%;
+	}
+#myCanvas_m_sl03{
+	width:15%;
+	height:13%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:17%;
+	left:52%;
+	}	
+#myCanvas_m_sl04{
+	width:38%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:33%;
+	left:32%;
+	}
+	
+/*mobile_sp*/
+#arrow_sp01{
+	width:10%;
+	height:auto;
+	z-index:10;
+	position:absolute;
+	padding-top:36%;
+	left:45%;
+	}
+#myCanvas_m_sp01{
+	width:30%;
+	height:20%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:25%;
+	left:36%;
+}
+#myCanvas_m_sp02{
+	width:20%;
+	height:15%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:15%;
+	left:45%;
+}
+#myCanvas_m_sp03{
+	width:13%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:0%;
+}
+#myCanvas_m_sp04{
+	width:25%;
+	height:30%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:2%;
+}
+#myCanvas_m_sp05{
+	width:13%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:88%;
+}
+#myCanvas_m_sp06{
+	width:25%;
+	height:30%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:72%;
+}
+
+#myCanvas_m_sp07{
+	width:95%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:16%;
+	left:2%;
+	}
+#myCanvas_m_sp08{
+	width:68%;
+	height:25%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:36%;
+	left:16%;
+}
+#myCanvas_m_sp09{
+	width:68%;
+	height:16%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:41%;
+	left:16%;
+}
+
+#myCanvas_m_sp10{
+	width:13%;
+	height:4%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:15%;
+	left:86%;
+}
+
+/*mobile_lo*/
+#myCanvas_m_lo01{
+	width:30%;
+	height:20%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:47%;
+	left:4%;
+	}
+#myCanvas_m_lo02{
+	width:15%;
+	height:11%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:17%;
+	left:47%;
+	}
+
+#myCanvas_m_lo03{
+	width:10%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:3%;
+	}
+	
+#myCanvas_m_lo04{
+	width:53%;
+	height:45%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:10%;
+	left:3%;
+	}
+#myCanvas_m_lo05{
+	width:10%;
+	height:8%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:11%;
+	left:88%;
+	}	
+#myCanvas_m_lo06{
+	width:34%;
+	height:14%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:16%;
+	left:63%;
+	}
+/*mobile_li*/	
+#myCanvas_m_li01{
+	width:30%;
+	height:20%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:22%;
+	left:4%;
+	}
+#myCanvas_m_li02{
+	width:25%;
+	height:17%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:43%;
+	left:49%;
+	}
+#myCanvas_m_li03{
+	width:16%;
+	height:11%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:13%;
+	left:53%;
+	}
+#myCanvas_m_li04{
+	width:30%;
+	height:7%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:39%;
+	left:13%;
+	}
+
+#liveGame01{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:5%;
+	left:30%;
+	}
+#liveGame02{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:27%;
+	left:30%;
+	}
+#liveGame03{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:34%;
+	left:30%;
+	}
+#liveGame04{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:41%;
+	left:30%;
+	}
+#liveGame05{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:48%;
+	left:30%;
+	}
+#liveGame06{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:55%;
+	left:30%;
+	}
+#liveGame07{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:62%;
+	left:30%;
+	}
+#myCanvas_m_sp01a{
+	width:30%;
+	height:20%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:46%;
+	left:36%;
+	}	
+#myCanvas_m_sp02a{
+	width:14%;
+	height:11%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:0%;
+	left:4%;
+	}
+#myCanvas_m_sp03a{
+	width:93%;
+	height:55%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:46%;
+	left:4%;
+	}
+#myCanvas_m_sp04a{
+	width:13%;
+	height:7%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:19%;
+	left:10%;
+	}	
+#myCanvas_m_sp05a{
+	width:18%;
+	height:7%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:88%;
+	left:8%;
+	}	
+	
+/*------*/
+
+#myCanvas_activity01_01{
+	width:18%;
+	height:7%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:43%;
+	left:4%;
+	}
+#myCanvas_activity01_02{
+	width:15%;
+	height:10%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:88%;
+	left:77%;
+	}	
+#myCanvas_activity01_03	{
+	width:20%;
+	height:6%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:28%;
+	left:3%;
+	}	
+#myCanvas_activity01_04	{
+	width:20%;
+	height:6%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:33%;
+	left:3%;
+	}
+#myCanvas_activity01_05{
+	width:20%;
+	height:6%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:26%;
+	left:3%;
+	}
+	
+#myCanvas_activity01_06{
+	width:20%;
+	height:6%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:23%;
+	left:3%;
+	}
+#myCanvas_activity01_07{
+	width:20%;
+	height:6%;
+	border:4px solid #FFCC00;
+	overflow:hidden;
+	position:absolute;
+	top:34%;
+	left:40%;
+	}
+.TXTstyle01 ul li{
+margin-top:5%;
+
+}
+	
+.TXTstyle01 ul li{
+	margin-bottom:5%;
+	list-style-type:none;
+	}
+
+.TXTstyle01 h2{
+	color:#666;
+	font-size:24px;	
+}
+.TXTstyle01 h4{
+	color:#666;
+	font-size:18pxpx;
+	}		
+@media(max-width:991px){
+	.arrow_all{
+	display:none;
+	}
+}

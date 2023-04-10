@@ -1,0 +1,127 @@
+.page-banner {
+  background-image: url("../img/promotion/banner.png");
+}
+
+.promotion-item {
+  border: 1px solid #ddd;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: block;
+  border-radius: .25rem;
+  overflow: hidden;
+}
+
+.promotion-item .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20% 0;
+}
+
+.promotion-item h2 {
+  font-size: 22px;
+  line-height: 33px;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.promotion-item p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #777777;
+}
+
+.promotion-item .btn {
+  width: 100%;
+}
+
+.promotion-item .end-time {
+  margin-top: 15px;
+}
+
+.promotion-item .end-time b {
+  color: #999;
+  font-weight: normal;
+}
+
+.promotion-item .end-time .date {
+  border: 1px solid #bfdfff;
+  margin-top: 3px;
+  padding: 2px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2287FF;
+}
+
+.promotion-item .end-time .date i {
+  margin-right: 5px;
+  color: #bfdfff;
+}
+
+.promotion-item .end-time .date.over {
+  background-color: #e9ecef;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #e9ecef;
+  color: #777777;
+}
+
+.promotion-main {
+  margin-bottom: 30px;
+}
+
+.promotion-main .img {
+  padding: 19% 0;
+  height: 100%;
+  display: block;
+}
+
+.promotion-main .txt {
+  padding: 40px 30px 40px 0;
+}
+
+.promotion-main .end-time {
+  margin: 25px 0;
+}
+
+.promotion-main .date {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (max-width: 991px) {
+  .promotion-main h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .promotion-main p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .promotion-main .date {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promotion-main .txt {
+    padding: 15px;
+  }
+  .promotion-main .end-time {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promotion-main {
+    margin-bottom: 20px;
+  }
+}

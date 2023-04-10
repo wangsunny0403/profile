@@ -1,0 +1,26 @@
+@mixin hoverBtn($bgColor, $color:#fff){
+    background-color: $bgColor;
+    color: $color;
+    // border: 1px solid $bgColor;
+    transition: all .3s;
+    &:hover{
+        background-color: $bgColor;
+        color: $color;
+        // border: 1px solid $bgColor;
+    }
+    @media(min-width:767px){
+        &:hover{
+            background-color: darken($bgColor, 15%);
+        }
+    }
+}
+@mixin sizeHeight($size){
+    font-size: $size;
+    line-height: $size*1.7;
+}
+@mixin bgcc($fileName){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/' + $fileName);
+}

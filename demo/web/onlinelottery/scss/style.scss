@@ -1,0 +1,404 @@
+@import "normal";
+@import "helper/variables", "helper/mixin";
+body{
+    font:{
+        family: "Microsoft JhengHei", 'Lato', 'Arial', sans-serif;
+    }
+    > a{
+        display: none;
+    }
+    &.scrollHidden{
+        overflow: hidden;
+    }
+}
+img{
+    max-width: 100%;
+    @media(max-width:1200px){
+        max-width: 90%;
+    }
+}
+.show{
+    &-mb{
+        display: none;
+    }
+    @media(max-width:767px){
+        &-mb{
+            display: block;
+        }
+        &-pc{
+            display: none;
+        }
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 650px;
+}
+.wrapper{
+    background-image: url('../img/bg-img.png'), url('../img/bg-color.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center center;
+    background-size: 100%, cover;
+    padding: 2% 0 3% 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .head{
+        margin-bottom: 10%;
+        h1{
+            margin-left: -16%;
+            img{
+                max-width: 370px;
+            }
+        }
+        h2{
+            img{
+                max-width: 280px;
+            }
+        }
+        @media(max-width:1200px){
+            margin-bottom: 8%;
+        }
+        @media(max-width:450px){
+            h1{
+                img{
+                    max-width: 255px;
+                }
+            }
+            h2{
+                img{
+                    max-width: 220px;
+                }
+            }
+        }
+    }
+    .body{
+        .shake-box{
+            max-width: 50%;
+            transform: rotate(0deg);
+            transform-origin: center bottom;
+        }
+        .sign-box{
+            position: relative;
+            margin: 0 7% -8%;
+            padding-bottom: 55%;
+            img{
+                position: absolute;
+                max-width: 35%;
+                transform: translate(0%, 5%);
+                transform-origin: center bottom;
+            }
+            .fortune1{
+                left: -10%;
+                bottom: -35%;
+                z-index: 4;
+            }
+            .fortune2{
+                left: 5%;
+                bottom: -24%;
+                z-index: 3;
+            }
+            .fortune3{
+                left: 25%;
+                bottom: 0%;
+                z-index: 2;
+            }
+            .fortune4{
+                left: 36%;
+                bottom: -27%;
+                z-index: 3;
+            }
+            .fortune5{
+                left: 59%;
+                bottom: -15%;
+                z-index: 4;
+            }
+            .fortune6{
+                right: -8%;
+                bottom: -39%;
+                z-index: 5;
+            }
+           
+            
+        }
+        .box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .lottery-box{
+                margin: 0 auto;
+                position: relative;
+                z-index: 10;
+            }
+            .stage-box{
+                text-align: center;
+                max-width: 80%;
+            }
+            .light{
+                margin-top: -46%;
+                z-index: 3;
+                position: relative;
+                max-width: 75%;
+            }
+            .stage{
+                margin-top: -18%;
+            }
+        }
+        @media(max-width:1200px){
+            .sign-box{
+                margin: 0 11% -8%;
+            }
+        }
+        @media(max-width:450px){
+            .shake-box{
+                max-width: 65%;
+            }
+            
+            .box{
+                .stage-box{
+                    max-width: 100%;
+                }
+                .light{
+                    margin-top: -50%;
+                }
+            }
+        }
+    }
+    
+}
+.shake-box{
+    &.shaking{
+        animation: shake-lottery-box 1.5s linear infinite;
+        @keyframes shake-lottery-box {
+            0%, 10%, 20%, 80%, 90%, 100% {
+                transform: translateY(0) rotate(0deg)
+            }
+        
+            5%, 15%, 85%, 95% {
+                transform: translateY(0) rotate(3deg)
+            }
+        }
+        .sign-box{
+            .fortune1{
+                animation: fortune1 1.5s .075s linear infinite;
+            }
+            .fortune2{
+                animation: fortune2 1.5s .075s linear infinite;
+            }
+            .fortune3{
+                left: 27%;
+                animation: fortune3 1.5s .075s linear infinite;
+            }
+            .fortune4{
+                animation: fortune1 1.5s .075s linear infinite;
+            }
+            .fortune5{
+                left: 58%;
+                animation: fortune5 1.5s .075s linear infinite;
+            }
+            .fortune6{
+                right: -2%;
+                animation: fortune6 1.5s .075s linear infinite;
+            }
+            @keyframes fortune1 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(0deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(15deg)
+                }
+            }
+            
+            @keyframes fortune2 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(0deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(6deg)
+                }
+            }
+            
+            @keyframes fortune3 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(-2deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(-7deg)
+                }
+            }
+            
+            @keyframes lkdw-02 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(0deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(-15deg)
+                }
+            }
+            
+            @keyframes fortune5 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(3deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(-3deg)
+                }
+            }
+            
+            @keyframes fortune6 {
+                0%, 10%, 20%, 80%, 90%, 100% {
+                    transform: translateX(0%) translateY(0%) rotate(10deg)
+                }
+            
+                5%, 15%, 85%, 95% {
+                    transform: translateX(0%) translateY(-10%) rotate(4deg)
+                }
+            }
+            
+        }
+    }
+}
+.bottom-img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    @media(max-width:1200px){
+        max-width: 100%;
+    }
+}
+.resultModal{
+    &-outer{
+        background-color: rgba(0,0,0, .5);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+        z-index: 30;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .modal{
+        &-dialog{
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-content{
+            background-image: url('../img/result-bg.png');
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 100% 100%;
+            background-color: transparent;
+            padding: 15px 25px 25px;
+            border: none;
+            position: relative;
+            a{
+                text-decoration: none;
+            }
+            .num{
+                font-family: 'Lobster';
+                margin: 0 3px;
+            }
+            .close-btn{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: -7px;
+                font-size: 30px;
+                color: #fff1e8;
+                z-index: 21;
+                cursor: pointer;
+            }
+        }
+        @media(max-width:400px){
+            &-open {
+                .modal{
+                    overflow-x: auto;
+                    overflow-y: auto;
+                }
+            }
+            &-content{
+                transform: scale(.85);
+            }
+        }
+    }
+    img{
+        position: absolute;
+    }
+    .top-left{
+        top: -3%;
+        left: -9%;
+        width: 85px;
+    }
+    .bottom-right{
+        bottom: 0;
+        right: -5%;
+        width: 70px;
+    }
+    h2{
+        font-size: 3.5em;
+        font-weight: bold;
+        color: $primary;
+        line-height: 1;
+    }
+    h3{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffdf00+0,ffb903+100 */
+        background: #ffdf00; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffdf00 0%, #ffb903 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ffdf00 0%,#ffb903 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ffdf00 0%,#ffb903 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf00', endColorstr='#ffb903',GradientType=0 ); /* IE6-9 */
+        font-size: 20px;
+        color: #754c24;
+        padding: 5px;
+        border-radius: 30px;
+        margin: 15px 0 10px;
+    }
+    h4{
+        font-size: 30px;
+        color: $primary;
+        writing-mode: vertical-lr;
+        margin: 10px auto;
+        letter-spacing: 5px;
+    }
+    p{
+        color: #fff3e9;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    .btn-link{
+        display: block;
+        width: 150px;
+        padding: 3px;
+        font-size: 20px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8caac+0,f8bd99+100 */
+        background: #f8caac; /* Old browsers */
+        background: -moz-linear-gradient(top,  #f8caac 0%, #f8bd99 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #f8caac 0%,#f8bd99 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #f8caac 0%,#f8bd99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8caac', endColorstr='#f8bd99',GradientType=0 ); /* IE6-9 */
+        color: #754c24;
+        border-radius: 30px;
+        margin: 0 auto;
+        transition: all .3s;
+        position: relative;
+        z-index: 20;
+        &:hover{
+            text-decoration: none;
+            opacity: .9;
+        }
+    }
+}

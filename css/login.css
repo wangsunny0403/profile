@@ -1,0 +1,279 @@
+/*
+	normal.scss - a CSS normalizer (cf. CSS reset).
+	
+	Provides a normalized environment for new designs and nice defaults for
+	styling simple documents.
+
+	Author: Miikka Koskinen <miikka.koskinen@iki.fi>
+*/
+/* Box model reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Text styling */
+body {
+  font-size: 1em;
+  font-family: "Palatino", "Palatino Linotype", "Georgia", serif;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.86667em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.86667em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-variant: small-caps;
+}
+
+p, ul, ol, blockquote, pre {
+  margin-bottom: 1.4em;
+}
+
+small {
+  font-size: 0.8em;
+  line-height: 1.75em;
+}
+
+/* vim: set ts=4 sw=4 noet: */
+body {
+  font-family: "Microsoft JhengHei", 'Lato', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #222;
+  background-color: #e9ecef;
+}
+
+.btn-blue {
+  background-color: #2287FF;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-blue:hover {
+  background-color: #0061d5;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  color: #fff;
+}
+
+.header {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+
+.header .service-box {
+  margin-left: auto;
+}
+
+.header .service-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .service-box a:hover {
+  text-decoration: none;
+}
+
+.header .service-box span, .header .service-box b {
+  display: block;
+}
+
+.header .service-box span {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #999;
+}
+
+.header .service-box b {
+  font-size: 20px;
+  line-height: 20px;
+  color: #2287FF;
+}
+
+.header .service-box i {
+  font-size: 40px;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1050px) {
+  .header .service-box b {
+    font-size: 17px;
+    line-height: 17px;
+    color: #2287FF;
+  }
+  .header .service-box i {
+    font-size: 30px;
+    line-height: 45px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .service-box a > div:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .navbar-brand img {
+    width: 160px;
+  }
+}
+
+.page-main h3 {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.page-main h3 div {
+  position: relative;
+  z-index: 10;
+}
+
+.page-main h3 i {
+  background-color: #777777;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 520px) {
+  .page-main h3 {
+    background-image: url("../img/closeposition/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: #fff;
+  }
+  .page-main h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 40, 95, 0.6);
+  }
+}
+
+.login-box {
+  max-width: 500px;
+  margin: -20px auto 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.login-box .btn {
+  width: 100%;
+  border: 1px solid #ced4da;
+}
+
+.login-box .btn-box {
+  padding-left: 0;
+}
+
+.login-box b {
+  color: #f3a953;
+  font-weight: normal;
+}
+
+.login-box .form {
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #efefef;
+          box-shadow: 0 0 5px #efefef;
+  padding: 35px;
+}
+
+@media (max-width: 767px) {
+  .login-box .row > div:last-child {
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+}
+
+.tips {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #777777;
+}
+
+.footer ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li a {
+  color: #777777;
+}
+
+.footer ul li::after {
+  content: "|";
+  color: #777777;
+  margin: 0 5px;
+}
+
+.footer ul li:last-child::after {
+  display: none;
+}

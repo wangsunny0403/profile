@@ -1,0 +1,175 @@
+
+
+@media only screen and (max-width: 720px) {
+	
+	/* Force table to not be like tables anymore */
+	.break-table{
+		background-color: transparent !important;  
+	}
+	.break-table, 
+	.break-table thead, 
+	.break-table tbody, 
+	.break-table th, 
+	.break-table td, 
+	.break-table tr { 
+		display: block; 
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.break-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.break-table tr { border: 1px solid #ccc; margin-bottom: 10px; background-color: #ffffff;}
+
+	.break-table td { 
+		/* Behave  like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;  
+		position: relative;
+		padding-left: 55% !important; 
+		white-space: normal;
+		text-align:left;
+	}
+
+	.break-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		color: #1a1a1a;
+	}
+
+	.break-table td:before { content: attr(data-title); }
+	
+}
+
+
+/***************************************************************************************/
+/*表格01*/
+/***************************************************************************************/
+#rwd_table {
+	width: 80%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 480px){
+	#rwd_table{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table{
+	width: 95%;
+}
+	
+}
+
+#rwd_table td, #rwd_table th{
+	padding: 5px;
+}
+
+#rwd_table td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table th{
+	background-color: #a1723a;
+	color:#ffffff;
+	border: #FFF 1px solid;
+	text-align: center;
+}
+
+
+/***************************************************************************************/
+/*表格02*/
+/***************************************************************************************/
+#rwd_table_02 {
+	width: 80%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    /*margin-bottom: 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 480px){
+	#rwd_table_02{
+	width: 95%;
+}
+}
+
+@media screen and (max-width: 720px){
+		#rwd_table_02{
+	width: 95%;
+}
+	
+}
+
+#rwd_table_02 td, #rwd_table_02 th{
+	padding: 5px;
+}
+
+#rwd_table_02 td{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#rwd_table_02 th{
+	background-color: #a1723a;
+	color:#fff;
+	text-align: center;
+	padding: 1em 0;
+	border: solid 1px #fff;
+}
+
+
+
+/*特殊*/
+.roulette_content #rwd_table_02 {
+	width: 80%;
+   /* background-color: rgba(0,0,0,0)!important;*/
+    border-collapse: collapse;
+    /*margin-bottom: 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+    border: #ddd 1px solid;
+    min-height: 400px;
+}
+
+.roulette_content #rwd_table_02 td{
+	color: #666666;
+	border: none!important;
+	padding-top: 2em;
+}
+
+@media screen and (max-width: 991px){
+.roulette_content #rwd_table_02 {
+    width: 100%;
+    /* background-color: rgba(0,0,0,0)!important; */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #ddd 1px solid;
+    min-height: 250px;
+}
+}
+
+
+
+/*特殊*/

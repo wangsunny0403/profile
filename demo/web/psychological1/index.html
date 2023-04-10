@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>心理測驗</title>
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+    <audio autoplay = "autoplay" controls = "controls" loop = "loop" preload = "auto"
+    src = "img/music.mp3" style="opacity: 0;" id="myAudio"> </audio>
+    <!-- home-box -->
+    <div class="section-box home-box" id="home-box">
+        <div class="container">
+            <div class="home-head">
+                <img src="img/home-top-img.png" alt="">
+            </div>
+            <h1>测试你的性格<br/>对新冠病毒的免疫能力</h1>
+            <div class="home-content">
+                <p>
+                    新型冠状病毒来势汹汹，<br/>
+                    在全球弥漫着一股恐惧的气氛。<br/>
+                    从疫情爆发到稳定控制，<br/>
+                    对比美国及欧洲的慌乱情况，<br/>
+                    国内齐心对抗疫情的精神值得骄傲，<br/>
+                    也成为了其他国家学习及效仿的对象。
+                </p>
+                <p>
+                    另外你知道除了常见的防疫知识外，<br/>
+                    你的人格特质也会影响免疫能力么？
+                </p>
+                <p>
+                    接下来的测验包含十道题目，<br/>
+                    请用最真实的直观感受回答，<br/>
+                    每一题的答案都会影响到你的测试结果。
+                </p>
+                <p>
+                    赶紧来试试吧！
+                </p>
+                <a class="btn" id="btn-start"><img src="img/home-start-btn.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- 問題 -->
+    <!-- qa-box1 -->
+    <div class="section-box qa-box qa-box1" id="qa-box1">
+        <div class="container">
+            <div class="qa-title">
+                <b>第一题:</b>
+                <p>
+                    <span>你无意间拿到一幅画，画上面有一幢孤独的房子。</span>
+                    <span>以下四项你最想在周围加上什么呢？</span>
+                </p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>好动的小孩
+                    </div>
+                    <div class="img"><img src="img/qa-box1-img1.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>炽热的太阳
+                    </div>
+                    <div class="img"><img src="img/qa-box1-img2.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>艳丽的鲜花
+                    </div>
+                    <div class="img"><img src="img/qa-box1-img3.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>坚固的栅栏
+                    </div>
+                    <div class="img"><img src="img/qa-box1-img4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box2 -->
+    <div class="section-box qa-box qa-box2" id="qa-box2">
+        <div class="container">
+            <div class="qa-title">
+                <b>第二题:</b>
+                <p>窗外下起了倾盆大雨，<br/>独自在家的你会做些什么呢？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>默默站在窗旁<br/>看著落雨发呆</p>
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>倾听雨点敲击<br/>屋檐的声音</p>
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>继续做事<br/>不予理会</p>
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>回忆起过去<br/>雨天发生的事</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box3 -->
+    <div class="section-box qa-box qa-box3" id="qa-box3">
+        <div class="container">
+            <div class="qa-title">
+                <b>第三题:</b>
+                <p>你最珍贵的记忆来自于何处？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>家人</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box3-img1-l.png" alt="" class="qa-box3-img qa-box3-img1-l">
+                        <img src="img/qa-box3-img1.png" alt="">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>朋友</p>
+                    </div>
+                    <div class="img"><img src="img/qa-box3-img2.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>恋人</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box3-img3-l.png" alt="" class="qa-box3-img qa-box3-img3-l">
+                        <img src="img/qa-box3-img3.png" alt="">
+                        <img src="img/qa-box3-img3-r.png" alt="" class="qa-box3-img qa-box3-img3-r">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>自我</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box3-img4.png" alt="">
+                        <img src="img/qa-box3-img4-r.png" alt="" class="qa-box3-img qa-box3-img4-r">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box4 -->
+    <div class="section-box qa-box qa-box4" id="qa-box4">
+        <div class="container">
+            <div class="qa-title">
+                <b>第四题:</b>
+                <p>当你叙述一段往事给你想吸引的人听时，<br/>
+                    你最常的表达方式是什么？</p>
+            </div>
+            <div class="qa-list">
+                <div class="qa-item qa-item1">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>老老实实讲出实际情况</p>
+                        <img src="img/qa-box4-simg.png" alt="" class="qa-box4-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>实话为主但稍微夸饰些</p>
+                        <img src="img/qa-box4-simg.png" alt="" class="qa-box4-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item3">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>为了动听大部分有所变动</p>
+                        <img src="img/qa-box4-simg.png" alt="" class="qa-box4-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>虚构没发生过的事</p>
+                        <img src="img/qa-box4-simg.png" alt="" class="qa-box4-simg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box5 -->
+    <div class="section-box qa-box qa-box5" id="qa-box5">
+        <div class="container">
+            <div class="qa-title">
+                <b>第五题:</b>
+                <p>你很要好的朋友与你大吵一架<br/>你非常失望，接下来会怎么做？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>无条件原谅他，<br/>并且待他跟当初一样</p>
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>选择原谅他，<br/>但你心理非常清楚<br/>友谊已经发生了变化</p>
+
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>不能继续当朋友<br/>从此各走各的路</p>
+
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>与他反目成仇，<br/>并且相互攻击</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box6 -->
+    <div class="section-box qa-box qa-box6" id="qa-box6">
+        <div class="container">
+            <div class="qa-title">
+                <b>第六题:</b>
+                <p>当你无意中听到有人议论你时，<br/>什么样的形容会让你最难过？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>没想象力<br/>没创造力</p>
+                        <img src="img/qa-box6-simg.png" alt="" class="qa-box6-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>不受欢迎<br/>难以相处</p>
+                        <img src="img/qa-box6-simg.png" alt="" class="qa-box6-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>不与时俱进<br/>不知变通</p>
+                        <img src="img/qa-box6-simg.png" alt="" class="qa-box6-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>利益优先<br/>贪小便宜</p>
+                        <img src="img/qa-box6-simg.png" alt="" class="qa-box6-simg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box7 -->
+    <div class="section-box qa-box qa-box7" id="qa-box7">
+        <div class="container">
+            <div class="qa-title">
+                <b>第七题:</b>
+                <p>你最难忍受一个人身上有以下哪种特质？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>自我中心和自恋</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box7-img1.png" alt="" class="qa-box7-img">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>封闭，不愿接受新思想</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box7-img2.png" alt="" class="qa-box7-img">
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>墨守成规，毫无企图心</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box7-img3.png" alt="" class="qa-box7-img">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>冷漠，缺乏同情心</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/qa-box7-img4.png" alt="" class="qa-box7-img">
+                    </div>
+                    <img src="img/qa-box7-img4-r.png" alt="" class="qa-box7-img-r">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box8 -->
+    <div class="section-box qa-box qa-box8" id="qa-box8">
+        <div class="container">
+            <div class="qa-title">
+                <b>第八题:</b>
+                <p>将你的人生分四个等级，「一」代表艰苦挣扎与杰出成就，而「四」代表舒坦度日与平凡无奇，你会落在哪个分级？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>等级一</p>
+                        <img src="img/qa-box8-simg.png" alt="" class="qa-box8-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>等级二</p>
+                        <img src="img/qa-box8-simg.png" alt="" class="qa-box8-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>等级三</p>
+                        <img src="img/qa-box8-simg.png" alt="" class="qa-box8-simg">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>等级四</p>
+                        <img src="img/qa-box8-simg.png" alt="" class="qa-box8-simg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box9 -->
+    <div class="section-box qa-box qa-box9" id="qa-box9">
+        <div class="container">
+            <div class="qa-title">
+                <b>第九题:</b>
+                <p>当追溯你的生活时，你希望能看到什么样的人生？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>你与朋友、同事和家人之间拥有长久和且意义的关系</p>
+                        <img src="img/qa-box9-simg1.png" alt="" class="qa-box9-simg qa-box9-simg1">
+                    </div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>你充分发掘并发挥了你的创造天分</p>
+                        <img src="img/qa-box9-simg2.png" alt="" class="qa-box9-simg qa-box9-simg2">
+                    </div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>你为别人或社会做出贡献</p>
+                        <img src="img/qa-box9-simg3.png" alt="" class="qa-box9-simg qa-box9-simg3">
+                    </div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>你从未停止过学习和成长</p>
+                        <img src="img/qa-box9-simg4.png" alt="" class="qa-box9-simg qa-box9-simg4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qa-box10 -->
+    <div class="section-box qa-box qa-box10" id="qa-box10">
+        <div class="container">
+            <div class="qa-title">
+                <b>第十题:</b>
+                <p>如果有个孩子问你生命中最重要的是什么，<br/>你会告诉他什么答案？</p>
+            </div>
+            <div class="qa-list half-column-list">
+                <div class="qa-item qa-item1 half-column-item">
+                    <div class="txt">
+                        <b>(A)</b>
+                        <p>做一个对社会<br/>有用且善良的人</p>
+                        <img src="img/qa-box10-simg1.png" alt="" class="qa-box10-simg qa-box10-simg1">
+                        <!-- <img src="img/qa-box10-img1-bg.png" alt="" class="qa-box10-img-bg qa-box10-img1-bg"> -->
+                    </div>
+                    <div class="img"><img src="img/qa-box10-img1.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item2 half-column-item">
+                    <div class="txt">
+                        <b>(B)</b>
+                        <p>不要把你爱的人<br/>视为理所当然的存在</p>
+                        <img src="img/qa-box10-simg2.png" alt="" class="qa-box10-simg qa-box10-simg2">
+                        <!-- <img src="img/qa-box10-img2-bg.png" alt="" class="qa-box10-img-bg qa-box10-img2-bg"> -->
+                    </div>
+                    <div class="img"><img src="img/qa-box10-img2.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item3 half-column-item">
+                    <div class="txt">
+                        <b>(C)</b>
+                        <p>保持开放的心态，<br/>活到老学到老</p>
+                        <img src="img/qa-box10-simg3.png" alt="" class="qa-box10-simg qa-box10-simg3">
+                        <!-- <img src="img/qa-box10-img3-bg.png" alt="" class="qa-box10-img-bg qa-box10-img3-bg"> -->
+                    </div>
+                    <div class="img"><img src="img/qa-box10-img3.png" alt=""></div>
+                </div>
+                <div class="qa-item qa-item4 half-column-item">
+                    <div class="txt">
+                        <b>(D)</b>
+                        <p>发现并享受<br/>这个世界的美丽</p>
+                        <!-- <img src="img/qa-box10-img4-bg.png" alt="" class="qa-box10-img-bg qa-box10-img4-bg"> -->
+                    </div>
+                    <div class="img"><img src="img/qa-box10-img4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 測驗結果 -->
+    <!-- result-box1 -->
+    <div class="section-box result-box result-box1" id="result-box1">
+        <div>
+            <div class="container">
+                <a id="result1"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：60%</h2>
+                    <h3>无忧无虑，顽皮，愉快的人 </h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box9-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你喜欢自由自在，无拘无束的生活。<br/>
+                            你的座右铭是︰生命只能活一次，因此你尽量享受每一刻。<br/>
+                            你好奇心旺盛，对新事物抱有开放的态度；你向往改变，讨厌束缚。<br/>
+                            你觉得身边的环境都不断在变，而且经常为你带来惊喜。
+                        </p>
+                        <p>
+                            虽然你较不受拘束且不喜欢备任何事物限制，<br/>
+                            但聪明如你也知道疫情期间要减少出门<br/>
+                            并且遵从以下建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。<br/>
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box2 -->
+    <div class="section-box result-box result-box2" id="result-box2">
+        <div>
+            <div class="container">
+                <a id="result2"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：70%</h2>
+                    <h3>独立，前卫，不受拘束</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box8-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你追求自由及不受拘束，自我的生活。<br/>
+                            你的工作及消闲活动都与艺术有关。<br/>
+                            你对于自由的渴求有时候会使你做出令人出人意表的事。<br/>
+                            你的生活方式极具个人色彩；你永远不会盲目追逐潮流。<br/>
+                            相反地，你会根据自己的意思和信念去生活，就算是逆流而上也在所不惜。
+                        </p>
+                        <p>
+                            虽然你较不受拘束且不喜欢备任何事物限制，<br/>
+                            但聪明如你也知道疫情期间要减少出门<br/>
+                            并且遵从以下建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box3 -->
+    <div class="section-box result-box result-box3" id="result-box3">
+        <div>
+            <div class="container">
+                <a id="result3"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：95%</h2>
+                    <h3>时常自我反省,敏感的思想家</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box7-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你对于自己及四周的环境能够比一般人控制得更好更彻底。<br/>
+                            你讨厌表面化及肤浅的东西；你宁愿独自一人也不愿跟别人闲谈，但你跟朋友的关系却非常深入，这令你的心境保持和谐安逸。<br/>
+                            不介意长时间独自一人，而且绝少会觉得沈闷。
+                        </p>
+                        <p>
+                            你比任何人了解疫情的严重性<br/>
+                            请持续保持警觉，并且提醒周遭的人<br/>
+                            以下为防疫建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box4 -->
+    <div class="section-box result-box result-box4" id="result-box4">
+        <div>
+            <div class="container">
+                <a id="result4"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：85%</h2>
+                    <h3>务实，头脑清醒，和谐</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box6-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你作风自然，喜欢简单的东西。<br/>
+                            人们欣赏你脚踏实地，他们觉得你稳重，值得信赖。<br/>
+                            你能够给予身边的人安全感，你给人一种亲切，温暖的感觉。<br/>
+                            你对于俗气的，花花绿绿的东西都不屑一顾，对时装潮流抱着怀疑的态度；<br/>
+                            对于你来说，衣服必须是实用及大方得体的。
+                        </p>
+                        <p>
+                            你比任何人了解疫情的严重性<br/>
+                            请持续保持警觉，并且提醒周遭的人<br/>
+                            以下为防疫建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box5 -->
+    <div class="section-box result-box result-box5" id="result-box5">
+        <div>
+            <div class="container">
+                <a id="result5"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：75%</h2>
+                    <h3> 专业，实事求事，自信</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box5-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你掌管自己的生活，你相信自己的能力多于相信命运的安排。<br/>
+                            你以实际，简单的方式去解决问题。<br/>
+                            你对日常生活中所遇到的事物抱有现实的睇法，并且能够应付自如。<br/>
+                            人们知道你可担重任，因此都放心把大量工作交给你处理。<br/>
+                            你那坚强的意志使你时刻都充满信心。<br/>
+                            未达到自己的目标之前，你绝不罢休。
+                        </p>
+                        <p>
+                            虽然你较不受拘束且不喜欢备任何事物限制，<br/>
+                            但聪明如你也知道疫情期间要减少出门<br/>
+                            并且遵从以下建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box6 -->
+    <div class="section-box result-box result-box6" id="result-box6">
+        <div>
+            <div class="container">
+                <a id="result6"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：90%</h2>
+                    <h3>温和，谨慎，无攻击性</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box4-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你生性随和，但处事谨慎。<br/>
+                            你很容易认识朋友，但同时享受你的私人时间及独立生活。<br/>
+                            有时候，你会从人群中抽身而出，一个人静静地思考生活的意义，并自娱一番。<br/>
+                            你需要个人的空间，因此有时会隐匿于美梦当中，但你并不是一个爱孤独的人。<br/>
+                            你跟自己及这个世界都能够和陆共处，而你对现状亦非常满意。
+                        </p>
+                        <p>
+                            你比任何人了解疫情的严重性<br/>
+                            请持续保持警觉，并且提醒周遭的人<br/>
+                            以下为防疫建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+     <!-- result-box7 -->
+     <div class="section-box result-box result-box7" id="result-box7">
+        <div>
+            <div class="container">
+                <a id="result7"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：80%</h2>
+                    <h3>具分析力，可靠，自信</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box3-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你对事物的灵敏度令你可以发现到旁人忽略了的东西。<br/>
+                            这些就是你的宝石，你喜欢发掘这些美好的东西。<br/>
+                            你的教养对于你的生活有很特别的影响。<br/>
+                            你有自己高雅独特的一套，无视任何时装潮流。<br/>
+                            你的理想生活是优雅而愉快的，而你亦希望跟你接触的人们都是高雅而有教养的。
+                        </p>
+                        <p>
+                            你比任何人了解疫情的严重性<br/>
+                            请持续保持警觉，并且提醒周遭的人<br/>
+                            以下为防疫建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box8 -->
+    <div class="section-box result-box result-box8" id="result-box8">
+        <div>
+            <div class="container">
+                <a id="result8"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：65%</h2>
+                    <h3>浪漫，爱幻想，情绪化</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box2-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你是一个感性的人。你拒绝只从一个严肃，理智的角度去理解事物。<br/>
+                            你的感觉亦十分重要。事实上，你觉得人生必需要有梦想才叫活得充实。<br/>
+                            你不接受那些轻视浪漫主义及被理智牵着鼻子走的人；<br/>
+                            而且不会让任何事物影响到你那丰富的感情及情绪。
+                        </p>
+                        <p>
+                            虽然你较不受拘束且不喜欢备任何事物限制，<br/>
+                            但聪明如你也知道疫情期间要减少出门<br/>
+                            并且遵从以下建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                </div>
+                <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+            </div>
+        </div>
+    </div>
+    <!-- result-box9 -->
+    <div class="section-box result-box result-box9" id="result-box9">
+        <div>
+            <div class="container">
+                <a id="result9"></a>
+                <div class="inner">
+                    <h6>测试结果</h6>
+                    <h2>防疫指数：70%</h2>
+                    <h3>精力充沛，好动，外向</h3>
+                    <div class="img">
+                        <div class="img-box">
+                            <img src="img/result-box1-img.png" alt="">
+                        </div>
+                        <div class="qrcode">
+                            <img src="img/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            你不介意冒险，特别喜欢有趣的，多元化的工作。<br/>
+                            相比之下，例行公事及惯例会令你没精打采。<br/>
+                            你最兴奋的是可以积极参与任何比赛活动，因为这样你就可以在众人面前大显身手了。
+                        </p>
+                        <p>
+                            虽然你较不受拘束且不喜欢备任何事物限制，<br/>
+                            但聪明如你也知道疫情期间要减少出门<br/>
+                            并且遵从以下建议：<br/>
+                            <i class="fas fa-check"></i> 经常用肥皂和水洗手至少 20 秒<br/>
+                            <i class="fas fa-check"></i> 如果没有肥皂和水，请使用含至少 60% 酒精的洗手液。<br/>
+                            <i class="fas fa-check"></i> 避免用未洗的手触摸您的眼睛、鼻子和嘴。<br/>
+                            <i class="fas fa-check"></i> 避免与生病的人密切接触。<br/>
+                            <i class="fas fa-check"></i> 如果您生病了，请待在家里。<br/>
+                            <i class="fas fa-check"></i> 清洁和消毒经常触摸的物体和表面。
+                        </p>
+                    </div>
+                    <span class="btn-primary link-btn">赶紧截屏 分享朋友圈</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cover-box -->
+    <!-- 增加cover-box時，body加上class="fixed" -->
+    <div class="cover-box">
+        <div>
+            <div class="cover-pop-box" id="share-box">
+                <div class="close"><i class="fas fa-times"></i></div>
+                <p>
+                    分享二维码，查看自己的结果<br/>
+                    测试看看朋友的防疫指数吧！
+                </p>
+                <div class="qrcode mb-2 mt-2">
+                    <img src="img/qrcode.jpg" alt="">
+                </div>
+                <a class="btn btn-primary link-btn" id="copyBtn">复制链结</a>
+                <ul class="share-box mt-2">
+                    <li>分享到：</li>
+                    <li id="shareLink1"><a><img src="img/share-1.png" alt=""> 微信</a></li>
+                    <li id="shareLink3"><a ><img src="img/share-4.png" alt=""> 新浪微博</a></li>
+                    <li id="shareLink2"><a ><img src="img/share-2.png" alt=""> QQ好友</a></li>
+                    <li id="shareLink4"><a><img src="img/share-3.png" alt=""> QQ空間</a></li>
+                </ul>
+            </div>
+            <!-- 完成分享 -->
+            <div class="cover-pop-box" id="sharefinish-box">
+                <p class="mt-2 mb-2">
+                    已分享完成，点击查看结果
+                </p>
+                <button id="close-sharefinish-box" class="btn btn-primary link-btn">查看结果</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

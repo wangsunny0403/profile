@@ -1,0 +1,142 @@
+@media screen and (max-width:1400px) {
+    .news_img {
+        left: 15px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .about_img {
+        right: -15px;
+        max-width: 540px;
+    }
+    .news_img {
+        left: 15px;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 987px) {
+    /*about*/
+    .about_img, .news_img{
+        display: none;
+    }
+    .about_txt {
+        margin-left: 15px;
+        width: calc(100% - 15px);
+    }
+    /*products*/
+    .product_box{
+        padding-top: 0;
+    }
+    .product_txt{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    /*news*/
+    .news_box{
+        min-height:550px;
+    }
+    .news_txt {
+        max-width: inherit;
+        float: inherit;
+        width: 80%;
+        margin: 8% auto;
+    }
+
+}
+@media (min-width: 768px){
+    .navbar-nav > li > a {
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title_en {
+        font-size: 45px;
+    }
+    .title_cn {
+        font-size: 28px;
+    }
+    /*header*/
+    .header {
+        background: #2c2a34;
+        height: 65px;
+        padding: 0 15px;
+    }
+    .header > .container{
+        padding: 0;
+    }
+    .banner > img{
+        padding-top: 65px;
+    }
+    .header .navbar-brand{
+        padding: 15px 0;
+    }
+    .header .navbar-brand > img{
+        width: 80px;
+    }
+    .header .navbar-toggle{
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    .header .navbar-collapse{
+        background: #4e4b5a;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: 7px;
+    }
+    .header .navbar-nav > li {
+        font-size: 15px;
+    }
+    .navbar-default .navbar-nav > li > a i{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    /*products*/
+    .product_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    /*top*/
+    .scrollTop{
+        width: 30px;
+    }
+    .scrollTop i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .scrollTop span{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .main_title {
+        margin-bottom: 35px;
+    }
+    /*product*/
+    .products{
+        padding: 60px 15px;
+    }
+    /*contact*/
+    .contact ul li i{
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .contact ul li i img {
+        width: 30px;
+    }
+}
+@media screen and (max-width: 550px){
+    .products .slick-prev, .products .slick-next{
+        width: 20px;
+    }
+    .contact ul li{
+        width: 90%;
+        margin-left: 10%;
+    }
+}

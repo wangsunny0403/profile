@@ -1,0 +1,511 @@
+.page-banner {
+  padding: 10% 0;
+  background-image: url("../img/page-banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.page-items {
+  background-color: #07214E;
+  padding: 20px;
+  color: #fff;
+}
+
+/*index*/
+.carousel-indicators li {
+  background-color: #005DB6;
+  border: 1px solid #fff;
+  height: 9px;
+  width: 40px;
+}
+
+.carousel-indicators li.active {
+  background-color: #FFE867;
+}
+
+.main-title span {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.notice-box {
+  background-color: #CEDDEF;
+  padding: 10px 0;
+}
+
+.notice-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notice-title {
+  width: 120px;
+  color: #005eb6;
+  font-size: 18px;
+}
+
+.notice-txt {
+  overflow: hidden;
+  width: calc(100% - 120px);
+  position: relative;
+  top: 2px;
+}
+
+.notice-txt a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.index a {
+  border: 1px solid #FFE867;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index a img {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.index a:hover {
+  -webkit-box-shadow: 0 0 10px #FFE867;
+          box-shadow: 0 0 10px #FFE867;
+}
+
+.index a:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.index-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.index-list .img_mb {
+  display: none;
+}
+
+.game-top-left {
+  max-width: 749px;
+  margin-right: 20px;
+}
+
+.game-top-right {
+  max-width: 340px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222775+0,231e4c+77 */
+  background: #222775;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#222775), color-stop(46%, #231e4c));
+  background: linear-gradient(to right, #222775 0%, #231e4c 46%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222775', endColorstr='#231e4c',GradientType=1 );
+  /* IE6-9 */
+}
+
+.game-top-right a {
+  height: 100%;
+}
+
+.game-top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+}
+
+.game-top-inner div {
+  max-width: 364px;
+}
+
+.game-top-inner div:first-child {
+  margin-right: 20px;
+}
+
+.game-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.game-bottom > div {
+  max-width: 545px;
+}
+
+.game-bottom > div:first-child {
+  margin-right: 20px;
+}
+
+/*ball*/
+.ball {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.ball-blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0085ae), to(#043980));
+  background-image: linear-gradient(#0085ae, #043980);
+}
+
+.ball-red {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e91f40), to(#981f3b));
+  background-image: linear-gradient(#e91f40, #981f3b);
+}
+
+.ball-green {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#28a444), to(#00625c));
+  background-image: linear-gradient(#28a444, #00625c);
+}
+
+/*registered*/
+.terms {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.terms li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+.terms li a {
+  color: #FFC107;
+}
+
+.terms li a:hover {
+  text-decoration: underline;
+}
+
+/*bet*/
+.bet-title {
+  font-size: 20px;
+  color: #FFE867;
+  margin-bottom: 10px;
+}
+
+.bet-detail-box {
+  margin-bottom: 20px;
+}
+
+.bet-detail-title {
+  font-size: 20px;
+  color: #FFE867;
+  margin-bottom: 10px;
+}
+
+/*member*/
+.verify-box .tips {
+  margin-top: 10px;
+}
+
+.verify-add {
+  border: 1px solid #CEDDEF;
+  border-radius: 2px;
+  padding: 0 10px;
+  height: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #CEDDEF;
+}
+
+.verify-add input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: transparent;
+}
+
+.verify-add > div {
+  margin: 5px 0;
+}
+
+.verify-add i {
+  font-size: 40px;
+}
+
+.verify-img {
+  height: 198px;
+}
+
+.verify-img img {
+  width: 280px;
+  height: 180px;
+}
+
+/*chat*/
+.chat-content {
+  min-height: 300px;
+  margin: 0 auto 25px;
+  border: 1px solid #CEDDEF;
+}
+
+.chat-btn {
+  padding-left: 0;
+}
+
+.chat-btn .btn {
+  width: 100%;
+}
+
+/*stored*/
+.stored-info {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.stored-list {
+  margin-bottom: 20px;
+}
+
+.stored-list li {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #FFE867;
+  width: calc(100%/3 - 13px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.stored-list li:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.stored-list li.active {
+  border: 2px solid #CEDDEF;
+  -webkit-box-shadow: 0 0 5px #CEDDEF;
+          box-shadow: 0 0 5px #CEDDEF;
+}
+
+/*game*/
+.game-num span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.game-list {
+  margin-top: 25px;
+}
+
+.game-list a {
+  display: block;
+  text-align: center;
+  padding: 30px 15px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 8px solid transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.game-list .bet {
+  background-color: #630563;
+}
+
+.game-list .bet i {
+  color: #630563;
+}
+
+.game-list .bet .game-icon {
+  -webkit-box-shadow: 7px 7px 0 #400449;
+          box-shadow: 7px 7px 0 #400449;
+}
+
+.game-list .bet:hover {
+  border-color: #320332;
+}
+
+.game-list .record {
+  background-color: #EBAF08;
+}
+
+.game-list .record i {
+  color: #EBAF08;
+}
+
+.game-list .record .game-icon {
+  -webkit-box-shadow: 7px 7px 0 #b88801;
+          box-shadow: 7px 7px 0 #b88801;
+}
+
+.game-list .record:hover {
+  border-color: #ba8a06;
+}
+
+.game-list .bet-detail {
+  background-color: #2A865F;
+}
+
+.game-list .bet-detail i {
+  color: #2A865F;
+}
+
+.game-list .bet-detail .game-icon {
+  -webkit-box-shadow: 7px 7px 0 #176343;
+          box-shadow: 7px 7px 0 #176343;
+}
+
+.game-list .bet-detail:hover {
+  border-color: #1e5f43;
+}
+
+.game-list .history {
+  background-color: #2A5786;
+}
+
+.game-list .history i {
+  color: #2A5786;
+}
+
+.game-list .history .game-icon {
+  -webkit-box-shadow: 7px 7px 0 #124273;
+          box-shadow: 7px 7px 0 #124273;
+}
+
+.game-list .history:hover {
+  border-color: #1e3e5f;
+}
+
+.game-item {
+  margin-bottom: 10px;
+}
+
+.game-icon {
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 80px;
+  border-radius: 50%;
+  line-height: 140px;
+}
+
+.game-title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/*history*/
+.history-box .card {
+  background-color: #07214E;
+  border-radius: 0;
+  border: 0px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.history-box .card h2 {
+  cursor: pointer;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.history-box .card .btn {
+  color: #fff;
+}
+
+.history-box .card-body {
+  border-top: 1px solid #72849a;
+}
+
+.history-box .price {
+  margin-left: auto;
+}
+
+/*bet*/
+.bet-box {
+  text-align: center;
+}
+
+.bet-box .row {
+  margin: 0;
+}
+
+.bet-box .row > div {
+  padding: 5px;
+  border: 0.5px solid #2f5eb3;
+}
+
+.bet-head {
+  margin-bottom: 20px;
+}
+
+.bet-head .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bet-head .row > div:nth-child(2) {
+  color: #FFC107;
+  font-size: 18px;
+}
+
+.bet-table .table th, .bet-table .table td {
+  padding: 10px;
+}
+
+.bet-table .table th {
+  background-color: #CEDDEF;
+}
+
+.bet-table .table th, .bet-table .table td {
+  border-left: 1px solid #CEDDEF;
+}
+
+.bet-table .table th:last-child, .bet-table .table td:last-child {
+  border-right: 1px solid #CEDDEF;
+}
+
+.bet-btn .btn-submit {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bet-price {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=page.css.map */

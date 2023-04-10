@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏下载</title>
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-box text-center">
+            <div class="img"><img src="img/img.png" alt=""></div>
+            <div class="txt">
+                <div class="sub"><img src="img/sub-txt.png" alt=""></div>
+                <div class="main"><img src="img/main-txt.png" alt=""></div>
+            </div>
+        </div>
+        <ul class="link-box">
+            <li class="link-item link-item1">
+                <a href="" target="_blank">
+                    <div class="img"><img src="img/ic-1.png" alt=""></div>
+                    <div class="txt">
+                        <h2>Android下载</h2>
+                        <p>适用版本</p>
+                    </div>
+                </a>
+            </li>
+            <li class="link-item link-item2" id="ios-btn">
+                <a>
+                    <div class="img"><img src="img/ic-2.png" alt=""></div>
+                    <div class="txt">
+                        <h2>IOS下载</h2>
+                        <p>适用于IOS6.0级以上</p>
+                    </div>
+                </a>
+            </li>
+            <li class="link-item link-item3">
+                <a href="" target="_blank">
+                    <div class="img"><img src="img/ic-3.png" alt=""></div>
+                    <div class="txt">
+                        <h2>直接访问购彩</h2>
+                        <p>使用WAP端</p>
+                    </div>
+                </a>
+            </li>
+            <li class="link-item link-item4">
+                <a href="" target="_blank">
+                    <div class="img"><img src="img/ic-4.png" alt=""></div>
+                    <div class="txt">
+                        <h2>用户咨询</h2>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="ios-download-info">
+        <i class="fas fa-times close"></i>
+        <div class="ios-download-head">
+            <h2>重要提示</h2>
+            <p>请耐心阅读以下说明，并按照步骤准确操作！</p>
+        </div>
+        <div class="ios-download-item">
+            <h3>1.在下载页面点击【iOS下载】按钮，在弹窗中点击【允许】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img1.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>2.点击屏幕右上角的【安装】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img2.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>3.输入手机锁屏密码（如果你的手机没有设置锁屏密码，会直接开始下载），这时APP会开始自动下载，请等待下载完成，下载完成之后，手机屏幕会显示APP的图标</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img3.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>4.点击屏幕底部的【安装】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img4.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>5.点击屏幕弹窗的【打开】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img5.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>6.请点击屏幕弹窗的【安装】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img6.png" alt=""></div>
+        </div>
+        <div class="ios-download-item">
+            <h3>7.下载完成之后，在手机找到APP图标，打开APP，在屏幕弹窗点击【允许】按钮</h3>
+            <div class="img-box"><img src="img/ios-download/ios-download-img7.png" alt=""></div>
+        </div>
+        <div class="scrolltop"><i class="fas fa-arrow-alt-circle-up"></i></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#ios-btn').click(function(){
+                $('body').addClass('bodyFixed');
+                $('.ios-download-info').fadeIn();
+                var a = document.createElement('a');
+                a.setAttribute('href', '');
+                a.setAttribute('download', 'mobileconfig');
+                var aj = $(a);
+                aj.appendTo('body');
+                aj[0].click();
+                aj.remove();
+            })
+            $('.close').click(function(){
+                $('.ios-download-info').fadeOut();
+                $('body').removeClass('bodyFixed');
+            })
+            $('.scrolltop').click(function(){
+                $('.ios-download-info').animate({scrollTop:0}, '500');
+            })
+        })
+    </script>
+</body>
+</html>
